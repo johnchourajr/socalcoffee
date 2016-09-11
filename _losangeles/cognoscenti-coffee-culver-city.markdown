@@ -1,10 +1,12 @@
 ---
-# Cognoscenti Coffee
+title: Cognoscenti Coffee Culver City
+tags:
+- Indoor Seating
 shop_name: Cognoscenti Coffee Culver City
-website:
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.0310978,-118.3800115
 type: Coffee Shop
 city: Culver City
@@ -16,9 +18,8 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
 coffee:
 - Ritual Coffee Roasters
 - Kuma Coffee Roasters
 ---
+

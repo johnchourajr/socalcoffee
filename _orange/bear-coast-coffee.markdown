@@ -1,10 +1,14 @@
 ---
-# Bear Coast
+title: Bear Coast Coffee
+tags:
+- Indoor Seating
+- Outdoor Seating
+- Free Wi-Fi
 layout: shop
 shop_name: Bear Coast Coffee
 website: http://bearcoastcoffee.com/
-rating:
-featured_min: # 'yes'
+rating: 
+featured_min: 
 featured_max_1: 'yes'
 map: 33.420043, -117.619632
 type: Coffee Shop
@@ -17,12 +21,9 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 6a-6p |
-tags:
-- Indoor Seating
-- Outdoor Seating
-- Free Wi-Fi
 coffee:
 - Ritual Coffee Roasters
 - 49th Parallel Coffee Roasters
 - Heart Coffee Roasters
 ---
+

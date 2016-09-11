@@ -1,10 +1,13 @@
 ---
-# TAZA
+title: Taza
+tags:
+- Indoor Seating
+- Food
 shop_name: TAZA
 website: http://tazacoffee.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.1402146,-118.0342262
 type: Coffee Shop
 city: Arcadia
@@ -16,10 +19,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Saturday | 8a-6p |
-tags:
-- Indoor Seating
-- Food
-# - Pop-up
 coffee:
 - Blue Bottle Coffee
 ---
+

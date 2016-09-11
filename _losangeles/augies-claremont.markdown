@@ -1,10 +1,10 @@
 ---
-# Outpost Kitchen
+title: Augies Claremont
 shop_name: Augies Coffee Claremont
 website: augies.coffee
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.09424,-117.7235609
 type: Coffee Shop
 city: Claremont
@@ -18,8 +18,7 @@ hours: |-
   | ------ | ------ |
   | Saturday-Sunday | 7a–10p |
   | Monday-Friday | 6a–10p |
-tags:
--
 coffee:
 - Augies Coffee
 ---
+

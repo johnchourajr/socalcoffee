@@ -1,9 +1,14 @@
 ---
+title: Lord Windsor
+tags:
+- Indoor Seating
+- Outdoor Seating
+- Cold Brew
 shop_name: Lord Windsor
 website: http://lordwindsor.com
-rating:
+rating: 
 featured_min: 'yes'
-featured_max_1: # 'yes'
+featured_max_1: 
 map: 33.770468, -118.178155
 type: Coffee Shop / Roaster
 city: Long Beach
@@ -15,10 +20,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 7a-7p |
-tags:
-- Indoor Seating
-- Outdoor Seating
-- Cold Brew
 coffee:
 - Lord Windsor Coffee Roasters
 ---
+

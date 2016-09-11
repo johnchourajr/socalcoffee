@@ -1,8 +1,13 @@
 ---
-# The Common Room
+title: Common Room
+tags:
+- Outdoor Seating
+- Indoor Seating
+- Free Wi-Fi
+- Roaster
 shop_name: The Common Room
 website: www.commonroomroasters.com/
-rating:
+rating: 
 map: 33.6313274,-117.9375444
 type: Coffee Shop / Roaster
 city: Newport Beach
@@ -15,11 +20,7 @@ hours: |-
   | ------ | ------ |
   | Monday-Friday | 7a-4p |
   | Saturday-Sunday | 8a-4p |
-tags:
-- Outdoor Seating
-- Indoor Seating
-- Free Wi-Fi
-- Roaster
 coffee:
 - Common Room Coffee
 ---
+

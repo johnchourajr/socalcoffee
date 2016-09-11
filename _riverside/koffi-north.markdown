@@ -1,10 +1,12 @@
 ---
-# Outpost Kitchen
+title: Koffi North
+tags:
+- Indoor Seating
 shop_name: Koffi North
 website: https://www.kofficoffee.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.830621, -116.547012
 type: Coffee Shop
 city: Palm Springs
@@ -16,8 +18,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 6a–6p |
-tags:
-- Indoor Seating
 coffee:
 - Koffi Coffee Roasters
 ---
+

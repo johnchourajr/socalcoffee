@@ -1,10 +1,15 @@
 ---
-# Portola Santa Ana
+title: Portola Santa Ana
+tags:
+- Indoor Seating
+- Pastries
+- Roaster
+- Outdoor Seating
 shop_name: Portola Santa Ana
-website:
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.7481934,-117.8664136
 type: Coffee Shop / Roaster
 city: Santa Ana
@@ -18,11 +23,7 @@ hours: |-
   | ------ | ------ |
   | Sunday-Wednesday | 7a-9p |
   | Thursday-Saturday | 7a-10p |
-tags:
-- Indoor Seating
-- Pastries
-- Roaster
-- Outdoor Seating
 coffee:
 - Portola Coffee
 ---
+

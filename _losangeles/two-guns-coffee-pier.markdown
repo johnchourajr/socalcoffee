@@ -1,9 +1,12 @@
 ---
+title: Two Guns Coffee Pier
+tags:
+- Indoor Seating
 shop_name: Two Guns Espresso on the Pier
 website: twogunsespresso.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.8834216,-118.4167426
 type: Coffee Shop
 city: Manhattan Beach
@@ -16,8 +19,7 @@ hours: |-
   | ------ | ------ |
   | Friday-Sunday | 8a-5p |
   | Monday-Thursday | 10a-3p |
-tags:
-- Indoor Seating
 coffee:
 - Two Guns Coffee Roasters
 ---
+

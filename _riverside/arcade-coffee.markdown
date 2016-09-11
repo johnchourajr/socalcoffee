@@ -1,9 +1,11 @@
 ---
-# Outpost Kitchen
+title: Arcade Coffee
+tags:
+- Outdoor Seating
 shop_name: Arcade Coffee Roasters
 website: http://www.arcadecoffeeroasters.com
-rating:
-featured_min: # 'yes'
+rating: 
+featured_min: 
 featured_max_1: 'yes'
 map: 33.981935,-117.343110
 type: Coffee Shop / Roaster
@@ -17,8 +19,7 @@ hours: |-
   | ------ | ------ |
   | Saturday-Wednesday | Closed |
   | Thursday-Friday | 8a–2p |
-tags:
-- Outdoor Seating
 coffee:
 - Arcade Coffee Roasters
 ---
+

@@ -1,10 +1,10 @@
 ---
-# Outpost Kitchen
+title: Augies Redlands
 shop_name: Augies Coffee Redlands
 website: augies.coffee
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.056934,-117.181510
 type: Coffee Shop
 city: Redlands
@@ -17,8 +17,7 @@ hours: |-
   | ------ | ------ |
   | Saturday-Sunday | 6:30a–8p |
   | Monday-Friday | 6a–9p |
-tags:
--
 coffee:
 - Augies Coffee
 ---
+

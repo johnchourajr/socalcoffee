@@ -1,10 +1,13 @@
 ---
-# Intelligentsia Silver Lake
+title: Intelligentsia Venice
+tags:
+- Indoor Seating
+- Outdoor Seating
 shop_name: Intelligentsia Venice
 website: http://intelligentsiacoffee.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.9909821,-118.4691269
 type: Coffee Shop | Roaster
 city: Venice
@@ -17,12 +20,6 @@ hours: |-
   | ------ | ------ |
   | Sunday-Thursday | 6a-8p |
   | Friday-Saturday | 6a-10p |
-tags:
-- Indoor Seating
-- Outdoor Seating
-# - Pop-up
-coffee:
-# - Ritual Coffee Roasters
-# - 49th Parallel Coffee Roasters
-# - Heart Coffee Roasters
+coffee: 
 ---
+

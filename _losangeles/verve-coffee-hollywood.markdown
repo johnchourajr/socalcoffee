@@ -1,10 +1,12 @@
 ---
-# Verve Coffee Roasters
+title: Verve Coffee Hollywood
+tags:
+- Indoor Seating
 shop_name: Verve Coffee West Hollywood
 website: http://vervecoffee.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.080933,-118.3897242
 type: Coffee Shop
 city: West Hollywood
@@ -16,8 +18,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 7a-8p |
-tags:
-- Indoor Seating
 coffee:
 - Verve Coffee Roasters
 ---
+

@@ -7,8 +7,8 @@ collections:
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: ...
-      cord: -117.97,33.99
+      description: "..."
+      cord: "-117.97,33.99"
       zoom: 9
       in_nav: true
   orange:
@@ -16,17 +16,20 @@ collections:
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: ...
-      cord: -117.83,33.72
+      description: "..."
+      cord: "-117.83,33.72"
       zoom: 9
       in_nav: true
+  posts:
+    title: Posts
+    output: true
   riverside:
     title: Riverside County
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: ...
-      cord: -116.18,33.70
+      description: "..."
+      cord: "-116.18,33.70"
       zoom: 8
       in_nav: true
   sanbernadino:
@@ -34,40 +37,40 @@ collections:
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: ...
-      cord: -117.25,34.13
+      description: "..."
+      cord: "-117.25,34.13"
       zoom: 10
-      in_nav: true
-  santabarbara:
-    title: Santa Barbara County
-    output: true
-    permalink: "/:collection/:path/"
-    meta:
-      description: ...
-      cord:
-      zoom: 9
       in_nav: true
   sandiego:
     title: San Diego County
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: ...
-      cord: -117.12,33.02
+      description: "..."
+      cord: "-117.12,33.02"
       zoom: 8
       in_nav: true
-  ventura:
-    title: Ventura County
+  santabarbara:
+    title: Santa Barbara County
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: ...
-      cord:
+      description: "..."
+      cord: 
       zoom: 9
       in_nav: true
   uploads:
     title: Uploads
     output: true
+  ventura:
+    title: Ventura County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: "..."
+      cord: 
+      zoom: 9
+      in_nav: true
 defaults:
 - scope:
     path: ''
@@ -79,8 +82,7 @@ exclude:
 - Gemfile.lock
 - README*
 - ".gitignore"
-sass:
-    # style: compressed
-port:    4000
-host:    127.0.0.1
-baseurl: "" # does not include hostname
+sass: 
+port: 4000
+host: 127.0.0.1
+baseurl: ''

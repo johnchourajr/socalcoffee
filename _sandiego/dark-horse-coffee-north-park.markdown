@@ -1,10 +1,12 @@
 ---
-# Dark Horse Coffee Roasters
+title: Dark Horse Coffee North Park
+tags:
+- Indoor Seating
 shop_name: Dark Horse North Park
 website: http://darkhorseroasting.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 32.747133,-117.130432
 type: Coffee Shop / Roaster
 city: San Diego
@@ -19,9 +21,7 @@ hours: |-
   | Sunday | 7a-7p |
   | Monday-Wednesday | 6:30a-6p |
   | Thursday-Friday | 6:30a-8p |
-tags:
-- Indoor Seating
-# - Pop-up
 coffee:
 - Dark Horse Coffee Roasters
 ---
+

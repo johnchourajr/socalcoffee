@@ -1,11 +1,12 @@
 ---
-# Rose Park Coffee Roasters
-# TODO: Add Specs
+title: Rose Park Roasters
+tags:
+- Indoor Seating
 shop_name: Rose Park Coffee
 website: http://www.roseparkroasters.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.7715776,-118.15803
 type: Coffee Shop / Roaster
 city: Long Beach
@@ -18,8 +19,7 @@ hours: |-
   | ------ | ------ |
   | Monday-Friday | 6a-5p |
   | Saturday-Sunday | 7a-6p |
-tags:
-- Indoor Seating
 coffee:
 - Rose Park Coffee Roasters
 ---
+

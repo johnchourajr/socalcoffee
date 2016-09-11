@@ -1,11 +1,12 @@
 ---
-# Menotti's Coffee Stop
-# TODO: Add Specs
+title: Menottis Coffee Stop
+tags:
+- Indoor Seating
 shop_name: Menotti's Coffee Stop
 website: http://www.coffeeveniceca.com/
-rating:
+rating: 
 featured_min: 'yes'
-featured_max_1: # 'yes'
+featured_max_1: 
 map: 33.9872844,-118.4748787
 type: Coffee Shop
 city: Venice Beach
@@ -17,8 +18,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 7a-7p |
-tags:
-- Indoor Seating
 coffee:
 - Four Barrel Coffee Roasters
 ---
+

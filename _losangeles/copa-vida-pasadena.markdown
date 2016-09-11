@@ -1,10 +1,12 @@
 ---
-# Copa Vida
+title: Copa Vida Pasadena
+tags:
+- Indoor Seating
 shop_name: Copa Vida Pasadena
 website: http://www.copa-vida.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.1456748,-118.0982557
 type: Coffee Shop
 city: Pasadena
@@ -16,11 +18,6 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
-# - Pop-up
-coffee:
-# - Ritual Coffee Roasters
-# - 49th Parallel Coffee Roasters
-# - Heart Coffee Roasters
+coffee: 
 ---
+

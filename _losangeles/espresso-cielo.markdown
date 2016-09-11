@@ -1,10 +1,12 @@
 ---
-# Espresso Cielo
+title: Espresso Cielo
+tags:
+- Indoor Seating
 shop_name: Espresso Cielo
-website:
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.9980719,-118.4815993
 type: Coffee Shop
 city: Santa Monica
@@ -16,11 +18,6 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
-# - Pop-up
-coffee:
-# - Ritual Coffee Roasters
-# - 49th Parallel Coffee Roasters
-# - Heart Coffee Roasters
+coffee: 
 ---
+

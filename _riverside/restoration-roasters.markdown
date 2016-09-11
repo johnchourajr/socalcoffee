@@ -1,10 +1,12 @@
 ---
-# Outpost Kitchen
+title: Restoration Roasters
+tags:
+- Outdoor Seating
 shop_name: Restoration Roasters
 website: http://www.restorationroasters.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.852006, -117.556513
 type: Coffee Shop / Roaster
 city: Riverside
@@ -17,8 +19,7 @@ hours: |-
   | ------ | ------ |
   | Saturday-Wednesday | Closed |
   | Thursday-Friday | 8a–2p |
-tags:
-- Outdoor Seating
 coffee:
 - Arcade Coffee Roasters
 ---
+

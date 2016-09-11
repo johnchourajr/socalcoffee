@@ -1,13 +1,12 @@
 ---
-# Bird Rock Coffee Roasters
-# TODO: Location Address and Coordinates
-# TODO: Add Phone Number
-# TODO: Add Specs
+title: Bird Rock Coffee Morena
+tags:
+- Indoor Seating
 shop_name: Bird Rock Coffee Morena
 website: http://birdrockcoffee.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 32.771291,-117.202137
 type: Coffee Shop
 city: San Diego
@@ -20,9 +19,7 @@ hours: |-
   | ------ | ------ |
   | Sunday-Saturday | Closed |
   | Monday-Friday | 6a-12p |
-tags:
-- Indoor Seating
-# - Pop-up
 coffee:
 - Bird Rock Coffee Roasters
 ---
+

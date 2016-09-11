@@ -1,11 +1,12 @@
 ---
-# Steelhead Coffee
-# TODO: Add Specs
+title: Steelhead Coffee
+tags:
+- Indoor Seating
 shop_name: Steelhead Coffee
 website: http://steelheadcoffee.com/
-rating:
+rating: 
 featured_min: 'yes'
-featured_max_1: # 'yes'
+featured_max_1: 
 map: 33.8187944,-118.1782147
 type: Coffee Shop / Multi-Roaster
 city: Long Beach
@@ -18,10 +19,9 @@ hours: |-
   | ------ | ------ |
   | Monday-Friday | 6a-7p |
   | Saturday-Sunday | 7a-6p |
-tags:
-- Indoor Seating
 coffee:
 - Ruby Coffee Roasters
 - Huckleberry Coffee Roasters
 - Heart Coffee Roasters
 ---
+

@@ -1,10 +1,15 @@
 ---
-# Cafecito Organico Costa Mesa
+title: Cafecito Organic Costa Mesa
+tags:
+- Indoor Seating
+- Outdoor Seating
+- Pastries
+- Roaster
 shop_name: Cafecito Organico Costa Mesa
 website: http://cafecitoorganico.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.6775404,-117.8861032
 type: Coffee Shop / Roaster
 city: Costa Mesa
@@ -18,11 +23,7 @@ hours: |-
   | ------ | ------ |
   | Sunday-Friday | 9a-8p |
   | Saturday | 9a-9p |
-tags:
-- Indoor Seating
-- Outdoor Seating
-- Pastries
-- Roaster
 coffee:
 - Cafecito Organico
 ---
+

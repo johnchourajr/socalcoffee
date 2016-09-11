@@ -1,10 +1,12 @@
 ---
-# Outpost Kitchen
+title: Ernest Coffee
+tags:
+- Indoor Seating
 shop_name: Ernest Coffee
 website: http://ernestcoffee.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.837408, -116.547026
 type: Coffee Shop
 city: Palm Springs
@@ -16,8 +18,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 6a–7p |
-tags:
-- Indoor Seating
 coffee:
 - Stumptown Coffee
 ---
+

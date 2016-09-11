@@ -1,10 +1,12 @@
 ---
-# Sidecar Donuts
+title: Bohdi Leaf Anahiem
+tags:
+- Outdoor Seating
 shop_name: Bohdi Leaf Coffee Orange
 website: http://www.bodhileafcoffee.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.8654648,-117.8102635
 type: Coffee Shop
 city: Orange
@@ -16,8 +18,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 6:30a–6:30p |
-tags:
-  - Outdoor Seating
 coffee:
-  - Bohdi Coffee
+- Bohdi Coffee
 ---
+

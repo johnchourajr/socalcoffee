@@ -1,26 +1,23 @@
 ---
-# Dinosaur Coffee
+title: Dinosaur Coffee
+tags:
+- Indoor Seating
 shop_name: Dinosaur Coffee
 website: http://www.dinosaurcoffee.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.0952805,-118.2859751
 type: Coffee Shop
 city: Silver Lake
 address: |-
   4334 W. Sunset Blvd.
   Los Angeles, CA 90029
-phone: # 949-492-3663
+phone: 
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
-# - Pop-up
-coffee:
-# - Ritual Coffee Roasters
-# - 49th Parallel Coffee Roasters
-# - Heart Coffee Roasters
+coffee: 
 ---
+

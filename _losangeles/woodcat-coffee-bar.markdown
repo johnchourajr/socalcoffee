@@ -1,10 +1,12 @@
 ---
-# Verve Coffee Roasters
+title: Woodcat Coffee Bar
+tags:
+- Indoor Seating
 shop_name: Woodcat Coffee Bar
 website: http://woodcatcoffee.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.07614,-118.2586483
 type: Coffee Shop
 city: Echo Park
@@ -17,8 +19,6 @@ hours: |-
   | ------ | ------ |
   | Saturday-Sunday | 7a-6p |
   | Monday-Friday | 6a-6p |
-tags:
-- Indoor Seating
-coffee:
-# - Verve Coffee Roasters
+coffee: 
 ---
+

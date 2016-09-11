@@ -1,13 +1,12 @@
 ---
-# Bird Rock Coffee Roasters
-# TODO: Location Address and Coordinates
-# TODO: Add Phone Number
-# TODO: Add Specs
+title: Bird Rock Coffee Harborview
+tags:
+- Indoor Seating
 shop_name: Bird Rock Coffee Harborview
 website: http://birdrockcoffee.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 32.727996,-117.170950
 type: Coffee Shop
 city: San Diego
@@ -20,9 +19,7 @@ hours: |-
   | ------ | ------ |
   | Sunday-Saturday | 7a-7p |
   | Monday-Friday | 6a-6p |
-tags:
-- Indoor Seating
-# - Pop-up
 coffee:
 - Bird Rock Coffee Roasters
 ---
+

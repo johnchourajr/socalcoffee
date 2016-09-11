@@ -1,10 +1,12 @@
 ---
-# Coffee Commissary
+title: Coffee Commissary Hollywood
+tags:
+- Indoor Seating
 shop_name: Coffee Commissary Hollywood
-website:
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.0982293,-118.3239649
 type: Coffee Shop
 city: Hollywood
@@ -16,11 +18,6 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
-# - Pop-up
-coffee:
-# - Ritual Coffee Roasters
-# - 49th Parallel Coffee Roasters
-# - Heart Coffee Roasters
+coffee: 
 ---
+

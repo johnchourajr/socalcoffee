@@ -1,10 +1,12 @@
 ---
-# Outpost Kitchen
+title: Koffi Rancho Mirage
+tags:
+- Indoor Seating
 shop_name: Koffi Rancho Mirage
 website: https://www.kofficoffee.com/
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.746451, -116.417697
 type: Coffee Shop
 city: Palm Springs
@@ -16,8 +18,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 6:30a–5:30p |
-tags:
-- Indoor Seating
 coffee:
 - Koffi Coffee Roasters
 ---
+

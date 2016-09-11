@@ -1,10 +1,12 @@
 ---
-# Cognoscenti Coffee
+title: Cognoscenti Coffee Downtown
+tags:
+- Indoor Seating
 shop_name: Cognoscenti Coffee Downtown
-website:
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.044562,-118.2604816
 type: Coffee Shop
 city: Downtown LA
@@ -16,9 +18,8 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
 coffee:
 - Ritual Coffee Roasters
 - Kuma Coffee Roasters
 ---
+

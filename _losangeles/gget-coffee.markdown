@@ -1,10 +1,12 @@
 ---
-# Go Get Em Tiger
+title: Gget Coffee
+tags:
+- Indoor Seating
 shop_name: Go Get Em Tiger
 website: http://ggetla.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.075612,-118.3255138
 type: Coffee Shop
 city: Larchmont Village
@@ -16,11 +18,6 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 6:30a-8p |
-tags:
-- Indoor Seating
-# - Pop-up
-coffee:
-# - Ritual Coffee Roasters
-# - 49th Parallel Coffee Roasters
-# - Heart Coffee Roasters
+coffee: 
 ---
+

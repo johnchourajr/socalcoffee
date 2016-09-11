@@ -1,10 +1,12 @@
 ---
-# Cognoscenti Coffee
+title: Cognoscenti Coffee Glendale
+tags:
+- Indoor Seating
 shop_name: Cognoscenti Coffee Glendale
-website:
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.117311,-118.2693893
 type: Coffee Shop
 city: Glendale
@@ -16,9 +18,8 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-tags:
-- Indoor Seating
 coffee:
 - Ritual Coffee Roasters
 - Kuma Coffee Roasters
 ---
+

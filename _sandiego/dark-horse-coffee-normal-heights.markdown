@@ -1,10 +1,12 @@
 ---
-# Dark Horse Coffee Roasters
+title: Dark Horse Coffee Normal Heights
+tags:
+- Indoor Seating
 shop_name: Dark Horse Normal Heights
 website: http://darkhorseroasting.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 32.763495,-117.123390
 type: Coffee Shop / Roaster
 city: San Diego
@@ -18,9 +20,7 @@ hours: |-
   | Saturday-Sunday | 7a-7p |
   | Monday-Thursday | 6:30a-6:30p |
   | Friday | 6:30a-7p |
-tags:
-- Indoor Seating
-# - Pop-up
 coffee:
 - Dark Horse Coffee Roasters
 ---
+
