@@ -1,12 +1,9 @@
 ---
-title: Two Guns Coffee Downtown
-tags:
-- Indoor Seating
 shop_name: Two Guns Espresso Downtown
 website: twogunsespresso.com
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min: # 'yes'
+featured_max_1: # 'yes'
 map: 34.0491321,-118.2619904
 type: Coffee Shop
 city: Downtown LA
@@ -19,7 +16,8 @@ hours: |-
   | ------ | ------ |
   | Monday-Friday | 7a-4:30p |
   | Saturday-Sunday | Closed |
+tags:
+- Indoor Seating
 coffee:
 - Two Guns Coffee Roasters
 ---
-

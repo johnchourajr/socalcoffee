@@ -1,1 +1,1 @@
-# socalcoffee
+# So. Cal. Craft Coffee Directory

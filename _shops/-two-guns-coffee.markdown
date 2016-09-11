@@ -1,12 +1,9 @@
 ---
-title: Two Guns Coffee
-tags:
-- Indoor Seating
 shop_name: Two Guns Espresso
 website: twogunsespresso.com
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min: # 'yes'
+featured_max_1: # 'yes'
 map: 33.8801992,-118.3999649
 type: Coffee Shop
 city: Manhattan Beach
@@ -19,7 +16,8 @@ hours: |-
   | ------ | ------ |
   | Saturday-Sunday | 7a-5p |
   | Monday-Friday | 6a-5p |
+tags:
+- Indoor Seating
 coffee:
 - Two Guns Coffee Roasters
 ---
-
