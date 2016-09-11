@@ -1,0 +1,72 @@
+<section>
+  <div class="wrapper">
+    <h4 class="text-secondary section-header bold xs-pb3">Search by City</h4>
+    <div class="clearfix gutters pills md-block">
+      <div class="controls">
+        <div class="col">
+          <button class="button filter blue" data-filter="all">
+            <h3 class="bold text-primary">Show All</h3>
+          </button>
+        </div>
+        {% for place in places %}
+          {% if place.title and place.meta.in_nav == true %}
+            <div class="col">
+              <button class="button filter blue" data-filter=".{{ place.title | downcase | replace:' ','-' }} " data-sort="name:desc">
+                <h3 class="bold text-primary">{{ place.title }}</h3>
+              </button>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+
+  <div id="contain" class="wrapper container">
+    {% for place in places %}
+      {% if place.title and place.meta.in_nav == true %}
+        <div class="mix {{ place.title | downcase | replace:' ','-' }} ">
+          <h3 class="text-primary bold">{{ place.title }}</h3>
+          {% assign groups = place.docs | group_by: "city" | sort: "name" %}
+          {% for group in groups %}
+            <h4 class="bold text-primary xs-pt3 xs-pb1">{{ group.name }}</h4>
+            {% for item in group.items %}
+              {% if item.title == place.title %}
+              {% else %}
+                <a class="nav__link nav__link--sidebar" href="{{ item.url }}">
+                  <h2 class="bold text-secondary">{{ item.title }}</h2>
+                </a>
+              {% endif %}
+            {%endfor%}
+          {%endfor%}
+        </div>
+      {% elsif place.meta.in_nav == false %}
+      {% endif %}
+    {% endfor %}
+    <div class="fail-message"><span>No items were found matching the current filters.</span></div>
+  </div>
+
+</section>
+
+<script type="text/javascript">
+$(function(){
+  $('#contain').mixItUp({
+    load: {
+      filter: 'all'
+    },
+    controls: {
+      toggleFilterButtons: true,
+      toggleLogic: 'and'
+    },
+    callbacks: {
+      onMixEnd: function(state){
+        console.log(state.activeFilter)
+      }
+    }
+  });
+});
+
+</script>

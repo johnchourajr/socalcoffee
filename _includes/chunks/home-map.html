@@ -1,0 +1,34 @@
+<section class="xs-block">
+  <div class="clearfix gutters">
+    <div class="col xs-col-12 md-col-7 lg-col-5">
+      <div class="xs-block map-left">
+        <h1 class="text-primary bold xs-pb4 xs-pt6 xs-block">So. Cal. Map</h1>
+        {%comment%} Generate Counties {%endcomment%}
+        {% assign places = site.collections %}
+        {% for place in places %}
+          {% if place.title and place.meta.in_nav == true %}
+            <div class="xs-block">
+              <a href="/{{ place.label }}/" class="xs-inline-block">
+                <h3 class="section-header bold">{{ place.title }}</h3>
+              </a>
+              <span class="xs-inline-block">
+                <a id="{{ place.label }}" class="" style="cursor:pointer;">
+                  <h6 class="xs-hide md-inline-block section-header bold"><span class="circle circle-lg see-on-map"><h6>➝</h6></span></h6>
+                </a>
+              </span>
+            </div>
+          {% elsif place.meta.in_nav == false %}
+            <h3 class="bold text-secondary line-through">{{ place.title }}</h3>
+          {% endif %}
+        {% endfor %}
+        <a href="/directory" class="button button--lg xs-mt3">View Full Directory</a>
+      </div>
+    </div>
+    <div class="col xs-col-12 md-col-5 lg-col-7 ">
+      <div class="xs-block xs-relative">
+        <div id='map' class="home xs-mt6"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include scripts/home-map-js.html %}

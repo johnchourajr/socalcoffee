@@ -1,0 +1,101 @@
+---
+title: Directory
+layout: directory
+---
+
+{% assign places = site.collections %}
+
+<div class="directory-list">
+  <section>
+    <div class="wrapper">
+
+      <!-- MOBILE PICKER -->
+      <form class="controls gutters xs-inline-block md-hide -xs-mb1" id="DropdownFilters">
+        <fieldset class="col xs-col-12 sm-col-6 md-col-12 xs-mb2">
+          <h4 class="text-primary bold xs-mb1 col xs-col-12"><span class="circle fill-primary text-white">1</span> <span class="underline">Pick A County</span></h4>
+          <select>
+            <option value="">All</option>
+            {% for place in places %}
+              {% if place.title and place.meta.in_nav == true %}
+                  <option value=".{{ place.title | downcase | replace:' ','-' }}" >{{ place.title }}</p>
+                  </option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </fieldset>
+        <fieldset class="col xs-col-12 sm-col-6 md-col-12 xs-mb2">
+          <h4 class="text-primary bold xs-mb1 col xs-col-12"><span class="circle fill-primary text-white">2</span> <span class="underline">Get Nit Picky</span></h4>
+          <select>
+            <option value="">Make a Pick</button>
+            <option value=".indoor-seating">Sit Inside</button>
+            <option value=".outdoor-seating">Sit Outside</button>
+            <option value=".free-wi-fi">Free Wi-Fi</button>
+            <option value=".food">Food</button>
+            <option value=".roaster">Roaster</button>
+            <option value=".multi-roaster">Multi-Roaster</button>
+          </select>
+        </fieldset>
+      </form>
+
+      <!-- TABLET & DESKTOP PICKER -->
+      <form class="controls xs-hide md-block" id="Filters">
+        <fieldset class="gutters">
+          <h4 class="text-primary bold xs-my3 col xs-col-12"><span class="circle fill-primary text-white">1</span> <span class="underline">Pick A County</span></h4>
+          <button id="all" class="col filter active" >
+            <h3 class="button bold text-primary">All</h3>
+          </button>
+          {% for place in places %}
+            {% if place.title and place.meta.in_nav == true %}
+                <button id="{{ place.label }}" class="col filter " data-filter=".{{ place.title | downcase | replace:' ','-' }}" >
+                  <p class="button bold text-primary">{{ place.title }} <span class="circle">{{ place.docs | size | minus: 1 }}</span></p>
+                </button>
+            {% endif %}
+          {% endfor %}
+        </fieldset>
+        <fieldset class="gutters">
+          <h4 class="text-primary bold xs-my3 col xs-col-12"><span class="circle fill-primary text-white">2</span> <span class="underline">Get Nit Picky</span></h4>
+          <button class="col filter " data-filter=".indoor-seating"><p class="bold text-primary"><div class="button bold text-primary">Sit Inside</div></p></button>
+          <button class="col filter " data-filter=".outdoor-seating"><p class="bold text-primary"><div class="button bold text-primary">Sit Outside</div></p></button>
+          <button class="col filter " data-filter=".free-wi-fi"><p class="bold text-primary"><div class="button bold text-primary">Free Wi-Fi</div></p></button>
+          <button class="col filter " data-filter=".food"><p class="bold text-primary"><div class="button bold text-primary">Food</div></p></button>
+          <button class="col filter " data-filter=".roaster"><p class="bold text-primary"><div class="button bold text-primary">Roaster</div></p></button>
+          <button class="col filter " data-filter=".multi-roaster"><p class="bold text-primary"><div class="button bold text-primary">Multi-Roaster</div></p></button>
+        </fieldset>
+      </form>
+
+    </div>
+  </section>
+
+  <section class="xs-inline-block">
+    <div class="wrapper">
+      <div id="Container" class="container gutters">
+
+        {% for place in places %}
+          {% assign shops = place.docs | sort: title %}
+          {% for shop in shops %}
+            {% if shop.title == place.title %}{% else %}
+
+              <div class="mix col xs-col-6 sm-col-4 md-col-6 xl-col-4 {% for spec in shop.tags %}{{ place.title | downcase | replace:' ','-' }} {{ spec | downcase | replace:' ','-' }} {% endfor %} {% for spec in shop.tags %}all {{ spec | downcase | replace:' ','-' }} {% endfor %}">
+                <a class="" href="{{ shop.url }}">
+                  <h3 class="bold text-secondary">{{ shop.shop_name }}</h3>
+                  <h6 class="bold text-primary xs-pb1">{{ shop.city }}</h6>
+                </a>
+              </div>
+
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+        <!-- @TODO: add submission form. -->
+        <div class="col fail-message">
+          <h2 class="bold">Nothing here, yet. <a href="#">Submit a Shop.</a></h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id='map' class="xs-hide md-block directory"></div>
+
+{% include /scripts/directory-js.html %}

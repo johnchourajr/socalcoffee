@@ -1,0 +1,86 @@
+---
+title: So.Cal. — Craft Coffee
+timezone: UTC
+collections:
+  losangeles:
+    title: Los Angeles County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord: -117.97,33.99
+      zoom: 9
+      in_nav: true
+  orange:
+    title: Orange County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord: -117.83,33.72
+      zoom: 9
+      in_nav: true
+  riverside:
+    title: Riverside County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord: -116.18,33.70
+      zoom: 8
+      in_nav: true
+  sanbernadino:
+    title: San Bernadino County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord: -117.25,34.13
+      zoom: 10
+      in_nav: true
+  santabarbara:
+    title: Santa Barbara County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord:
+      zoom: 9
+      in_nav: true
+  sandiego:
+    title: San Diego County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord: -117.12,33.02
+      zoom: 8
+      in_nav: true
+  ventura:
+    title: Ventura County
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: ...
+      cord:
+      zoom: 9
+      in_nav: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: shop
+permalink: pretty
+exclude:
+- Gemfile
+- Gemfile.lock
+- README*
+- ".gitignore"
+sass:
+    # style: compressed
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname

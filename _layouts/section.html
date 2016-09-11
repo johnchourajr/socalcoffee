@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="hero hero-sm">
+  <div class="wrapper">
+    <div class="hero-inner">
+      <div class="xs-col-12 md-col-8 lg-col-7">
+        <h1 class="text-white bold xs-pb0"><span class="underline">{{ site[page.collection] | size | minus: 1 }}</span> Shops in {{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include chunks/city-scrollbar.html %}
+
+<section class="header-overlap header-overlap-sm">
+  <div class="wrapper">
+    <article class="">
+      {% assign documents = site[page.collection] | sort:"position" %}
+      {% assign groups = documents | group_by: "city" | sort: "name" %}
+
+      {% for group in groups %}
+        <h3 id="{{ group.name | downcase | remove: " " }}" class="bold text-secondary xs-pt3">{{ group.name }}</h3>
+        {% for item in group.items %}
+          {% if item.title == page.title %}
+          {% else %}
+            <a class="nav__link nav__link--sidebar" href="{{ item.url }}">
+              <h1 class="bold text-primary">{{ item.shop_name }}</h1>
+            </a>
+          {% endif %}
+        {%endfor%}
+      {%endfor%}
+    </article>
+  </div>
+</section>

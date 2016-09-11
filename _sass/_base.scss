@@ -1,0 +1,109 @@
+html {
+  font-family: $sans;
+}
+
+body {
+  font-size:   $text-4;
+  line-height: $line-height-4;
+}
+
+
+h1, .h1, .text-1 {
+  font-size:   ($text-1 * .8);
+  line-height: $line-height-1;
+
+  @include media-query(md) {
+    font-size:   $text-1;
+    line-height: $line-height-1;
+  }
+  @include media-query(lg) {
+    font-size:   ($text-1 * 1.2);
+    line-height: $line-height-1;
+  }
+}
+
+h2, .text-2 {
+  font-size:   ($text-2 * .8);
+  line-height: $line-height-2;
+
+  @include media-query(md) {
+    font-size:   $text-2;
+    line-height: $line-height-2;
+  }
+  @include media-query(lg) {
+    font-size:   ($text-2 * 1.2);
+    line-height: $line-height-2;
+  }
+}
+
+h3, .text-3 {
+  font-size:   ($text-3 * .8);
+  line-height: $line-height-3;
+
+  @include media-query(md) {
+    font-size:   $text-3;
+    line-height: $line-height-3;
+  }
+  @include media-query(lg) {
+    font-size:   ($text-3 * 1.2);
+    line-height: $line-height-3;
+  }
+}
+
+h4, .text-4 {
+  font-size:   ($text-4 * .8);
+  line-height: $line-height-4;
+
+  @include media-query(md) {
+    font-size:   $text-4;
+    line-height: $line-height-4;
+  }
+  @include media-query(lg) {
+    font-size:   ($text-4 * 1.2);
+    line-height: $line-height-4;
+  }
+}
+
+h5, .text-5 {
+  font-size:   ($text-5 * .8);
+  line-height: $line-height-5;
+
+  @include media-query(md) {
+    font-size:   $text-5;
+    line-height: $line-height-5;
+  }
+  @include media-query(lg) {
+    font-size:   ($text-5 * 1.2);
+    line-height: $line-height-5;
+  }
+}
+
+h6, .text-6 {
+  font-size:   ($text-6 * .8);
+  line-height: $line-height-6;
+
+  @include media-query(md) {
+    font-size:   $text-6;
+    line-height: $line-height-6;
+  }
+  @include media-query(lg) {
+    font-size:   ($text-6 * 1.2);
+    line-height: $line-height-6;
+  }
+}
+
+.button {
+
+
+  &--lg {
+    font-size: 1.2em !important;
+    font-weight: bold;
+    background: lighten($fill-primary, 45%) !important;
+    color: $text-primary !important;
+  }
+
+  &:hover, &:not(.button--disabled):hover, &:active {
+    background: lighten($fill-primary, 35%) !important;
+    color: $text-primary !important;
+  }
+}

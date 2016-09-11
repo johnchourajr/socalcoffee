@@ -1,0 +1,92 @@
+#map.home {
+  width: 100%;
+  height: 30em;
+
+  @include media-query(md) {
+    height: 40vh;
+  }
+  @include media-query(lg) {
+    height: 80vh;
+  }
+}
+
+#map.directory {
+  width: 100%;
+  height: 30em;
+
+  @include media-query(md) {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+  }
+  @include media-query(lg) {
+    height: 100vh;
+  }
+}
+
+#map.shop {
+  width: 100%;
+  height: 400px;
+}
+
+.mapboxgl {
+  &-popup {
+    max-width: 400px;
+
+    &-tip {
+      display: none;
+    }
+    &-content {
+      position: relative;
+      background: lighten($fill-primary, 45%) !important;
+      color: lighten($fill-primary, 0%);
+      border-radius: 2px !important;
+      box-shadow: none !important;
+      padding: 12px 12px !important;
+      pointer-events: auto;
+      font-size: 2em;
+      font-family: $sans;
+      font-weight: bold;
+      // text-transform: uppercase;
+      // letter-spacing: .1em;
+      // text-shadow: 0px 0px 1px white;
+      // -webkit-text-stroke: 2px white;
+
+      a {
+        color: lighten($fill-primary, 0%);
+        text-decoration: underline;
+      }
+    }
+  }
+  &-ctrl-top-right {
+    // z-index: 9999 !important; 
+  }
+  &-ctrl-bottom-right {
+    display: none !important;
+  }
+  &-ctrl-group {
+    border-radius: 4px;
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+    box-shadow: none !important;
+    overflow: hidden;
+    background: white !important;
+  }
+  &-ctrl-group > button {
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 0;
+    outline: none;
+    border: none !important;
+    // border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    // background-color: rgba(0,0,0,0);
+    cursor: pointer;
+  }
+}
+
+.mapboxgl-ctrl-top-right {
+  z-index: 9999 !important;
+}

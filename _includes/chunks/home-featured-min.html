@@ -1,0 +1,32 @@
+<section>
+  <div class="wrapper">
+    <h3 class="section-header">LA Picks</h3>
+    <div class="clearfix gutters">
+      {%comment%} Generate Counties {%endcomment%}
+      {% assign places = site.collections %}
+      {% for place in places %}
+        {%comment%} Generate Shops in counties {%endcomment%}
+        {% assign shops = place.docs %}
+        {% for shop in shops %}
+          {% if item.title == place.title %}{% else %}
+            {%comment%} Generate featured items {%endcomment%}
+            {% assign featured_min = shop.featured_min | limit:1 %}
+            {% if featured_min == "yes" %}
+              <div class="feature feature-min col xs-col-12 sm-col-4 ">
+                <div class="feature-min-inner">
+                  <a href="{{ shop.url | prepend:site.baseurl }}" class="">
+                    <span class="text">
+                      <h3 class="bold">{{ shop.shop_name }}</h3>
+                      <h5 class="bold underline">{{ shop.city }}</h5>
+                    </span>
+                    <span class="img" style="background-image:url(/uploads/{{shop.slug}}.jpg);"></span>
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

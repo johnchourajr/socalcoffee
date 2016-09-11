@@ -1,0 +1,38 @@
+<section>
+  <div class="wrapper">
+    <h4 class="text-secondary section-header bold xs-pb3">Search by City</h4>
+    <div id="noscrollbar" class="clearfix gutters scroll-right xs-block md-hide">
+      <div class="scroll-right-inner" style="width: calc({{ site[page.collection] | size | minus: 1 }} * 10%);">
+
+        {% assign documents = site[page.collection] | sort:"position" %}
+        {% assign groups = documents | group_by: "city" | sort: "name" %}
+
+        {% for group in groups %}
+          <div class="col">
+            <a href="#{{ group.name | downcase | remove: " " }}">
+              <h3 class="bold text-secondary">{{ group.name }}  <span class="circle">{{ group.items | size }}</span></h3>
+            </a>
+          </div>
+        {%endfor%}
+
+      </div>
+    </div>
+
+    <div class="clearfix gutters pills xs-hide md-block">
+      <div class="hide-first">
+
+        {% assign documents = site[page.collection] | sort:"position" %}
+        {% assign groups = documents | group_by: "city" | sort: "name" %}
+
+        {% for group in groups %}
+          <div class="col">
+            <a href="#{{ group.name | downcase | remove: " " }}">
+              <h3 class="bold text-secondary">{{ group.name }} <span class="circle">{{ group.items | size }}</span></h3>
+            </a>
+          </div>
+        {%endfor%}
+
+      </div>
+    </div>
+  </div>
+</section>

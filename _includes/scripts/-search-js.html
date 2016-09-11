@@ -1,0 +1,58 @@
+<script type="text/javascript">
+
+
+  // builds lunr
+  var index = lunr(function () {
+    this.field('title', {boost: 10})
+    this.field('tags')
+    this.field('city')
+    this.field('type')
+    this.field('coffee')
+    this.field('county')
+    this.ref('id')
+  });
+  {% assign count = 0 %}{% assign places = site.collections %}{% for place in places %}{% assign shops = place.docs %}{% for shop in shops %}{% if shop.title == place.title %}{% else %}
+  index.add({
+    id: {{count}},
+    title: {{shop.shop_name | jsonify}},
+    type: {{shop.type | jsonify}},
+    county: {{place.title | jsonify}},
+    city: {{shop.city | jsonify}},
+    tags: {{shop.tags | strip_html | strip_newlines | jsonify}}
+  });{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{% endfor %}
+  console.log( jQuery.type(index) );
+  // builds reference data
+  var store = [{% assign places = site.collections %}{% for place in places %}{% assign shops = place.docs %}{% for shop in shops %}{% if shop.title == place.title %}{% else %}{
+    "title": "{{ shop.shop_name | xml_escape }}",
+    "type": "{{ shop.type | xml_escape }}",
+    "city": "{{ shop.city | xml_escape }}",
+    "county": "{{ place.title | xml_escape }}",
+    "coffee": {{ shop.coffee | strip_html | strip_newlines | jsonify }},
+    "content": {{ shop.tags | strip_html | strip_newlines | jsonify }},
+    "url": "{{ shop.url | xml_escape }}"
+  },{% endif %}{% endfor %}{% endfor %}]
+  // builds search
+  $(document).ready(function() {
+    $('input#search').on('keyup', function () {
+      // Select ID
+      var resultdiv = $('#results');
+      // Select Status ID
+      var resultstatus = $('#resultstatus');
+      // Get query
+      var query = $(this).val();
+      // Search for it
+      var result = index.search(query);
+      // Show results
+      resultdiv.empty();
+      // Add status
+      resultstatus.replaceWith('<div id="resultstatus" class="col xs-col-12 xs-mb4"><h3 class="bold text-secondary">Found '+result.length+' result(s)</h3></div>');
+      // Loop through, match, and add results
+      for (var item in result) {
+        var ref = result[item].ref;
+        var searchitem = '<div class="mix col xs-col-6 sm-col-4 md-col-6 xl-col-4 result"><div class="result-body"><a href="'+store[ref].url+'" class=""><h3 class="bold text-secondary">'+store[ref].title+'</h3><h6 class="bold text-primary xs-pb1">'+store[ref].city+'</h6></a></div></div>';
+        resultdiv.append(searchitem);
+      }
+    });
+  });
+
+</script>

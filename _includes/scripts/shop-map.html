@@ -1,0 +1,78 @@
+<script>
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoiamNob3VyYSIsImEiOiI4dUd0bF9RIn0.gjN9GZul3zPeCXfDDIMSXA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/jchoura/cis3mh21n001agrm8uhrg5afy',
+    center: [{% assign coord = {{page.map}} | split: ',' %}{{ coord[1] }}, {{ coord[0] }}], // starting position
+    zoom: 14, // starting zoom
+    pitch: 45, // pitch in degrees
+    // bearing: -60, // bearing in degrees
+    interactive: false
+  });
+
+  map.on('load', function () {
+    map.addSource("points", {
+        "type": "geojson",
+        "data": {
+            "type": "FeatureCollection",
+            "features": [
+            {
+                type: 'Feature',
+                properties: {
+                    title: "{{page.shop_name}}",
+                    icon: 'circle'
+                },
+                geometry: {
+                    type: 'Point',
+                    coordinates: [{% assign coord = {{page.map}} | split: ',' %}{{ coord[1] }}, {{ coord[0] }}]
+                }
+            },
+        ]
+        }
+    });
+
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": "points",
+        "layout": {
+            "icon-image": "{icon}-15"
+        }
+    });
+  });
+
+  // Create a popup, but don't add it to the map yet.
+  var popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+  });
+
+  map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+      if (!features.length) {
+          popup.remove();
+          return;
+      }
+
+      var feature = features[0];
+
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup.setLngLat(feature.geometry.coordinates)
+          .setHTML(feature.properties.title)
+          .addTo(map);
+  });
+
+  // Disable drag and zoom handlers.
+
+  map.scrollZoom.disable();
+  // map.touchZoom.disable();
+  map.doubleClickZoom.disable();
+  // map.scrollWheelZoom.disable();
+  map.addControl(new mapboxgl.Navigation());
+
+</script>

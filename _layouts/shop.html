@@ -1,0 +1,79 @@
+---
+layout: default
+hero: lg
+---
+
+<section class="hero hero-sm">
+  <div class="wrapper">
+    <div class="hero-inner">
+      <h1 class="text-white bold xs-pb0">{{ page.shop_name }}</h1>
+    </div>
+  </div>
+  <span class="img" style="background-image:url(/uploads/{{page.slug}}.jpg);"></span>
+</section>
+
+<section class="xs-inline-block">
+  <div class="wrapper">
+    <div class="sm-col-8 col">
+      <h2 class="bold text-primary xs-pb4 md-pb0">
+        {% include chunks/shop-description.html %}
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="xs-inline-block">
+  <div class="wrapper">
+
+    <div class="sm-col-6 col">
+      <div id='map' class="shop"></div>
+      {% include scripts/shop-map.html %}
+    </div>
+    <div class="sm-col-5 sm-offset-1 col xs-relative">
+      <span>
+        <h4 class="text-secondary bold xs-pb3">Location & Contact</h4>
+        <h3 class="bold wrap text-primary"><a class="text-secondary underline" href="http://maps.google.com/?q={{page.address}}">{{page.address}}</a></h3>
+        <h3 class="bold wrap text-primary underline"><a href="tel:{{page.phone}}" class="text-secondary">{{page.phone}}</a></h3>
+        <h4 class="text-secondary bold xs-pt3 xs-pb3">Hours</h4>
+        {{page.hours | markdownify }}
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="xs-block">
+  <div class="wrapper">
+
+    <div class="clearfix gutters pills">
+
+      <h4 class="text-secondary bold xs-pb3">Attributes</h4>
+
+      {% for city in page.city %}
+        <div class="col">
+          <span class="city">
+            <h3 class="bold text-primary">{{ city }}</h3>
+          </span>
+        </div>
+      {% endfor %}
+
+      {% for spec in page.tags %}
+        <div class="col">
+          <span>
+            <h3 class="bold text-secondary">{{ spec }}</h3>
+          </span>
+        </div>
+
+      {% endfor %}
+
+      {% for coffee in page.coffee %}
+        <div class="col">
+          <span>
+            <h3 class="bold text-secondary">{{ coffee }}</h3>
+          </span>
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
