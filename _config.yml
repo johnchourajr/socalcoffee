@@ -77,25 +77,28 @@ defaults:
   values:
     layout: shop
     meta:
-      title:
+      title: What's the shop's name?
       tags:
-      shop_name:
-      website:
-      rating:
+        - pick
+        - some
+        - tags
+      shop_name: What's the full name?
+      website: On the web?
+      rating: 1 to 5
       featured_min:
       featured_max_1:
-      map:
-      type:
-      city:
+      map: 34.056934,-117.181510
+      type: Coffee Shop or Roaster or Multi-Roaster or Pop-Up Shop
+      city: What City?
       address: |-
         Line One
         Line Two
-      phone:
+      phone: Can you call them?
       hours: |-
         | Days   | Time   |
         | ------ | ------ |
         | Tuesday-Sunday | 7a-4p |
-      coffee:
+      coffee: What Coffee do they serve?
 permalink: pretty
 exclude:
 - Gemfile
