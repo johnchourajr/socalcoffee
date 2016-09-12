@@ -1,10 +1,13 @@
 ---
 title: Augies Redlands
+tags:
+- Indoor Seating
+- Outdoor Seating
 shop_name: Augies Coffee Redlands
 website: augies.coffee
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 34.056934,-117.181510
 type: Coffee Shop
 city: Redlands
@@ -20,4 +23,3 @@ hours: |-
 coffee:
 - Augies Coffee
 ---
-

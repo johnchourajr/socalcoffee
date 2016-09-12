@@ -4,4 +4,3 @@ permalink: "/sanbernadino/"
 position: 0
 layout: section
 ---
-

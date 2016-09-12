@@ -22,13 +22,19 @@
   background: $fill-primary-lightest;
   transition: all .2s $bez;
 
+  @include media-query(md) {
+    display: none;
+  }
+
   &.closed {
     height: 0;
     padding: 0;
+    opacity: 0;
   }
   &.open {
     height: auto;
     padding: $space-3 0;
+    opacity: 1;
   }
 
   .button {
@@ -748,10 +754,12 @@ table {
   &.closed {
     height: 0;
     padding: 0;
+    opacity: 0;
   }
   &.open {
     height: auto;
     padding: 6vw 0;
+    opacity: 1;
   }
 }
 
