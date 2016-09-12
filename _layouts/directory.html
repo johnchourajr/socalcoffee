@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  {% include head.html %}
+<section class="hero hero-sm hero-blue md-hide">
+  <div class="wrapper">
+    <div class="hero-inner">
+      <h1 class="text-primary bold xs-pb0">{{ page.title }}</h1>
+    </div>
+  </div>
+</section>
 
-  <body>
-
-    {% include header.html %}
-
-    <section class="hero hero-sm hero-blue md-hide">
-      <div class="wrapper">
-        <div class="hero-inner">
-          <h1 class="text-primary bold xs-pb0">{{ page.title }}</h1>
-        </div>
-      </div>
-    </section>
-
-    {{ content }}
-
-  </body>
-
-</html>
+{{ content }}

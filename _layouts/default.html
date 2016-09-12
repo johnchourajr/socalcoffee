@@ -3,13 +3,21 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if  page.title == 'Directory' %}class="noscroll"{% endif %}>
 
-    {% include header.html %}
+    <div class="body">
 
-    {{ content }}
+      {% include search-drawer.html %}
 
-    {% include footer.html %}
+      {% include menu-drawer.html %}
+
+      {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}      
+
+    </div>
 
   </body>
 

@@ -1,3 +1,9 @@
+html, body, .body {
+  overflow-x: hidden;
+  min-height: 100vh;
+
+}
+
 html {
   font-family: $sans;
 }
@@ -7,6 +13,18 @@ body {
   line-height: $line-height-4;
 }
 
+body {
+  position: relative;
+  padding-bottom: 18em;
+}
+
+body.noscroll {
+
+  @include media-query(md) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
 
 h1, .h1, .text-1 {
   font-size:   ($text-1 * .8);
