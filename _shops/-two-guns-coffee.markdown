@@ -1,9 +1,9 @@
 ---
 shop_name: Two Guns Espresso
 website: twogunsespresso.com
-rating:
-featured_min: # 'yes'
-featured_max_1: # 'yes'
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.8801992,-118.3999649
 type: Coffee Shop
 city: Manhattan Beach
@@ -21,3 +21,4 @@ tags:
 coffee:
 - Two Guns Coffee Roasters
 ---
+
