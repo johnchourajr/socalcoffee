@@ -60,27 +60,11 @@ $('.menu-nav').on('click', function(evt) {
   }
 });
 
-// Mobile Nav Opener
-$('.menu-nav').on('click', function(evt) {
-  var body = $('body');
-  var button = $('.menu-nav');
-  var drawer = $('.menu-nav-drawer');
-  var icn = $('.menu-nav-icn');
-
-  if (drawer.hasClass('closed')) {
-    drawer.addClass('open').removeClass('closed');
-    icn.attr('src','/assets/images/x.svg');
-  } else {
-    drawer.addClass('closed').removeClass('open');
-    icn.attr('src','/assets/images/menu.svg');
-  }
-});
-
-var searchinput = $("#search");
-var reset = $(".reset");
-var help = $(".search-help")
-
 $(".reset").click(function() {
+  var searchinput = $("#search");
+  var reset = $(".reset");
+  var help = $(".search-help")
+
   searchinput.attr('value','');
   searchinput.val('');
   searchinput.focus();
@@ -89,6 +73,9 @@ $(".reset").click(function() {
 });
 
 $('#search').on('keyup', function () {
+  var searchinput = $("#search");
+  var reset = $(".reset");
+  var help = $(".search-help")
   reset.removeClass('hide');
   reset.addClass('show');
 });
