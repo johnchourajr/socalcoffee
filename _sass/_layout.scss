@@ -358,45 +358,6 @@ section {
   }
 }
 
-.map-left {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-
-  @include media-query(sm) {
-    padding-left: 6vw;
-  }
-
-  @include media-query(md) {
-    padding-left: 12vw;
-  }
-}
-
-.see-on-map {
-  position: relative;
-
-  &:after {
-    content: 'Map It';
-    position: absolute;
-    top: .6em;
-    right: -2.5em;
-    text-align: left;
-    display: inline-block;
-    transition: all .3s $bez;
-    opacity: 0;
-
-  }
-
-  &:hover {
-    color: $text-primary;
-
-    &:after {
-      right: -3em;
-      opacity: 1;
-      color: $text-primary;
-    }
-  }
-}
-
 .scroll-right {
   overflow-x: scroll;
   position: relative;
@@ -515,6 +476,28 @@ section {
   }
 }
 
+.comma {
+
+  &-item {
+    position: relative;
+    padding-right: 0.15em;
+    padding-bottom: 0.2em;
+    display: inline-block;
+
+    &:after {
+      content: ", ";
+      color: $text-primary;
+      display: inline-table;
+    }
+    &:last-child {
+      &:after {
+        content: "." !important;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
 span.circle {
   font-size: .6em;
   padding-top: .15em;
@@ -622,9 +605,7 @@ table {
       line-height: $line-height-3 !important;
       color: $fill-secondary !important;
       background: $fill-secondary-lightest!important;
-      // border: solid 2px $fill-secondary-lightest!important;
       border-radius: ($space-1 / 2);
-      opacity: .5;
     }
 
     &.active {
@@ -730,6 +711,10 @@ table {
 }
 
 .search-help {
+  opacity: .75;
+}
+
+.search-helper {
   opacity: .75;
 }
 
@@ -872,4 +857,12 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   padding-bottom: .5em;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: inherit;
 }

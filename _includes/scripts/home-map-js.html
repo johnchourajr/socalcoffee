@@ -114,35 +114,35 @@
   map.addControl(new mapboxgl.Navigation());
 
 
-var isAtStart = true;
-
-{% assign sections = site.collections %}
-{% for section in sections %}
-{% if section.title and section.meta.in_nav == true %}
-
-document.getElementById('{{section.label}}').addEventListener('click', function() {
-
-  var {{section.label}} = [{{section.meta.cord}}];
-  var target = isAtStart ? {{section.label}} : {{section.label}};
-
-  isAtStart = !isAtStart;
-
-  map.flyTo({
-
-      center: target,
-      zoom: {{section.meta.zoom}},
-      bearing: 0,
-
-      speed: 1, // make the flying slow
-      curve: 1, // change the speed at which it zooms out
-
-      easing: function (t) {
-          return t;
-      }
-  });
-});
-
-{% endif %}
-{% endfor %}
+// var isAtStart = true;
+// 
+// {% assign sections = site.collections %}
+// {% for section in sections %}
+// {% if section.title and section.meta.in_nav == true %}
+//
+// document.getElementById('{{section.label}}').addEventListener('click', function() {
+//
+//   var {{section.label}} = [{{section.meta.cord}}];
+//   var target = isAtStart ? {{section.label}} : {{section.label}};
+//
+//   isAtStart = !isAtStart;
+//
+//   map.flyTo({
+//
+//       center: target,
+//       zoom: {{section.meta.zoom}},
+//       bearing: 0,
+//
+//       speed: 1, // make the flying slow
+//       curve: 1, // change the speed at which it zooms out
+//
+//       easing: function (t) {
+//           return t;
+//       }
+//   });
+// });
+//
+// {% endif %}
+// {% endfor %}
 
 </script>

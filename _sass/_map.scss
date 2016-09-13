@@ -6,7 +6,7 @@
     height: 40vh;
   }
   @include media-query(lg) {
-    height: 80vh;
+    height: 60vh;
   }
 }
 
@@ -89,4 +89,43 @@
 
 .mapboxgl-ctrl-top-right {
   z-index: 9999 !important;
+}
+
+.map-left {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+
+  @include media-query(sm) {
+    padding-left: 6vw;
+  }
+
+  @include media-query(md) {
+    padding-left: 12vw;
+  }
+}
+
+.see-on-map {
+  position: relative;
+
+  &:after {
+    content: 'Map It';
+    position: absolute;
+    top: .6em;
+    right: -2.5em;
+    text-align: left;
+    display: inline-block;
+    transition: all .3s $bez;
+    opacity: 0;
+
+  }
+
+  &:hover {
+    color: $text-primary;
+
+    &:after {
+      right: -3em;
+      opacity: 1;
+      color: $text-primary;
+    }
+  }
 }
