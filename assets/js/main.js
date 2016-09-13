@@ -86,8 +86,6 @@ $(".reset").click(function() {
   searchinput.focus();
   reset.removeClass('show');
   reset.addClass('hide');
-  // help.removeClass('hide');
-  // help.addClass('show');
 });
 
 $('#search').on('keyup', function () {
