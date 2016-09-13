@@ -620,7 +620,7 @@ table {
     > .button {
       font-size: $text-4 !important;
       line-height: $line-height-3 !important;
-      color: $fill-secondary-lighter !important;
+      color: $fill-secondary !important;
       background: $fill-secondary-lightest!important;
       // border: solid 2px $fill-secondary-lightest!important;
       border-radius: ($space-1 / 2);
@@ -733,17 +733,10 @@ table {
   opacity: .75;
 }
 
-.search-light {
-
-  .white {
-
-  }
-
-  ::-webkit-input-placeholder {
-    color: $fill-primary-lightest;
-    opacity: .75;
-    pointer-events: none;
-  }
+.search-light::-webkit-input-placeholder {
+  color: $fill-primary-lightest;
+  opacity: .75;
+  pointer-events: none;
 }
 
 .search-nav-drawer {
