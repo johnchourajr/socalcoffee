@@ -449,6 +449,12 @@ section {
   }
 }
 
+.icn-image {
+  width: 1em;
+  height: 1em;
+  transform: translateY(2px);
+}
+
 .comma-list {
 
   &-item {

@@ -16,6 +16,7 @@
     title: {{shop.shop_name | jsonify}},
     type: {{shop.type | jsonify}},
     county: {{place.title | jsonify}},
+    coffee: {{shop.coffee | strip_html | strip_newlines | jsonify}},
     city: {{shop.city | jsonify}},
     tags: {{shop.tags | strip_html | strip_newlines | jsonify}}
   });{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{% endfor %}
