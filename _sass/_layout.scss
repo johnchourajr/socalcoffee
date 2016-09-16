@@ -214,7 +214,7 @@ section {
 }
 
 .section-header {
-  color: $fill-secondary;
+  color: $text-secondary;
   font-weight: bold;
   text-decoration: underline;
   display: block;
@@ -609,8 +609,8 @@ table {
     > .button {
       font-size: $text-4 !important;
       line-height: $line-height-3 !important;
-      color: $fill-secondary !important;
-      background: $fill-secondary-lightest!important;
+      color: $text-secondary !important;
+      background: $text-secondary-lightest!important;
       border-radius: ($space-1 / 2);
     }
 
@@ -618,7 +618,7 @@ table {
 
       > .button {
         color: $text-primary !important;
-        background: $fill-primary-lightest !important;
+        background: $text-primary-lightest !important;
         // border: solid 2px $fill-primary-light!important;
         opacity: 1;
       }
@@ -636,7 +636,7 @@ table {
     outline: none;
     border: none;
     color: $text-primary !important;
-    background: $fill-primary-lightest !important;
+    background: $text-primary-lightest !important;
     font-weight: bold;
     border-radius: ($space-1 / 2);
     padding: $space-1;

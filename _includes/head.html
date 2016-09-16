@@ -24,74 +24,8 @@
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.1/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.1/mapbox-gl.css' rel='stylesheet' />
 
-  <script type="text/javascript" src="https://cdn.rawgit.com/rmxdave/phnx/master/lib/OAuth/OAuth.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/rmxdave/phnx/master/lib/OAuth/SHA1.js"></script>
-
-  <script type="text/javascript">
-
-  function cb(data) {
-          console.log("cb: " + JSON.stringify(data));
-  }
-
-      var auth = {
-          //
-          // Update with your auth tokens.
-          //
-          consumerKey : "	zE85MXJIb5MvoczJvJTWZw",
-          consumerSecret : "6PPl2i8h-Qr0lJ-87Dn4cG_WK6k",
-          accessToken : "9pRuFtrPo23ZylP9gFnxM8j4HxLaVWL7",
-          // This example is a proof of concept, for how to use the Yelp v2 API with javascript.
-          // You wouldn't actually want to expose your access token secret like this in a real application.
-          accessTokenSecret : "3yqzR7WyJ6X6lR_pa3MxM5xe9wE",
-          serviceProvider : {
-              signatureMethod : "HMAC-SHA1"
-          }
-      };
-
-      var terms = 'food';
-      var near = 'San+Francisco';
-
-      var accessor = {
-          consumerSecret : auth.consumerSecret,
-          tokenSecret : auth.accessTokenSecret
-      };
-
-      var parameters = [];
-      parameters.push(['term', terms]);
-      parameters.push(['location', near]);
-      parameters.push(['callback', 'cb']);
-      parameters.push(['oauth_consumer_key', auth.consumerKey]);
-      parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
-      parameters.push(['oauth_token', auth.accessToken]);
-      parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
-
-      var message = {
-        'action' :   'https://api.yelp.com/v2/business/neat-coffee-costa-mesa',
-        'method' : 'GET',
-        'parameters' : parameters
-      };
-
-      OAuth.setTimestampAndNonce(message);
-      OAuth.SignatureMethod.sign(message, accessor);
-
-      var parameterMap = OAuth.getParameterMap(message.parameters);
-
-      $.ajax({
-        'url' : message.action,
-        'data' : parameterMap,
-        'dataType' : 'jsonp',
-        'jsonpCallback' : 'cb',
-        'cache': true
-      })
-      .done(function(data, textStatus, jqXHR) {
-          console.log('success[' + data + '], status[' + textStatus + '], jqXHR[' + JSON.stringify(jqXHR) + ']');
-        }
-      )
-      .fail(function(jqXHR, textStatus, errorThrown) {
-          console.log('error[' + errorThrown + '], status[' + textStatus + '], jqXHR[' + JSON.stringify(jqXHR) + ']');
-        }
-      );
-
-  </script>
+  {% comment %}
+  {% include scripts/yelp-js.html %}
+  {% endcomment %}
 
 </head>

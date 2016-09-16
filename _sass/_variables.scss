@@ -50,7 +50,7 @@ $fill-primary: #0743FF;
 $fill-primary-light: lighten($fill-primary, 5%);
 $fill-primary-lighter: lighten($fill-primary, 20%);
 $fill-primary-lightest: lighten($fill-primary, 45%);
-$fill-secondary: #00FBD5;
+$fill-secondary: #00FBD5; //#00FBD5
 $fill-secondary-light: lighten($fill-secondary, 5%);
 $fill-secondary-lighter: lighten($fill-secondary, 20%);
 $fill-secondary-lightest: lighten($fill-secondary, 45%);
@@ -83,11 +83,11 @@ $fill-vine: #00b488;
 $fill-snapchat: #fffc00;
 
 // Type Colors
-$text-primary: #0743FF;
+$text-primary: $fill-primary;
 $text-primary-light: lighten($text-primary, 5%);
 $text-primary-lighter: lighten($text-primary, 20%);
 $text-primary-lightest: lighten($text-primary, 45%);
-$text-secondary: #00FBD5;
+$text-secondary: #05f4cf;
 $text-secondary-light: lighten($text-secondary, 5%);
 $text-secondary-lighter: lighten($text-secondary, 20%);
 $text-secondary-lightest: lighten($text-secondary, 45%);
