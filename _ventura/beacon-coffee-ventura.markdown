@@ -16,5 +16,9 @@ hours: |
   | Monday-Friday | 7a-2p |
   | Saturday-Sunday | 8a-2p |
 coffee: Beacon Coffee Roasters
+tags:
+- Indoor Seating
+- Food
+- 
 ---
 
