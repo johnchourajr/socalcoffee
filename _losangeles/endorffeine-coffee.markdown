@@ -7,9 +7,9 @@ tags:
 - Espresso
 shop_name: Endorffeine Coffee
 website: endorffeine.coffee
-rating:
-featured_min:
-featured_max_1:
+rating: 
+featured_min: 
+featured_max_1: 
 map: 34.061446,-118.239771
 type: Coffee Shop
 city: Chinatown
@@ -25,3 +25,4 @@ hours: |-
   | *Tuesday* | *Closed* |
 coffee: Heart Coffee Roasters
 ---
+
