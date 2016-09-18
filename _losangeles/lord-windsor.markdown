@@ -6,9 +6,7 @@ tags:
 - Cold Brew
 shop_name: Lord Windsor
 website: http://lordwindsor.com
-rating: 
-featured_min: 'yes'
-featured_max_1: 
+featured_min: true
 map: 33.770468, -118.178155
 type: Coffee Shop / Roaster
 city: Long Beach
