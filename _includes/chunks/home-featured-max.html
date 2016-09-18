@@ -11,7 +11,7 @@
           {% if item.title == place.title %}{% else %}
             {%comment%} Generate featured items {%endcomment%}
             {% assign featured_max_1 = shop.featured_max_1 | limit:1 %}
-            {% if featured_max_1 == "yes" %}
+            {% if featured_max_1 == true %}
               <div class="feature feature-max col">
                 <div class="feature-max-inner">
                   <a href="{{ shop.url | prepend:site.baseurl }}" class="">

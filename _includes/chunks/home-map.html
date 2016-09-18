@@ -9,9 +9,7 @@
           {% assign places = site.collections %}
           {% for place in places %}
             {% if place.title and place.meta.in_nav == true %}
-
-                  <h1 class="bold comma-item"><a href="/{{ place.label }}/" class="-comma-flow-item xs-inline-block underline">{{ place.title | remove: 'County' }}</a></h1>
-
+              <h1 class="bold comma-item"><a href="/{{ place.label }}/" class="-comma-flow-item xs-inline-block underline">{{ place.title | remove: 'County' }}</a></h1>
             {% endif %}
           {% endfor %}
         </div>
@@ -24,9 +22,6 @@
       <div class="col xs-col-12 sm-col-6">
         <a href="#top" class="search-nav xs-block button button--lg xs-mt3 xs-py3 md-py4 lg-py6"><h3><img src="/assets/images/search.svg" class="icn-image xs-mr1" alt="{{ site.title }}" /> Search Shops</h3></a>
       </div>
-
-
-      </a>
     </div>
   </div>
 </section>

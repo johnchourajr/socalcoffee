@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="hero hero-sm">
+<section class="hero hero-sm xs-mb4">
   <div class="wrapper">
     <div class="hero-inner">
       <div class="xs-col-12 md-col-8 lg-col-7">
@@ -12,25 +12,25 @@ layout: default
   </div>
 </section>
 
-{% include chunks/city-scrollbar.html %}
+{% include chunks/section-picker.html %}
 
-<section class="header-overlap header-overlap-sm">
+<section class="xs-inline-block">
   <div class="wrapper">
-    <article class="">
-      {% assign documents = site[page.collection] | sort:"position" %}
-      {% assign groups = documents | group_by: "city" | sort: "name" %}
-
-      {% for group in groups %}
-        <h3 id="{{ group.name | downcase | remove: " " }}" class="bold text-secondary xs-pt3">{{ group.name }}</h3>
-        {% for item in group.items %}
-          {% if item.title == page.title %}
-          {% else %}
-            <a class="nav__link nav__link--sidebar" href="{{ item.url }}">
-              <h1 class="bold text-primary">{{ item.shop_name }}</h1>
-            </a>
-          {% endif %}
-        {%endfor%}
+    <div id="Container" class="container gutters hide-first">
+      {% assign documents = site[page.collection] | sort:"position" %}{% assign cities = documents | group_by: "city" | sort: "name" %}
+      {% for city in cities %}
+        <div class="mix col xs-col-12 {{ city.name | downcase | replace:' ','-' }}">
+          <h1 id="{{ city.name | downcase | remove: " " }}" class="bold text-secondary xs-pt3 -underline">{{ city.name }}</h1>
+          {% for item in city.items %}
+            {% if item.title == page.title %}
+            {% else %}
+              <h2 class="bold text-secondary comma-item"><a class="xs-inline-block underline" href="{{ item.url }}">{{ item.shop_name }}</a></h2>
+            {% endif %}
+          {%endfor%}
+        </div>
       {%endfor%}
-    </article>
+    </div>
   </div>
 </section>
+
+{% include /scripts/section-js.html %}

@@ -1,0 +1,15 @@
+<section class="xs-mb4">
+  <div class="wrapper">
+    <form class="controls lg-col-10" id="Filters">
+      <h4 class="text-secondary section-header bold xs-pb3">Search by City</h4>
+      <fieldset class="gutters hide-first">
+        {% assign documents = site[page.collection] | sort:"position" %}{% assign cities = documents | group_by: "city" | sort: "name" %}
+        {% for city in cities %}
+          <a id="{{ city.name | downcase | replace:' ','-' }}" class="col filter " data-filter=".{{ city.name | downcase | replace:' ','-' }}" >
+            <p class="button bold text-primary">{{ city.name }} <span class="circle">{{ city.items | size }}</span></p>
+          </a>
+        {%endfor%}
+      </fieldset>
+    </form>
+  </div>
+</section>

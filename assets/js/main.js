@@ -60,6 +60,7 @@ $('.menu-nav').on('click', function(evt) {
   }
 });
 
+// Search Input Clear
 $(".reset").click(function() {
   var searchinput = $("#search");
   var reset = $(".reset");
@@ -71,7 +72,6 @@ $(".reset").click(function() {
   reset.removeClass('show');
   reset.addClass('hide');
 });
-
 $('#search').on('keyup', function () {
   var searchinput = $("#search");
   var reset = $(".reset");

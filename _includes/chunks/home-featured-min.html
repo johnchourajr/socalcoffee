@@ -11,7 +11,7 @@
           {% if item.title == place.title %}{% else %}
             {%comment%} Generate featured items {%endcomment%}
             {% assign featured_min = shop.featured_min | limit:1 %}
-            {% if featured_min == "yes" %}
+            {% if featured_min == true %}
               <div class="feature feature-min col xs-col-12 sm-col-4 ">
                 <div class="feature-min-inner">
                   <a href="{{ shop.url | prepend:site.baseurl }}" class="">
