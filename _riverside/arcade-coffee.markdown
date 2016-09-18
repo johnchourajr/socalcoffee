@@ -4,9 +4,7 @@ tags:
 - Outdoor Seating
 shop_name: Arcade Coffee Roasters
 website: http://www.arcadecoffeeroasters.com
-rating: 
-featured_min: 
-featured_max_1: 'yes'
+featured_max_1: true
 map: 33.981935,-117.343110
 type: Coffee Shop / Roaster
 city: Riverside
