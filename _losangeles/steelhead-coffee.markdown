@@ -4,9 +4,7 @@ tags:
 - Indoor Seating
 shop_name: Steelhead Coffee
 website: http://steelheadcoffee.com/
-rating: 
-featured_min: 'yes'
-featured_max_1: 
+featured_min: true
 map: 33.8187944,-118.1782147
 type: Coffee Shop / Multi-Roaster
 city: Long Beach
