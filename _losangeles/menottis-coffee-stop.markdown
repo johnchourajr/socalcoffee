@@ -4,9 +4,7 @@ tags:
 - Indoor Seating
 shop_name: Menotti's Coffee Stop
 website: http://www.coffeeveniceca.com/
-rating: 
-featured_min: 'yes'
-featured_max_1: 
+featured_min: true
 map: 33.9872844,-118.4748787
 type: Coffee Shop
 city: Venice Beach
