@@ -15,9 +15,8 @@ phone: 951-266-6839
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Saturday-Wednesday | Closed |
   | Thursday-Friday | 8a–2p |
+  | *Saturday-Wednesday* |*Closed*|
 coffee:
 - Arcade Coffee Roasters
 ---
-
