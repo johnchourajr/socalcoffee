@@ -7,16 +7,16 @@ tags:
 - Free Wi-Fi
 shop_name: Portola Huntington
 website: http://www.portolacoffeelab.com/
-rating:
-featured_min:
-featured_max_1:
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.654443, -117.996608
 type: Coffee Shop / Roaster
 city: Huntington Beach
 address: |-
   21060 Pacific Coast Hwy, Space 170
   Huntington Beach, CA 92648
-phone:
+phone: 
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
@@ -26,3 +26,4 @@ hours: |-
 coffee:
 - Portola Coffee
 ---
+

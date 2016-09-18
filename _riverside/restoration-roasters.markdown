@@ -4,9 +4,9 @@ tags:
 - Outdoor Seating
 shop_name: Restoration Roasters
 website: http://www.restorationroasters.com/
-rating:
-featured_min:
-featured_max_1:
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.852006, -117.556513
 type: Coffee Shop / Roaster
 city: Riverside
@@ -19,7 +19,7 @@ hours: |-
   | ------ | ------ |
   | Thursday-Friday | 8a–2p |
   | *Saturday-Wednesday* |*Closed*|
-
 coffee:
 - Arcade Coffee Roasters
 ---
+
