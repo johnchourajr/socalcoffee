@@ -3,22 +3,17 @@ title: Bar 9 Coffee
 tags:
 - Indoor Seating
 shop_name: Bar 9 Coffee Roasters
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
 map: 34.0268383,-118.3858297
 type: Coffee Shop
 city: Culver City
-address: |-
-  Line One
-  Line Two
-phone: 
+address: "3515 Helms Ave, \nCulver City, CA 90232"
+phone: 310-837-7815
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Tuesday-Sunday | 7a-4p |
+  | Monday-Friday | 7a-6p |
+  | Saturday-Sunday | 8a-6p |
 coffee:
-- Ritual Coffee Roasters
+- Bar Nine
 ---
 
