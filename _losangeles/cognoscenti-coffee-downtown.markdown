@@ -16,10 +16,10 @@ hours: |-
   | ------ | ------ |
   | Daily | 7a-7p |
 coffee:
+- Cognoscenti
 - Ritual Coffee Roasters
 - Kuma Coffee Roasters
 - Phil & Sebastian
 - Heart Coffee Roasters
-- Cognoscenti
 ---
 
