@@ -1,20 +1,17 @@
 ---
-title: Cafecito Organic Malibu
+title: Cafecito Organico Malibu
 tags:
 - Indoor Seating
 - Roaster
 shop_name: Cafecito Organico Malibu
 website: http://cafecitoorganico.com
-rating: 
-featured_min: 
-featured_max_1: 
 map: 34.0213218,-118.8119292
 type: Coffee Shop / Roaster
 city: Malibu
 address: |-
   Point Dume Plaza Shopping Center,
   29169 Heathercliff Rd, Malibu, CA 90265
-phone: 
+phone: 213-550-3738
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
