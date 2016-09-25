@@ -2,9 +2,6 @@
 title: Augies Claremont
 shop_name: Augies Coffee Claremont
 website: augies.coffee
-rating: 
-featured_min: 
-featured_max_1: 
 map: 34.09424,-117.7235609
 type: Coffee Shop
 city: Claremont
