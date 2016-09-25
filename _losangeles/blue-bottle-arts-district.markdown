@@ -10,6 +10,7 @@ city: Downtown LA
 address: |-
   582 Mateo St,
   Los Angeles, CA 90013
+phone: 213-621-4194
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
