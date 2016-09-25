@@ -6,7 +6,7 @@ shop_name: Blue Bottle Echo Park
 website: https://bluebottlecoffee.com/cafes/echo-park
 map: 34.0772369,-118.2611829
 type: Coffee Shop
-city: Downtown LA
+city: Echo Park
 address: |-
   1712 Sunset Blvd,
   Los Angeles, CA 90026
