@@ -15,6 +15,10 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 6:30a-8p |
-coffee: 'Forty Ninth Parallel '
+coffee:
+- 'Forty Ninth Parallel Coffee '
+- George Howell
+- Heart
+- 
 ---
 
