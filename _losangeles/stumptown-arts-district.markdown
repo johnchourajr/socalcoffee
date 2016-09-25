@@ -12,6 +12,6 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-coffee: 'Stumptown Coffee '
+coffee: Stumptown Coffee Roasters
 ---
 
