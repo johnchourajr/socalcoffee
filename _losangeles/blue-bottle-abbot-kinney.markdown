@@ -13,6 +13,6 @@ hours: |-
   | Days   | Time   |
   | Sunday-Thursday | 7a-6p |
   | Friday-Saturday | 7a-7p |
-coffee: Blue Bottle
+coffee: Blue Bottle Coffee Roaster
 ---
 
