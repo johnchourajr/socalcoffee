@@ -1,5 +1,5 @@
 ---
-title: Go Get Em Tiger Loz Feliz
+title: Go Get Loz Feliz
 date: 2016-09-25 23:33:00 Z
 shop_name: Go Get Em Tiger Loz Feliz
 website: gandb.coffee
@@ -10,6 +10,10 @@ address: |-
   4630 Hollywood Blvd
   Loz Feliz, CA 90027
 phone: 323-543-4438
+hours: |-
+  | Days   | Time   |
+  | ------ | ------ |
+  | Daily | 7a-3p |
 coffee:
 - Mad Cap Coffee
 - George Howell
