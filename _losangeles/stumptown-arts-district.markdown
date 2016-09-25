@@ -3,21 +3,15 @@ title: Stumptown Arts District
 tags:
 - Indoor Seating
 shop_name: Stumptown Arts District
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
-map: 
-type: Coffee Shop
-city: Downtown LA
-address: |-
-  Line One
-  Line Two
-phone: 
+map: 34.0332792,-118.22978660000001
+type: Coffee Shop / Roaster
+city: Arts District
+address: "806 S Santa Fe Ave, \nLos Angeles, CA 90021"
+phone: 855-711-3385
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-coffee: 
+coffee: 'Stumptown Coffee '
 ---
 
