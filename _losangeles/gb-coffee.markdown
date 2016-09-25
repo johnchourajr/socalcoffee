@@ -16,7 +16,7 @@ phone: 213-265-7718
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Tuesday-Sunday | 7a-6p |
+  | Monday-Sunday | 7a-6p |
 coffee:
 - George Howell
 - Heart
