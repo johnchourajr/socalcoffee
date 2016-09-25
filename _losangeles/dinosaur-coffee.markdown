@@ -13,7 +13,7 @@ address: |-
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Tuesday-Sunday | 7a-4p |
+  | Daily | 7a-7p |
 coffee: Four Barrel Coffee, Guest Coffee Roaster
 ---
 
