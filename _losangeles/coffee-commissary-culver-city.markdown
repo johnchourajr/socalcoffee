@@ -3,10 +3,7 @@ title: Coffee Commissary Culver City
 tags:
 - Indoor Seating
 shop_name: Coffee Commissary Culver City
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
+website: http://www.coffeecommissary.com
 map: 34.0860512,-118.3641633
 type: Coffee Shop
 city: Culver City
@@ -17,7 +14,12 @@ phone: 818.556.6055
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Tuesday-Sunday | 7a-4p |
-coffee: 
+  | Daily | 7a-8p |
+coffee:
+- Coava Coffee
+- Victrola Coffee Roasters
+- Mad Cap Coffee Company
+- Chromatic Coffee Co.
+- Temple Coffee Roasters
 ---
 
