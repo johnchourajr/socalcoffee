@@ -13,7 +13,7 @@ phone: 818.556.6055
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Tuesday-Sunday | 7a-4p |
+  | Daily | 7a-8p |
 coffee:
 - Mad Cap Coffee Company
 - Coava Coffee
