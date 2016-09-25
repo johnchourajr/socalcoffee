@@ -21,5 +21,6 @@ coffee:
 - Kuma Coffee Roasters
 - Phil & Sebastian
 - Heart Coffee Roasters
+- Various
 ---
 
