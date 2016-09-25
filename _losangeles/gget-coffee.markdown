@@ -1,5 +1,5 @@
 ---
-title: Gget Coffee
+title: Get Coffee Larchmont
 tags:
 - Indoor Seating
 shop_name: Go Get Em Tiger
