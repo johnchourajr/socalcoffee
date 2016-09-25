@@ -3,10 +3,6 @@ title: Coffee Commissary Burbank
 tags:
 - Indoor Seating
 shop_name: Coffee Commissary Burbank
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
 map: 34.1560668,-118.3373263
 type: Coffee Shop
 city: Burbank
@@ -18,6 +14,9 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Tuesday-Sunday | 7a-4p |
-coffee: 
+coffee:
+- Mad Cap Coffee Company
+- Coava Coffee
+- Victrola Coffee Roasters
 ---
 
