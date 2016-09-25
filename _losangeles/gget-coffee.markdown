@@ -1,8 +1,8 @@
 ---
-title: Get Coffee Larchmont
+title: GGet Larchmont
 tags:
 - Indoor Seating
-shop_name: Go Get Em Tiger
+shop_name: Go Get Em Tiger Larchmont
 website: http://ggetla.com
 map: 34.075612,-118.3255138
 type: Coffee Shop
@@ -19,6 +19,6 @@ coffee:
 - 'Forty Ninth Parallel Coffee '
 - George Howell
 - Heart
-- 
+- Various
 ---
 
