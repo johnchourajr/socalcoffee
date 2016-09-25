@@ -22,5 +22,6 @@ coffee:
 - Huckleberry Coffee Roasters
 - Heart Coffee Roasters
 - Supersonic Coffee
+- Rival Bros Coffee
 ---
 
