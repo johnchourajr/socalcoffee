@@ -3,6 +3,7 @@ title: Blue Bottle Beverly Grove
 tags:
 - Indoor Seating
 shop_name: Blue Bottle Beverly Grove
+website: https://bluebottlecoffee.com/cafes/beverly-grove
 map: 34.0762717,-118.3723989
 type: Coffee Shop
 city: Los Angeles
