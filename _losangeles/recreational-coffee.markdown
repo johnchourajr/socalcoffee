@@ -6,7 +6,7 @@ shop_name: Recreational Coffee
 website: http://recreationalcoffee.com
 map: 33.770082,-118.191998
 type: Coffee Shop and Food
-city: Long Beach
+city: Downtown
 address: |-
   237 Long Beach Blvd.
   Long Beach, CA 90802
