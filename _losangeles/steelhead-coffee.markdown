@@ -7,9 +7,9 @@ website: http://steelheadcoffee.com/
 featured_min: true
 map: 33.8187944,-118.1782147
 type: Coffee Shop / Multi-Roaster
-city: Long Beach
+city: Cal Heights
 address: |-
-  1208 E Wardlow Rd.
+  1208 E Wardlow Rd,
   Long Beach, CA 90807
 phone: 562-989-0000
 hours: |-
@@ -21,5 +21,6 @@ coffee:
 - Ruby Coffee Roasters
 - Huckleberry Coffee Roasters
 - Heart Coffee Roasters
+- Supersonic Coffee
 ---
 
