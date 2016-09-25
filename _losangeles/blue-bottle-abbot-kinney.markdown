@@ -11,8 +11,8 @@ address: "1103 Abbot Kinney Blvd, \nVenice, CA 90291"
 phone: 510-653-3394
 hours: |-
   | Days   | Time   |
-  | Friday-Saturday | 7a-7p |
   | Sunday-Thursday | 7a-6p |
+  | Friday-Saturday | 7a-7p |
 coffee: Blue Bottle
 ---
 
