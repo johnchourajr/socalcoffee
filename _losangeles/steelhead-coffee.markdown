@@ -23,5 +23,6 @@ coffee:
 - Heart Coffee Roasters
 - Supersonic Coffee
 - Rival Bros Coffee
+- Dogwood Coffee Co
 ---
 
