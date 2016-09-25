@@ -1,5 +1,5 @@
 ---
-title: GGet Larchmont
+title: Go Get Larchmont
 tags:
 - Indoor Seating
 shop_name: Go Get Em Tiger Larchmont
@@ -14,7 +14,7 @@ phone: 323-380-5359
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Monday-Sunday | 6:30a-8p |
+  | Daily | 6:30a-8p |
 coffee:
 - 'Forty Ninth Parallel Coffee '
 - George Howell
