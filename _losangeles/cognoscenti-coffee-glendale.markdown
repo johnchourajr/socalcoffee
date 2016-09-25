@@ -1,5 +1,5 @@
 ---
-title: Cognoscenti Coffee Glendale
+title: Cognoscenti Coffee Fashion District
 tags:
 - Indoor Seating
 shop_name: Cognoscenti Coffee Glendale
