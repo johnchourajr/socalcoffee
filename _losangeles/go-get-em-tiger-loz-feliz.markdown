@@ -7,5 +7,6 @@ coffee:
 - Mad Cap Coffee
 - George Howell
 - Sweet Bloom Coffee Roasters
+- Parlor Coffee
 ---
 
