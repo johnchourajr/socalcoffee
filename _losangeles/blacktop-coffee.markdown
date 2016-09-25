@@ -15,6 +15,5 @@ hours: |-
   | ------ | ------ |
   | Daily | 7a-6p |
 coffee: Sightglass Coffee Roasters
-Equipment: La Marzocco, Curtis, Fetco
 ---
 
