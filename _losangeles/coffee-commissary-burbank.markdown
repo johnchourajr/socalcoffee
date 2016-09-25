@@ -3,6 +3,7 @@ title: Coffee Commissary Burbank
 tags:
 - Indoor Seating
 shop_name: Coffee Commissary Burbank
+website: http://www.coffeecommissary.com/
 map: 34.1560668,-118.3373263
 type: Bakery and Coffee Shop
 city: Burbank
