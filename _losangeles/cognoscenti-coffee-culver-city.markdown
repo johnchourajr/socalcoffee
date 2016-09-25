@@ -20,5 +20,6 @@ coffee:
 - Kuma Coffee Roasters
 - 'Cognoscenti '
 - Phil & Sebastian Coffee Roasters
+- Various
 ---
 
