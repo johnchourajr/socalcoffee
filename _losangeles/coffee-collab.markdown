@@ -1,8 +1,8 @@
 ---
-title: Coffee Co Lab
+title: Coffee CoLab
 tags:
 - Indoor Seating
-shop_name: Coffee Co Lab
+shop_name: Coffee CoLab
 website: http://coffeecolab.com
 map: 34.0413495,-118.2535193
 type: Coffee Shop
