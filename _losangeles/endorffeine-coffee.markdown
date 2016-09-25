@@ -20,6 +20,8 @@ hours: |-
   | ------ | ------ |
   | Wednesday-Monday | 8a-6p |
   | *Tuesday* | *Closed* |
-coffee: Heart Coffee Roasters
+coffee: |-
+  Heart Coffee Roasters
+  and a guest roaster
 ---
 
