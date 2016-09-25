@@ -6,7 +6,7 @@ shop_name: Blue Bottle Beverly Grove
 website: https://bluebottlecoffee.com/cafes/beverly-grove
 map: 34.0762717,-118.3723989
 type: Coffee Shop
-city: Los Angeles
+city: Beverly Grove
 address: |-
   8301 Beverly Blvd
   Los Angeles, CA 90048
