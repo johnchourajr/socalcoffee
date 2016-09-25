@@ -18,5 +18,6 @@ hours: |-
 coffee:
 - Ritual Coffee Roasters
 - Kuma Coffee Roasters
+- 'Cognoscenti '
 ---
 
