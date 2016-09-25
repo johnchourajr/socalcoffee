@@ -16,9 +16,9 @@ hours: |-
   | Monday-Saturday | 8a-5p |
   | Sunday | 9a-3p |
 coffee:
+- 'Cognoscenti '
 - Ritual Coffee Roasters
 - Kuma Coffee Roasters
-- 'Cognoscenti '
 - Phil & Sebastian Coffee Roasters
 - Various
 ---
