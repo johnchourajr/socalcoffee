@@ -14,6 +14,6 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Daily | 7a-6p |
-coffee: Sight glass Coffee Roasters
+coffee: Sightglass Coffee Roasters
 ---
 
