@@ -4,11 +4,8 @@ tags:
 - Indoor Seating
 shop_name: Recreational Coffee
 website: http://recreationalcoffee.com
-rating: 
-featured_min: 
-featured_max_1: 
 map: 33.770082,-118.191998
-type: Coffee Shop
+type: Coffee Shop and Food
 city: Long Beach
 address: |-
   237 Long Beach Blvd.
