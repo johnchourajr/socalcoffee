@@ -5,9 +5,6 @@ tags:
 - Outdoor Seating
 shop_name: Intelligentsia Venice
 website: http://intelligentsiacoffee.com
-rating: 
-featured_min: 
-featured_max_1: 
 map: 33.9909821,-118.4691269
 type: Coffee Shop | Roaster
 city: Venice
@@ -19,7 +16,9 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Sunday-Thursday | 6a-8p |
-  | Friday-Saturday | 6a-10p |
-coffee: 
+  | Friday | 6a-10p |
+  | Saturday | 7a-10p |
+  | Sunday| 7a-8p |
+coffee: 'Intelligentsia '
 ---
 
