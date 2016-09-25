@@ -7,6 +7,10 @@ map: 34.26196439999999,-118.42740730000003
 city: Pacoima
 address: "13512 Van Nuys Blvd, \nLos Angeles, CA 91331"
 phone: 818-573-6511
+hours: |-
+  | Days   | Time   |
+  | Monday-Friday | 8a-6p |
+  | Saturday-Sunday | 9a-5p  |
 coffee:
 - Cafecito Organico
 ---
