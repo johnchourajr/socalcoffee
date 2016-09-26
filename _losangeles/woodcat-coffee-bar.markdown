@@ -4,9 +4,6 @@ tags:
 - Indoor Seating
 shop_name: Woodcat Coffee Bar
 website: http://woodcatcoffee.com
-rating: 
-featured_min: 
-featured_max_1: 
 map: 34.07614,-118.2586483
 type: Coffee Shop
 city: Echo Park
@@ -19,6 +16,6 @@ hours: |-
   | ------ | ------ |
   | Saturday-Sunday | 7a-6p |
   | Monday-Friday | 6a-6p |
-coffee: 
+coffee: Wrecking Ball Coffee Roasters
 ---
 
