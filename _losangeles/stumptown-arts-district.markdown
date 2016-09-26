@@ -8,10 +8,6 @@ type: Coffee Shop / Roaster
 city: Arts District
 address: "806 S Santa Fe Ave, \nLos Angeles, CA 90021"
 phone: 855-711-3385
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Daily | 7a-7p |
 coffee: Stumptown Coffee Roasters
 ---
 
