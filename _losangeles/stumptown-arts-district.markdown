@@ -11,7 +11,7 @@ phone: 855-711-3385
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
-  | Tuesday-Sunday | 7a-4p |
+  | Daily | 7a-7p |
 coffee: Stumptown Coffee Roasters
 ---
 
