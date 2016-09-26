@@ -5,9 +5,9 @@ tags:
 - Food
 shop_name: TAZA
 website: http://tazacoffee.com
-map: 34.1402146,-118.0342262
+map: 34.0781851,-118.25984069999998
 type: Coffee Shop
-city: Arcadia
+city: Silver Lake
 address: "1825 Sunset Blvd, \nLos Angeles, CA 90026"
 phone: 213-568-3419
 hours: |-
