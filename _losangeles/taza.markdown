@@ -8,10 +8,8 @@ website: http://tazacoffee.com
 map: 34.1402146,-118.0342262
 type: Coffee Shop
 city: Arcadia
-address: |-
-  11 W Huntington Dr
-  Arcadia, CA 91007
-phone: 626-538-2233
+address: "1825 Sunset Blvd, \nLos Angeles, CA 90026"
+phone: 213-568-3419
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
@@ -19,7 +17,6 @@ hours: |-
   | Saturday | 8a-6p |
   | Sunday| 8a-5p |
 coffee:
-- Blue Bottle Coffee
-- Stumptown Coffee Roasters
+- Taza Coffee
 ---
 
