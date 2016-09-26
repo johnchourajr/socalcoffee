@@ -9,7 +9,7 @@ city: Arts District
 address: "806 S Santa Fe Ave, \nLos Angeles, CA 90021"
 phone: 855-711-3385
 hours:
-- "| Daily| 7a-7p |"
+- "| Daily | 7a-7p |"
 - 'Public Tastings Friday at 2p '
 coffee: Stumptown Coffee Roasters
 ---
