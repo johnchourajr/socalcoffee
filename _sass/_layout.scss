@@ -162,6 +162,10 @@ nav {
   background: $fill-secondary-lightest;
   padding-top: 9em;
 
+  &--naked {
+    background: transparent !important;
+  }
+
   &-lg {
     padding-bottom: 20vw;
     margin-bottom: 0;

@@ -11,11 +11,9 @@ html {
 body {
   font-size:   $text-4;
   line-height: $line-height-4;
-}
-
-body {
   position: relative;
   padding-bottom: 18em;
+  color: $text-primary;
 }
 
 body.noscroll {
