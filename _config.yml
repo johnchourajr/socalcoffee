@@ -77,8 +77,6 @@ defaults:
   values:
     layout: shop
     title:
-    tags:
-    - Indoor Seating
     shop_name:
     website:
     rating:
