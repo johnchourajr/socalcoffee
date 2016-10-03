@@ -1,10 +1,10 @@
 ---
 # TODO: ADD DATA
-title: Handlebar Coffee Roasters
+title: Eightfold Coffee
 tags:
 - Indoor Seating
 - ...
-shop_name: Handlebar Coffee Roasters
+shop_name: Eightfold Coffee
 website:
 rating:
 featured_min:

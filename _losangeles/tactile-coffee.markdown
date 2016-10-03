@@ -1,10 +1,10 @@
 ---
 # TODO: ADD DATA
-title: Handlebar Coffee Roasters
+title: Tactile Coffee
 tags:
 - Indoor Seating
 - ...
-shop_name: Handlebar Coffee Roasters
+shop_name: Tactile Coffee
 website:
 rating:
 featured_min:

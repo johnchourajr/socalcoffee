@@ -1,10 +1,10 @@
 ---
 # TODO: ADD DATA
-title: Handlebar Coffee Roasters
+title: Lazy Brewing
 tags:
 - Indoor Seating
 - ...
-shop_name: Handlebar Coffee Roasters
+shop_name: Lazy Brewing
 website:
 rating:
 featured_min:

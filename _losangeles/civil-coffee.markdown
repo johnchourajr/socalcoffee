@@ -1,10 +1,10 @@
 ---
 # TODO: ADD DATA
-title: Handlebar Coffee Roasters
+title: Civil Coffee
 tags:
 - Indoor Seating
 - ...
-shop_name: Handlebar Coffee Roasters
+shop_name: Civil Coffee
 website:
 rating:
 featured_min:
