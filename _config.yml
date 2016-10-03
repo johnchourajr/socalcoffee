@@ -56,7 +56,7 @@ collections:
     permalink: "/:collection/:path/"
     meta:
       description: "..."
-      cord: 
+      cord:
       zoom: 9
       in_nav: true
   uploads:
@@ -68,7 +68,7 @@ collections:
     permalink: "/:collection/:path/"
     meta:
       description: "..."
-      cord: 
+      cord:
       zoom: 9
       in_nav: true
 defaults:
@@ -76,19 +76,19 @@ defaults:
     path: ''
   values:
     layout: shop
-    title: 
-    shop_name: 
-    website: 
-    rating: 
-    featured_min: 
-    featured_max_1: 
-    map: 
-    type: 
-    city: 
+    title:
+    shop_name:
+    website:
+    rating:
+    featured_min:
+    featured_max_1:
+    map:
+    type: Coffee Shop
+    city:
     address: |-
       # Line One
       # Line Two
-    phone: 
+    phone:
     hours: |-
       | Days   | Time   |
       | ------ | ------ |
@@ -105,7 +105,7 @@ exclude:
 - Gemfile.lock
 - README*
 - ".gitignore"
-sass: 
+sass:
 port: 4000
 host: 127.0.0.1
-baseurl: 
+baseurl:

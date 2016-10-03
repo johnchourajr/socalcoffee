@@ -4,9 +4,9 @@ tags:
 - Indoor Seating
 shop_name: Bird Rock Coffee La Jolla
 website: http://birdrockcoffee.com
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 32.814450,-117.269735
 type: Coffee Shop
 city: La Jolla
@@ -20,6 +20,5 @@ hours: |-
   | Sunday-Saturday | 6:30a-6p |
   | Monday-Friday | 6a-6p |
 coffee:
-- Bird Rock Coffee Roasters
+- Bird Rock Coffee 
 ---
-

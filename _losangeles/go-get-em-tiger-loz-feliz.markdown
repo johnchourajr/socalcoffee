@@ -16,9 +16,8 @@ hours: |-
   | Daily | 7a-3p |
 coffee:
 - Mad Cap Coffee
-- George Howell
-- Sweet Bloom Coffee Roasters
+- George Howell Coffee
+- Sweet Bloom Coffee
 - Parlor Coffee
 - Various
 ---
-

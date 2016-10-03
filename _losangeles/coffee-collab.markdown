@@ -15,6 +15,6 @@ hours: |-
   | ------ | ------ |
   | Saturday-Sunday | 7a-6p |
   | Monday-Friday | 8a-5p |
-coffee: Suits and Knives Coffee
+coffee:
+- Suits and Knives Coffee
 ---
-

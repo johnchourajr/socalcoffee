@@ -18,11 +18,10 @@ hours: |-
   | ------ | ------ |
   | Monday-Sunday | 7a-6p |
 coffee:
-- George Howell
-- Heart
+- George Howell Coffee
+- Heart Coffee
 - Ruby Colorful Coffees
-- 'Madcap Coffee '
+- Madcap Coffee
 - Ritual Coffee
-- Forty Ninth Parallel
+- Forty Ninth Parallel Coffee
 ---
-

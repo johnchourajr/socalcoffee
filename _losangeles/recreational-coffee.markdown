@@ -18,6 +18,5 @@ hours: |-
   | Saturday-Sunday | 7a-8p |
 coffee:
 - Portola Coffee
-- Case Coffee Roasters
+- Case Coffee 
 ---
-

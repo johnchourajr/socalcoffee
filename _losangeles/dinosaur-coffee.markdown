@@ -14,7 +14,7 @@ hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Daily | 7a-7p |
-coffee: "Four Barrel Coffee\nGuest Coffee "
-Field name: 
+coffee:
+- Four Barrel Coffee
+- Guest Coffee
 ---
-

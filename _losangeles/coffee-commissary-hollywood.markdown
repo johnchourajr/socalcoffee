@@ -17,9 +17,8 @@ hours: |-
   | Saturday-Sunday | 7a-5p |
 coffee:
 - Coava Coffee
-- Victrola Coffee Roasters
-- Madcap Coffee Company
+- Victrola Coffee
+- Madcap Coffee
 - Chromatic Coffee Co.
-- Temple Coffee Roasters
+- Temple Coffee 
 ---
-

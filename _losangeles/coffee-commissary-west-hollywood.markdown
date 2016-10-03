@@ -16,10 +16,9 @@ hours: |-
   | ------ | ------ |
   | Daily | 7a-8p |
 coffee:
-- 'Coava Coffee '
-- Victrola Coffee Roasters
-- Madcap Coffee Company
+- Coava Coffee
+- Victrola Coffee
+- Madcap Coffee
 - Chromatic Coffee Co.
-- Temple Coffee Roasters
+- Temple Coffee 
 ---
-

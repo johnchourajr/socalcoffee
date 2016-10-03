@@ -9,8 +9,10 @@ city: Los Angeles
 address: |-
   519 N Ave 64,
   Los Angeles, CA, 90042
-hours: "| Daily | 8a–4p |\n"
+hours: |-
+  | Days   | Time   |
+  | ------ | ------ |
+  | Daily | 8a–4p |
 coffee:
 - Bar Nine
 ---
-

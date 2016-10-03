@@ -19,9 +19,8 @@ hours: |-
   | ------ | ------ |
   | Monday-Sunday | 6a-6p |
 coffee:
-- Ritual Coffee Roasters
-- 49th Parallel Coffee Roasters
-- Heart Coffee Roasters
+- Ritual Coffee
+- 49th Parallel Coffee
+- Heart Coffee
 layout: shop
 ---
-

@@ -18,11 +18,10 @@ hours: |-
   | Monday-Friday | 6a-7p |
   | Saturday-Sunday | 7a-6p |
 coffee:
-- Ruby Coffee Roasters
-- Huckleberry Coffee Roasters
-- Heart Coffee Roasters
+- Ruby Coffee
+- Huckleberry Coffee
+- Heart Coffee
 - Supersonic Coffee
 - Rival Bros Coffee
 - Dogwood Coffee Co
 ---
-

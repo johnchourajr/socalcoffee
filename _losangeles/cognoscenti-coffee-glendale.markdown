@@ -13,11 +13,10 @@ hours: |-
   | Monday-Saturday | 8a-5p |
   | Sunday | Closed |
 coffee:
-- Cognoscenti
-- Ritual Coffee Roasters
-- Kuma Coffee Roasters
-- Heart Coffee Roasters
-- Phil & Sebastian Coffee Roasters
+- Cognoscenti Coffee
+- Ritual Coffee
+- Kuma Coffee
+- Heart Coffee
+- Phil & Sebastian Coffee
 - Various
 ---
-

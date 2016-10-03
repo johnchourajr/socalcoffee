@@ -16,9 +16,8 @@ hours: |-
   | ------ | ------ |
   | Daily | 6:30a-8p |
 coffee:
-- 'Forty Ninth Parallel Coffee '
-- George Howell
-- Heart
+- Forty Ninth Parallel
+- George Howell Coffee
+- Heart Coffee
 - Various
 ---
-

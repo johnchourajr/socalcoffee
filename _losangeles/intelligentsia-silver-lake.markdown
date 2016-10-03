@@ -17,6 +17,5 @@ hours: |-
   | Sunday-Wednesday | 6a-8p |
   | Thursday-Saturday | 6a-10p |
 coffee:
-- Intelligentsia
+- Intelligentsia Coffee
 ---
-

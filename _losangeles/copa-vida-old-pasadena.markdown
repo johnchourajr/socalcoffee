@@ -16,6 +16,6 @@ hours: |-
   | Monday-Friday | 7a-10p |
   | Saturday | 8a-10p |
   | Sunday | 8a-9p |
-coffee: Copa Vida
+coffee:
+- Copa Vida
 ---
-

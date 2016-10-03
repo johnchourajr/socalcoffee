@@ -4,9 +4,9 @@ tags:
 - Indoor Seating
 shop_name: Dark Horse Golden Hill
 website: http://darkhorseroasting.com
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 32.714007,-117.139866
 type: Coffee Shop / Roaster
 city: San Diego
@@ -19,6 +19,5 @@ hours: |-
   | ------ | ------ |
   | Monday-Sunday | 7a-6p |
 coffee:
-- Dark Horse Coffee Roasters
+- Dark Horse Coffee 
 ---
-

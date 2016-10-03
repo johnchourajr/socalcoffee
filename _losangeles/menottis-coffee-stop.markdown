@@ -17,6 +17,5 @@ hours: |-
   | ------ | ------ |
   | Daily | 7a-7p |
 coffee:
-- Four Barrel Coffee Roasters
+- Four Barrel Coffee 
 ---
-

@@ -14,6 +14,6 @@ phone: 310-314-9999
 hours: |-
   | Days   | Time   |
   | Daily | 7a-7p |
-coffee: 'Forty Ninth Parallel Coffee Roasters '
+coffee:
+- Forty Ninth Parallel Coffee
 ---
-
