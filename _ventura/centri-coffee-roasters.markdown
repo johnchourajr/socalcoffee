@@ -1,20 +1,11 @@
 ---
 title: Centri Coffee Roasters
 tags:
-- Indoor Seating
-- "..."
+- Outdoor Seatings
 shop_name: Centri Coffee Roasters
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
-map: 
-type: 
-city: 
 address: |-
   ...
   ...
-phone: 
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
