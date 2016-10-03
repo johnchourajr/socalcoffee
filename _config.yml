@@ -77,12 +77,14 @@ defaults:
   values:
     layout: shop
     title:
+    tags:
+    - Indoor Seating
     shop_name:
     website:
     rating:
     featured_min: false
     featured_max_1: false
-    map: 
+    map:
     type: Coffee Shop
     city:
     address: |-
@@ -93,8 +95,6 @@ defaults:
       | Days   | Time   |
       | ------ | ------ |
       | Tuesday-Sunday | 7a-4p |
-    tags:
-    - Indoor Seating
     coffee:
     - Coffee Roaster
 
