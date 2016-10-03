@@ -9,10 +9,10 @@ tags:
 - Free Wi-Fi
 - Pastries
 shop_name: Green Bliss
-website:
-rating:
-featured_min:
-featured_max_1:
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.8727927,-117.9247118
 type: Coffee Shop / Café
 city: Fullerton
@@ -31,3 +31,4 @@ coffee:
 - Rose Park Coffee
 - Verve Coffee
 ---
+

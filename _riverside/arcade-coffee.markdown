@@ -18,5 +18,6 @@ hours: |-
   | Thursday-Friday | 8a–2p |
   | *Saturday-Wednesday* |*Closed*|
 coffee:
-- Arcade Coffee 
+- Arcade Coffee
 ---
+

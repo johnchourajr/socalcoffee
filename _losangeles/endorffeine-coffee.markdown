@@ -22,5 +22,6 @@ hours: |-
   | *Tuesday* | *Closed* |
 coffee:
 - Heart Coffee
-- Guest Coffee 
+- Guest Coffee
 ---
+

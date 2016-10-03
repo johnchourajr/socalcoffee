@@ -17,8 +17,9 @@ hours: |-
   | Sunday | 9a-3p |
 coffee:
 - Cognoscenti Coffee
-- Ritual Coffee 
-- Kuma Coffee 
-- Phil & Sebastian Coffee 
+- Ritual Coffee
+- Kuma Coffee
+- Phil & Sebastian Coffee
 - Various
 ---
+

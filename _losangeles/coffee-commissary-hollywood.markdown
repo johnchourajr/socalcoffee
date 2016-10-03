@@ -20,5 +20,6 @@ coffee:
 - Victrola Coffee
 - Madcap Coffee
 - Chromatic Coffee Co.
-- Temple Coffee 
+- Temple Coffee
 ---
+

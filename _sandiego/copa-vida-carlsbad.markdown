@@ -4,9 +4,9 @@ tags:
 - Indoor Seating
 shop_name: Copa Vida Carlsbad
 website: http://www.copa-vida.com/
-rating:
-featured_min:
-featured_max_1:
+rating: 
+featured_min: 
+featured_max_1: 
 map: 33.1266828,-117.3286897
 type: Coffee Shop
 city: Carlsbad
@@ -21,3 +21,4 @@ hours: |-
 coffee:
 - Copa Vida Coffee
 ---
+

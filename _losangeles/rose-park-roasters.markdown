@@ -16,5 +16,6 @@ hours: |
   | ------ | ------ |
   | Daily | 6a-6p |
 coffee:
-- Rose Park Coffee 
+- Rose Park Coffee
 ---
+

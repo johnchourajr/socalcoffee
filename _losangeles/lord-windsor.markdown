@@ -19,5 +19,6 @@ hours: |-
   | ------ | ------ |
   | Monday-Sunday | 7a-7p |
 coffee:
-- Lord Windsor Coffee 
+- Lord Windsor Coffee
 ---
+

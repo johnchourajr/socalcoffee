@@ -17,5 +17,6 @@ hours: |-
   | Saturday-Sunday | 7a-6p |
   | Monday-Friday | 6a-6p |
 coffee:
-- Wrecking Ball Coffee 
+- Wrecking Ball Coffee
 ---
+
