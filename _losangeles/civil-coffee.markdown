@@ -1,25 +1,25 @@
 ---
-# TODO: ADD DATA
 title: Civil Coffee
 tags:
 - Indoor Seating
-- ...
+- "..."
 shop_name: Civil Coffee
-website:
-rating:
-featured_min:
-featured_max_1:
-map:
-type:
-city:
+website: 
+rating: 
+featured_min: 
+featured_max_1: 
+map: 
+type: 
+city: 
 address: |-
   ...
   ...
-phone:
+phone: 
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Sunday | 7a-8p |
 coffee:
-- ...
+- "..."
 ---
+
