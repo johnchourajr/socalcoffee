@@ -869,6 +869,14 @@ button {
   text-decoration: underline;
 }
 
+.dotted-line {
+  line-height: 1.3;
+  a {
+    border-bottom: 1px dashed $fill-primary;
+    text-decoration: none !important;
+  }
+}
+
 hr {
   height: 2px;
   background-color: $fill-black;

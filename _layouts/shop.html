@@ -46,7 +46,16 @@ hero: lg
     <div class="clearfix gutters pills">
 
       <h4 class="text-secondary bold xs-pb3">Attributes</h4>
-
+      <div class="col">
+        <span class="city">
+          <h3 class="bold text-primary"><a href="{% if page.website %}{{ page.website | remove: 'http://' | prepend: 'http://'}}{%else%}/search/?query={{ page.shop_name | replace: " ","+" | remove: "/+"}}{% endif %}">{{ page.shop_name | remove: ' Coffee Lab' }}</a></h3>
+        </span>
+      </div>
+      <div class="col">
+        <span class="city">
+          <h3 class="bold text-primary">{%if page.type%}<a href="/search/?query={{ page.type | replace: " ","+" | remove: "/+"}}">{{ page.type | remove: ' / Roaster' }}</a>{%else%}Coffee Shop{%endif%}</h3>
+        </span>
+      </div>
       {% for city in page.city %}
         <div class="col">
           <span class="city">

@@ -5,11 +5,11 @@
         <!-- <h1 class="text-primary bold xs-pb4 xs-pt6 xs-block">So. Cal. Map</h1> -->
         <h3 class="section-header">So. Cal. Counties</h3>
         {%comment%} Generate Counties {%endcomment%}
-        <div class="">
+        <div class="dotted-line">
           {% assign places = site.collections %}
           {% for place in places %}
             {% if place.title and place.meta.in_nav == true %}
-              <h1 class="bold comma-item"><a href="/{{ place.label }}/" class="-comma-flow-item xs-inline-block underline">{{ place.title | remove: 'County' }}</a></h1>
+              <h1 class="bold comma-item"><a href="/{{ place.label }}/" class="-comma-flow-item xs-inline-block">{{ place.title | remove: 'County' }}</a></h1>
             {% endif %}
           {% endfor %}
         </div>
