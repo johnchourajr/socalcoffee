@@ -3,6 +3,7 @@ title: Black Ring Coffee
 date: 2017-07-25 06:30:00 Z
 shop_name: Black Ring Coffee
 website: http://blackringcoffee.com/
+map: 33.853795,-118.196667
 type: Coffee Shop / Roaster
 city: Long Beach
 address: |-
