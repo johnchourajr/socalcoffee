@@ -6,5 +6,16 @@ website: http://steelheadcoffee.com/
 type: Coffee Shop
 city: Long Beach
 address: "Steelcraft\n3768 Long Beach Blvd. \nLong Beach, CA 90807"
+hours: |-
+  | Days   | Time   |
+  | ------ | ------ |
+  | Monday-Sunday | 6a-9p |
+  | Saturday-Sunday | 7a-6p |
+coffee:
+- Ruby Coffee Roasters
+- 49th Parallel Roasters
+- Heart Coffee Roasters
+- Huckleberry Roasters
+- Rose Park Roasters
 ---
 
