@@ -14,5 +14,7 @@ hours: |
   | Days   | Time   |
   | ------ | ------ |
   | Monday-Friday | 6a-1p |
+coffee:
+- Onyx Coffee Roasters
 ---
 
