@@ -16,6 +16,5 @@ coffee:
 - Methodical Coffee Roasters
 - Belleville Coffee Roasters
 - Parlor Coffee Roasters
-- 
 ---
 
