@@ -22,6 +22,7 @@ hours: |-
   | *Sunday* | *Closed* |
 coffee:
 - Arcade Coffee Roasters
+- Lord Windsor Coffee Roasters
 review: "Neat Coffee is a new shop founded by Ally Garvin. The shop is the simple
   essence of a coffee shop, It's just Ally pulling shots, and serving delicious coffee
   5 days a week. Be sure to check out the **Almond Milk Capp**, it's \U0001F44C."
