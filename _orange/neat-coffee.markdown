@@ -21,7 +21,6 @@ hours: |-
   | Saturday | 8a–12p |
   | *Sunday* | *Closed* |
 coffee:
-- Stumptown Coffee
 - Arcade Coffee Roasters
 review: "Neat Coffee is a new shop founded by Ally Garvin. The shop is the simple
   essence of a coffee shop, It's just Ally pulling shots, and serving delicious coffee
