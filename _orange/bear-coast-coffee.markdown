@@ -6,7 +6,6 @@ tags:
 - Free Wi-Fi
 shop_name: Bear Coast Coffee
 website: http://bearcoastcoffee.com/
-featured_max_1: true
 map: 33.420043, -117.619632
 type: Coffee Shop
 city: San Clemente

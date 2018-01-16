@@ -4,10 +4,9 @@ tags:
 - Indoor Seating
 shop_name: Steelhead Coffee
 website: http://steelheadcoffee.com/
-featured_min: true
 map: 33.8187944,-118.1782147
 type: Coffee Shop
-city: Cal Heights
+city: Long Beach
 address: |-
   1208 E Wardlow Rd,
   Long Beach, CA 90807
