@@ -2,3 +2,8 @@ source 'http://rubygems.org'
 
 gem 'siteleaf', '2.0.0.pre.beta9'
 gem 'jekyll'
+
+require 'rbconfig'
+if RbConfig::CONFIG['target_os'] =~ /darwin(1[0-3])/i
+  gem 'rb-fsevent', '<= 0.9.4'
+end
