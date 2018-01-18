@@ -23,6 +23,10 @@ collections:
   posts:
     title: Posts
     output: true
+  recipes:
+    title: Recipes
+    output: true
+    permalink: "/:collection/:path/"
   riverside:
     title: Riverside County
     output: true
@@ -56,7 +60,7 @@ collections:
     permalink: "/:collection/:path/"
     meta:
       description: "..."
-      cord:
+      cord: 
       zoom: 9
       in_nav: true
   uploads:
@@ -68,13 +72,9 @@ collections:
     permalink: "/:collection/:path/"
     meta:
       description: "..."
-      cord:
+      cord: 
       zoom: 9
       in_nav: true
-  recipes:
-    title: Recipes
-    output: true
-    permalink: "/:collection/:path/"
 defaults:
 - scope:
     path: ''
@@ -85,21 +85,21 @@ defaults:
     path: ''
   values:
     layout: shop
-    title:
+    title: 
     tags:
     - Indoor Seating
-    shop_name:
-    website:
-    rating:
+    shop_name: 
+    website: 
+    rating: 
     featured_min: false
     featured_max_1: false
-    map:
+    map: 
     type: Coffee Shop
-    city:
+    city: 
     address: |-
       Line One
       Line Two
-    phone:
+    phone: 
     hours: |-
       | Days   | Time   |
       | ------ | ------ |
@@ -112,7 +112,6 @@ exclude:
 - Gemfile.lock
 - README*
 - ".gitignore"
-sass:
-# host: jchoura-mbp.local
+sass: 
 port: 8888
-baseurl:
+baseurl: 
