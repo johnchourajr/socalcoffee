@@ -1,0 +1,158 @@
+---
+layout: default
+---
+
+<section class="hero hero-sm hero-blue fill-white xs-mb0">
+  <div class="wrapper">
+    <div class="hero-inner">
+      <h1 class="text-primary bold xs-pb0">Brewing With <br/>{{ page.title }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="xs-inline-block">
+  <div class="wrapper">
+    <div id="Container" class="container gutters">
+      <div class="col xs-col-12 md-col-4 md-col-3 xs-mb5">
+        <div class="card">
+          {% for item in page.ingredients %}
+            <fieldset class="">
+              <legend>{{ item.label }}</legend>
+              <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
+              <input id='{{ item.id }}' class="{{ item.class }} {% if item.locked %}disabled{% endif %}" value="{{ item.value }}" placeholder="{{ item.value }}" type="{{ item.type }}" onkeyup="{{ page.function }}" onchange="{{ page.function }}" {% if item.locked %}disabled{% endif %}>
+            </fieldset>
+          {% endfor %}
+          <fieldset class="">
+            <legend>Equipment</legend>
+            <div class="list">
+              {% for item in page.equipment %}
+                <p class="bold comma-item"><a href="{{ item.link }}" class=" xs-inline-block">{{ item.name }}</a></p>
+              {% endfor %}
+            </div>
+          </fieldset>
+        </div>
+
+      </div>
+      <div class="col xs-col-12 md-col-6 md-offset-1 md-col-7 md-offset-1">
+        <div class="">
+          <div id="Filters" class="controls lg-col-10 hide">
+            <fieldset class="gutters">
+              <a class="col filter active" data-filter=".filtershort" >
+                <p class="text-3 button bold text-primary">Short Steps</p>
+              </a>
+              <a class="col filter" data-filter=".filterlong" >
+                <p class="text-3 button bold text-primary">Long Steps</p>
+              </a>
+            </fieldset>
+          </div>
+          <div id="Container" class="container gutters">
+            <div class="col xs-col-12 recipe-hero-outer">
+              <img class="recipe-hero" src="{{ page.background }}" alt="">
+
+            </div>
+            <div class="mix col xs-col-12 filtershort">
+              {% for item in page.short_steps %}
+                <div class="xs-flex xs-flex-align-center xs-flex-column xs-pb5">
+                  <h4 class="xs-pb0 text-primary-lighter underline xs-text-center">{{ item.label }}</h4>
+                  <h3 class="xs-py1 xs-text-center">{{ item.text }}</h3>
+                  <h1 class="xs-pb0 xs-text-center"><strong class="{{ item.class }}">{{ item.number }}</strong>{% if item.number != '' %}g{% endif %}</h1>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="mix col xs-col-12 filterlong">
+              <p>{{ page.long_steps | markdownify }}</p>
+            </div>
+            <div class="col xs-col-12 md-col-8 md-offset-2 lg-col-6 lg-offset-3">
+              <div class="card xs-py4 lg-py4 xl-py5">
+                <div class="xs-flex xs-flex-align-center xs-flex-column">
+                  <h1 class="xs-pb0">😌</h1>
+                  <h3 class="xs-py1 xs-text-center">Enjoy The Coffee</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include /scripts/recipes-js.html %}
+
+<script type="text/javascript">
+  // Top Level Variables
+  RATIO = {% if page.ratio %}{{ page.ratio }}{% else %}14{% endif %}
+  BYPASS = 4.82
+
+  // document.getElementById("example").setAttribute('value','My default value');
+
+  function changeFormById(id, attr, value) {
+    value = Math.ceil(value)
+    document.getElementById(id).setAttribute(attr,value);
+  }
+
+  function changeById(id, el) {
+    document.getElementById(id).innerHTML = Math.ceil(el)
+  }
+
+  function changeByClass(html, selector, el) {
+    let selectorStr = html + "." + selector
+    let selectors = document.querySelectorAll(selectorStr)
+    selectors.forEach(function(selectors) {
+      selectors.innerHTML = Math.ceil(el)
+    })
+  }
+
+  // =============
+  // Chemex Recipe
+  {% if page.function == 'chemexmath()' %}
+    function chemexmath() {
+
+      var c = document.querySelector("input.chemex-coffee").value
+      var w = c * RATIO
+      var bypass = w / BYPASS
+          w = w + bypass
+      var preinfuse = c * 2
+      var goal = w - bypass - preinfuse
+      var pour = goal / 4
+      var pour1 = pour * 2
+      var pour2 = pour * 4
+
+      changeByClass("strong", "chemex-coffeegrams", c)
+      changeFormById("chemex-water", 'value', w)
+      changeByClass("strong", "chemex-bypass", bypass)
+      changeByClass("strong", "chemex-preinfuse", preinfuse)
+      changeByClass("strong", "chemex-pour1", pour1)
+      changeByClass("strong", "chemex-pour2", pour2)
+    }
+
+    chemexmath()
+  {% endif %}
+
+  // =============
+  // Chemex Recipe
+  {% if page.function == 'pourovermath()' %}
+    function pourovermath() {
+
+      var c = document.querySelector("input.pourover-coffee").value
+      var w = c * RATIO
+      var preinfuse = c * 2
+      var pour1 = c * 5
+      var pour2 = c * 8.3333333333
+      var pour3 = c * 11.6666666667
+
+      changeByClass("strong", "pourover-coffeegrams", c)
+      changeFormById("pourover-water", 'value', w)
+      changeByClass("strong", "pourover-preinfuse", preinfuse)
+      changeByClass("strong", "pourover-pour1", pour1)
+      changeByClass("strong", "pourover-pour2", pour2)
+      changeByClass("strong", "pourover-pour3", pour3)
+    }
+
+    pourovermath()
+  {% endif %}
+
+
+
+</script>

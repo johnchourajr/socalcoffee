@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="hero hero-sm hero-blue fill-white xs-mb0">
+  <div class="wrapper">
+    <div class="hero-inner">
+      <h1 class="text-primary bold xs-pb0"><span class="underline">{{ site[page.collection] | size | minus: 1 }}</span> {{ page.title }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="xs-inline-block">
+  <div class="wrapper">
+    <div id="Container" class="container gutters">
+      <div class="recipe-col-1 col xs-col-12 md-col-6">
+        {% assign documents = site[page.collection] | sort:"position" %}
+        {% assign recipes = documents | sort: "type" %}
+        {% for recipe in recipes %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+          {% if thecycle == 'even' and recipe.title != page.title %}
+            {% include /chunks/card-recipe-index.html title=recipe.title %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="recipe-col-2 md-mt6 col xs-col-12 md-col-6">
+        {% for recipe in recipes %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+          {% if thecycle == 'even' and recipe.title != page.title %}
+            {% include /chunks/card-recipe-index.html title=recipe.title %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

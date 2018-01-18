@@ -14,6 +14,4 @@ hours: "| Days | Time |\n| ------ | ------ | \n|  Monday-Friday | 7a-6p |\n| Sat
   | 8a-6p |\n| Sunday | 8a-3p |"
 coffee:
 - Sight Glass Coffee
-- 
 ---
-

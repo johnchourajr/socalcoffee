@@ -1,0 +1,4 @@
+---
+title: Aeropress
+type: recipe
+---

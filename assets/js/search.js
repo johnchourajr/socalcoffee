@@ -18,7 +18,7 @@
     city: {{shop.city | jsonify}},
     tags: {{shop.tags | strip_html | strip_newlines | jsonify}}
   });{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{% endfor %}
-  console.log( jQuery.type(index) );
+  // console.log( jQuery.type(index) );
   // builds reference data
   var store = [{% assign places = site.collections %}{% for place in places %}{% assign shops = place.docs %}{% for shop in shops %}{% if shop.title == place.title %}{% else %}{
     "title": "{{ shop.shop_name | xml_escape }}",

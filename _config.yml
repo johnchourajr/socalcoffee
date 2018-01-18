@@ -71,7 +71,16 @@ collections:
       cord:
       zoom: 9
       in_nav: true
+  recipes:
+    title: Recipes
+    output: true
+    permalink: "/:collection/:path/"
 defaults:
+- scope:
+    path: ''
+    type: recipes
+  values:
+    layout: recipe
 - scope:
     path: ''
   values:
@@ -104,6 +113,6 @@ exclude:
 - README*
 - ".gitignore"
 sass:
-host: jchoura-mbp.local
-port: 4444
+# host: jchoura-mbp.local
+port: 8888
 baseurl:

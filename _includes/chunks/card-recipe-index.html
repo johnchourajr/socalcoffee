@@ -1,0 +1,11 @@
+<div id="{{ include.title | downcase | remove: " " }}" class="recipe-card col xs-col-12">
+  <div class="recipe-card-inner">
+    <a href="{{ include.title | downcase | remove: " " | prepend:site.baseurl }}" class="">
+      <span class="text">
+        <h3 class="bold text-primary xs-pt3 -underline">{{ include.title }}</h3>
+        <h6 class="bold text-primary underline">View Recipe</h6>
+      </span>
+      <span class="img" style="background-image:url(/uploads/{{include.title | downcase | remove: " " }}.png);"></span>
+    </a>
+  </div>
+</div>
