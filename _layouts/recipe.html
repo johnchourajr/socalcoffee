@@ -16,11 +16,21 @@ layout: default
       <div class="col xs-col-12 md-col-4 md-col-3 xs-mb5">
         <div class="card">
           {% for item in page.ingredients %}
-            <fieldset class="">
-              <legend>{{ item.label }}</legend>
-              <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
-              <input id='{{ item.id }}' class="{{ item.class }} {% if item.locked %}disabled{% endif %}" value="{{ item.value }}" placeholder="{{ item.value }}" type="{{ item.type }}" onkeyup="{{ page.function }}" onchange="{{ page.function }}" {% if item.locked %}disabled{% endif %}>
-            </fieldset>
+            {% if item.type == 'number' or item.type == 'text' %}
+              <fieldset class="">
+                <legend>{{ item.label }} {% if item.locked %}{% else %}<u>Editable</u>{% endif %}</legend>
+                <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
+                <input id='{{ item.id }}' class="{{ item.class }} {% if item.locked %}disabled{% endif %}" value="{{ item.value }}" placeholder="{{ item.value }}" type="{{ item.type }}" onkeyup="{{ page.function }}" onchange="{{ page.function }}" {% if item.locked %}disabled{% endif %}>
+              </fieldset>
+            {% elsif item.type == 'slider' %}
+              <fieldset class="">
+                <legend>{{ item.label }}</legend>
+                <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
+                <input id='{{ item.id }}' class="{{ item.class }}" value="{{ item.value }}" min="{{ item.min }}" max="{{ item.max }}" step="{{ item.step }}" type="range" oninput="{{ page.function }}" >
+                <output for='{{ item.id }}' id='{{ item.id }}-output'>
+              </fieldset>
+            {% endif %}
+
           {% endfor %}
           <fieldset class="">
             <legend>Equipment</legend>
@@ -85,22 +95,24 @@ layout: default
   RATIO = {% if page.ratio %}{{ page.ratio }}{% else %}14{% endif %}
   BYPASS = 4.82
 
-  // document.getElementById("example").setAttribute('value','My default value');
+  function outputUpdate(vol) {
+    document.querySelector('#frenchpress-container-output').value = vol;
+  }
 
   function changeFormById(id, attr, value) {
-    value = Math.ceil(value)
+    value = Math.round(value)
     document.getElementById(id).setAttribute(attr,value);
   }
 
   function changeById(id, el) {
-    document.getElementById(id).innerHTML = Math.ceil(el)
+    document.getElementById(id).innerHTML = Math.round(el)
   }
 
   function changeByClass(html, selector, el) {
     let selectorStr = html + "." + selector
     let selectors = document.querySelectorAll(selectorStr)
     selectors.forEach(function(selectors) {
-      selectors.innerHTML = Math.ceil(el)
+      selectors.innerHTML = Math.round(el)
     })
   }
 
@@ -108,7 +120,6 @@ layout: default
   // Chemex Recipe
   {% if page.function == 'chemexmath()' %}
     function chemexmath() {
-
       var c = document.querySelector("input.chemex-coffee").value
       var w = c * RATIO
       var bypass = w / BYPASS
@@ -134,7 +145,6 @@ layout: default
   // Chemex Recipe
   {% if page.function == 'pourovermath()' %}
     function pourovermath() {
-
       var c = document.querySelector("input.pourover-coffee").value
       var w = c * RATIO
       var preinfuse = c * 2
@@ -153,6 +163,46 @@ layout: default
     pourovermath()
   {% endif %}
 
+
+  // =============
+  // frenchpress Recipe
+  {% if page.function == 'frenchpressmath()' %}
+    function frenchpressmath() {
+      var vol = document.querySelector("input.frenchpress-container").value
+      var volInterpret = vol === '1' ? 24 : vol === '2' ? 32 : vol === '3' ? 64 : 24
+      var volCups = volInterpret / 8
+      var volStr = `${volInterpret} oz (${volCups} cups)`
+      var mlConvert = 29.5757
+      var w = Math.round(volInterpret * mlConvert)
+      var c = w / RATIO
+      var preinfuse = c * 2
+      var pour1 = (w - 100) - preinfuse
+
+      outputUpdate(volStr)
+      changeFormById("frenchpress-coffee", 'value', c)
+      changeFormById("frenchpress-water", 'value', w)
+      changeByClass("strong", "frenchpress-preinfuse", preinfuse)
+      changeByClass("strong", "frenchpress-pour1", pour1)
+    }
+
+    frenchpressmath()
+  {% endif %}
+
+
+  // =============
+  // aeropress Recipe
+  {% if page.function == 'aeropressmath()' %}
+    function aeropressmath() {
+      var c = document.querySelector("input.aeropress-coffee").value
+      var w = c * RATIO
+      var pour = w
+
+      changeFormById("aeropress-water", 'value', w)
+      changeByClass("strong", "aeropress-pour", pour)
+    }
+
+    aeropressmath()
+  {% endif %}
 
 
 </script>

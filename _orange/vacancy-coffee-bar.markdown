@@ -17,7 +17,5 @@ hours: |-
   | ​​Saturday | 6:30a-3p |
   | ​Sunday | 6:30a-3p |
 coffee:
-- Toby's Estate coffee
-- 
+- Toby's Estate Coffee
 ---
-

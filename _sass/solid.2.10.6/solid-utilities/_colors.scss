@@ -5,8 +5,14 @@
 // Color Fills
 // -------------------------
 
-.fill-primary {           background-color: $fill-primary          !important; }
-.fill-secondary {         background-color: $fill-secondary        !important; }
+.fill-primary {           background-color: $text-primary           !important; }
+.fill-primary-light {     background-color: $text-primary-light     !important; }
+.fill-primary-lighter {   background-color: $text-primary-lighter   !important; }
+.fill-primary-lightest {  background-color: $text-primary-lightest  !important; }
+.fill-secondary {         background-color: $text-secondary         !important; }
+.fill-secondary-light {   background-color: $text-secondary-light   !important; }
+.fill-secondary-lighter { background-color: $text-secondary-lighter !important; }
+.fill-secondary-lightest {background-color: $text-secondary-lightest!important; }
 .fill-red {               background-color: $fill-red              !important; }
 .fill-red-lighter {       background-color: $fill-red-lighter      !important; }
 .fill-pink {              background-color: $fill-pink             !important; }
