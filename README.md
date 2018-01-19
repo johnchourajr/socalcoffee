@@ -1,5 +1,4 @@
 # So. Cal. Craft Coffee Directory
 
 ## Todo List
-[ ] County Pages
-[ ] Footer Nav
+A list of good coffee and brewing recipes
