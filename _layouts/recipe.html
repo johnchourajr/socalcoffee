@@ -18,13 +18,13 @@ layout: default
           {% for item in page.ingredients %}
             {% if item.type == 'number' or item.type == 'text' %}
               <fieldset class="">
-                <legend>{{ item.label }} {% if item.locked %}{% else %}<u>Editable</u>{% endif %}</legend>
+                <legend>{{ item.label }}  {% if item.locked %}{% else %}<u>Editable</u>{% endif %}</legend>
                 <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
                 <input id='{{ item.id }}' class="{{ item.class }} {% if item.locked %}disabled{% endif %}" value="{{ item.value }}" placeholder="{{ item.value }}" type="{{ item.type }}" onkeyup="{{ page.function }}" onchange="{{ page.function }}" {% if item.locked %}disabled{% endif %}>
               </fieldset>
             {% elsif item.type == 'slider' %}
               <fieldset class="">
-                <legend>{{ item.label }}</legend>
+                <legend>{{ item.label }}  <u>Draggable</u></legend>
                 <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
                 <input id='{{ item.id }}' class="{{ item.class }}" value="{{ item.value }}" min="{{ item.min }}" max="{{ item.max }}" step="{{ item.step }}" type="range" oninput="{{ page.function }}" >
                 <output for='{{ item.id }}' id='{{ item.id }}-output'>
@@ -169,8 +169,8 @@ layout: default
   {% if page.function == 'frenchpressmath()' %}
     function frenchpressmath() {
       var vol = document.querySelector("input.frenchpress-container").value
-      var volInterpret = vol === '1' ? 24 : vol === '2' ? 32 : vol === '3' ? 64 : 24
-      var volCups = volInterpret / 8
+      var volInterpret = vol === '1' ? 16 : vol === '2' ? 32 : vol === '3' ? 51 : 24
+      var volCups = volInterpret / 4
       var volStr = `${volInterpret} oz (${volCups} cups)`
       var mlConvert = 29.5757
       var w = Math.round(volInterpret * mlConvert)
@@ -181,6 +181,7 @@ layout: default
       outputUpdate(volStr)
       changeFormById("frenchpress-coffee", 'value', c)
       changeFormById("frenchpress-water", 'value', w)
+      changeByClass("strong", "frenchpress-coffee", c)
       changeByClass("strong", "frenchpress-preinfuse", preinfuse)
       changeByClass("strong", "frenchpress-pour1", pour1)
     }

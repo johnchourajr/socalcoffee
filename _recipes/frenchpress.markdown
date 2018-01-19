@@ -2,11 +2,11 @@
 title: French Press
 type: recipe
 background: "/uploads/frenchpress.png"
-ratio: 12
+ratio: 13
 function: frenchpressmath()
 ingredients:
 - label: French Press Size
-  value: 1
+  value: 2
   min: 1
   max: 3
   step: 1
@@ -32,7 +32,7 @@ ingredients:
   type: text
   locked: true
 equipment:
-- name: French Press
+- name: French Press carafe
   link: https://www.amazon.com/Stainless-Heat-Resistant-Borosilicate-Glass-2-Package/dp/B00DUHACEE/ref=sr_1_1_sspa?s=home-garden&ie=UTF8&qid=1516333361&sr=1-1-spons&keywords=french+press&psc=1
 - name: Burr Grinder
   link: https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2_sspa?s=home-garden&ie=UTF8&qid=1516333031&sr=1-2-spons&keywords=baratza+burr+grinder&psc=1
@@ -41,25 +41,32 @@ equipment:
 - name: Kettle
   link: https://www.amazon.com/Bonavita-1-0L-Electric-Kettle-BV3825B/dp/B005YR0GDA/ref=sr_1_3?s=home-garden&ie=UTF8&qid=1516333092&sr=1-3&keywords=bona+vita+kettle
 short_steps:
-- label: Step 1
-  text: Pour Pre-infusion
+- label: 'Step 1'
+  text: Add Coffee into<br/>French Press
+  number: 0
+  class: frenchpress-coffee
+- label: 'Step 2'
+  text: 'Pour Pre-infusion'
   number: 0
   class: frenchpress-preinfuse
-- label: Wait 30 Seconds
+- label: 'Wait 30 Seconds'
   text: ''
   number: ''
-  class: 
-- label: Step 2
-  text: Final Pour
+  class:
+- label: 'Step 3'
+  text: Stir with a<br/>wooden spoon
+  number: ''
+  class:
+- label: 'Step 4'
+  text: 'Final Pour'
   number: 0
   class: frenchpress-pour1
-- label: Wait 4 Minutes
+- label: 'Wait 4 Minutes'
   text: ''
   number: ''
-  class: 
-- label: Step 3
-  text: Press Gently
+  class:
+- label: 'Step 5'
+  text: 'Press Gently'
   number: ''
 long_steps: "..."
 ---
-
