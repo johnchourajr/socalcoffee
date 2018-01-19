@@ -33,13 +33,13 @@ ingredients:
   locked: true
 equipment:
 - name: French Press
-  link: "https://www.amazon.com/Stainless-Heat-Resistant-Borosilicate-Glass-2-Package/dp/B00DUHACEE/ref=sr_1_1_sspa?s=home-garden&ie=UTF8&qid=1516333361&sr=1-1-spons&keywords=french+press&psc=1"
+  link: https://www.amazon.com/Stainless-Heat-Resistant-Borosilicate-Glass-2-Package/dp/B00DUHACEE/ref=sr_1_1_sspa?s=home-garden&ie=UTF8&qid=1516333361&sr=1-1-spons&keywords=french+press&psc=1
 - name: Burr Grinder
-  link:  "https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2_sspa?s=home-garden&ie=UTF8&qid=1516333031&sr=1-2-spons&keywords=baratza+burr+grinder&psc=1"
+  link: https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK/ref=sr_1_2_sspa?s=home-garden&ie=UTF8&qid=1516333031&sr=1-2-spons&keywords=baratza+burr+grinder&psc=1
 - name: Digital Scale
-  link: "https://www.amazon.com/Hario-Coffee-Drip-Scale-Timer/dp/B009GPJMOU/ref=pd_sim_79_7?_encoding=UTF8&pd_rd_i=B009GPJMOU&pd_rd_r=6EDS0M09SHYCMHZG0VKS&pd_rd_w=ZjxhR&pd_rd_wg=rMMrE&psc=1&refRID=6EDS0M09SHYCMHZG0VKS"
+  link: https://www.amazon.com/Hario-Coffee-Drip-Scale-Timer/dp/B009GPJMOU/ref=pd_sim_79_7?_encoding=UTF8&pd_rd_i=B009GPJMOU&pd_rd_r=6EDS0M09SHYCMHZG0VKS&pd_rd_w=ZjxhR&pd_rd_wg=rMMrE&psc=1&refRID=6EDS0M09SHYCMHZG0VKS
 - name: Kettle
-  link: "https://www.amazon.com/Bonavita-1-0L-Electric-Kettle-BV3825B/dp/B005YR0GDA/ref=sr_1_3?s=home-garden&ie=UTF8&qid=1516333092&sr=1-3&keywords=bona+vita+kettle"
+  link: https://www.amazon.com/Bonavita-1-0L-Electric-Kettle-BV3825B/dp/B005YR0GDA/ref=sr_1_3?s=home-garden&ie=UTF8&qid=1516333092&sr=1-3&keywords=bona+vita+kettle
 short_steps:
 - label: Step 1
   text: Pour Pre-infusion
@@ -48,7 +48,7 @@ short_steps:
 - label: Wait 30 Seconds
   text: ''
   number: ''
-  class:
+  class: 
 - label: Step 2
   text: Final Pour
   number: 0
@@ -56,9 +56,10 @@ short_steps:
 - label: Wait 4 Minutes
   text: ''
   number: ''
-  class:
+  class: 
 - label: Step 3
   text: Press Gently
   number: ''
 long_steps: "..."
 ---
+
