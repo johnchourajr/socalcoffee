@@ -41,32 +41,33 @@ equipment:
 - name: Kettle
   link: https://www.amazon.com/Bonavita-1-0L-Electric-Kettle-BV3825B/dp/B005YR0GDA/ref=sr_1_3?s=home-garden&ie=UTF8&qid=1516333092&sr=1-3&keywords=bona+vita+kettle
 short_steps:
-- label: 'Step 1'
+- label: Step 1
   text: Add Coffee into<br/>French Press
   number: 0
   class: frenchpress-coffee
-- label: 'Step 2'
-  text: 'Pour Pre-infusion'
+- label: Step 2
+  text: Pour Pre-infusion
   number: 0
   class: frenchpress-preinfuse
-- label: 'Wait 30 Seconds'
+- label: Wait 30 Seconds
   text: ''
   number: ''
-  class:
-- label: 'Step 3'
+  class: 
+- label: Step 3
   text: Stir with a<br/>wooden spoon
   number: ''
-  class:
-- label: 'Step 4'
-  text: 'Final Pour'
+  class: 
+- label: Step 4
+  text: Final Pour
   number: 0
   class: frenchpress-pour1
-- label: 'Wait 4 Minutes'
+- label: Wait 4 Minutes
   text: ''
   number: ''
-  class:
-- label: 'Step 5'
-  text: 'Press Gently'
+  class: 
+- label: Step 5
+  text: Press Gently
   number: ''
 long_steps: "..."
 ---
+
