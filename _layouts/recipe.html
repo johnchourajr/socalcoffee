@@ -174,9 +174,9 @@ layout: default
       var volStr = `${volInterpret} oz (${volCups} cups)`
       var mlConvert = 29.5757
       var w = Math.round(volInterpret * mlConvert)
-      var c = w / RATIO
+      var c = w / 15
       var preinfuse = c * 2
-      var pour1 = (w - 100) - preinfuse
+      var pour1 = (w) - preinfuse
 
       outputUpdate(volStr)
       changeFormById("frenchpress-coffee", 'value', c)

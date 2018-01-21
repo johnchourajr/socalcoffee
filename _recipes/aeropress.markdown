@@ -2,7 +2,7 @@
 title: Aeropress
 type: recipe
 background: "/uploads/aeropress.png"
-ratio: 12.9411764706
+ratio: 16
 function: aeropressmath()
 ingredients:
 - label: Coffee in Grams
@@ -38,26 +38,30 @@ short_steps:
 - label: Step 1
   text: Wash Filter
   number: ''
-  class: 
+  class:
 - label: Step 2
   text: Add Coffee
   number: ''
-  class: 
+  class:
 - label: Step 3
   text: Pour Water in 10 Seconds
   number: 0
   class: aeropress-pour
-- label: Wait 1 Minute 15 Seconds
+- label: Step 4
+  text: Stir for 10 seconds
+  number: ''
+  class:
+- label: Wait 1 Minute 45 Seconds
   text: ''
   number: ''
-  class: 
-- label: Step 4
-  text: Plunge
+  class:
+- label: Step 6
+  text: Stir for 10 seconds
   number: ''
-  class: 
-long_steps: |-
-  Measure **0**{:.aeropress-coffeegrams}g of coffee, and grind **medium-coarse**. Bring **0**{:.aeropress-water}g of water to a boil (or 190°f). Rinse filter, place grounds in top of aeropress and pour a preinfusion of **0**{:.aeropress-water}g. Wait 15-30 seconds.
-  Zero the scale, and pour water over grounds to **0**{:.aeropress-pour1}g in a circlular motion. Once the previous pour has drained, continue pouring to **0**{:.aeropress-pour2}g.
-  Lastly, once the final pour has drained, discard the coffee filter and add a **0**{:.aeropress-bypass}g bypass pour directly into the brewed coffee.
+  class:
+- label: Step 4
+  text: Plunge firmly
+  number: ''
+  class:
+long_steps: "..."
 ---
-
