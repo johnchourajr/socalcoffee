@@ -1,7 +1,10 @@
 html, body, .body {
-  overflow-x: hidden;
   min-height: 100vh;
 
+}
+
+.body {
+  overflow: hidden;
 }
 
 html {
