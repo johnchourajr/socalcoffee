@@ -6,8 +6,8 @@ tags:
 - Free Wi-Fi
 - Outdoor Seating
 shop_name: Bad Coffee
-website:
-map: -117.92095189999998,33.6738207
+website: 
+map: "-117.92095189999998,33.6738207"
 type: Coffee Shop
 city: Costa Mesa
 address: |-
@@ -22,3 +22,4 @@ coffee:
 - Ruby Coffee Roasters
 - Slightly Coffee Roasters
 ---
+
