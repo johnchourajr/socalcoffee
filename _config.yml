@@ -60,7 +60,7 @@ collections:
     permalink: "/:collection/:path/"
     meta:
       description: "..."
-      cord: 
+      cord: "-119.69,34.42"
       zoom: 9
       in_nav: true
   uploads:
@@ -72,7 +72,7 @@ collections:
     permalink: "/:collection/:path/"
     meta:
       description: "..."
-      cord: 
+      cord: "-119.22,34.27"
       zoom: 9
       in_nav: true
 defaults:
@@ -85,21 +85,21 @@ defaults:
     path: ''
   values:
     layout: shop
-    title: 
+    title:
     tags:
     - Indoor Seating
-    shop_name: 
-    website: 
-    rating: 
+    shop_name:
+    website:
+    rating:
     featured_min: false
     featured_max_1: false
-    map: 
+    map:
     type: Coffee Shop
-    city: 
+    city:
     address: |-
       Line One
       Line Two
-    phone: 
+    phone:
     hours: |-
       | Days   | Time   |
       | ------ | ------ |
@@ -112,6 +112,6 @@ exclude:
 - Gemfile.lock
 - README*
 - ".gitignore"
-sass: 
+sass:
 port: 8888
-baseurl: 
+baseurl:

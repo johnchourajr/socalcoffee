@@ -21,12 +21,23 @@ layout: default
       {% for city in cities %}
         <div class="mix col xs-col-12 {{ city.name | downcase | replace:' ','-' }}">
           <h1 id="{{ city.name | downcase | remove: " " }}" class="bold text-secondary xs-pt3 -underline">{{ city.name }}</h1>
-          {% for item in city.items %}
-            {% if item.title == page.title %}
-            {% else %}
-              <h2 class="bold text-secondary comma-item"><a class="xs-inline-block underline" href="{{ item.url }}">{{ item.shop_name }}</a></h2>
-            {% endif %}
-          {%endfor%}
+          <div class="gutters">
+            {% for item in city.items %}
+              {% if item.title == page.title %}
+              {% else %}
+                <div class="mix-card result col xs-col-6 sm-col-4 md-col-6 xl-col-4 ">
+                  <div class="result-body">
+                    <a href="{{ item.url | prepend:site.baseurl }}" class="">
+                      <span class="text">
+                        <h3 class="bold">{{ item.shop_name }}</h3>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              {% endif %}
+            {%endfor%}
+          </div>
+
         </div>
       {%endfor%}
     </div>

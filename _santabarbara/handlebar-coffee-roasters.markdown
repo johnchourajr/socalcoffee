@@ -2,12 +2,11 @@
 title: Handlebar Coffee Roasters
 tags:
 - Indoor Seating
-- "..."
 shop_name: Handlebar Coffee Roasters
 website: handlebarcoffee.com
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 34.422274, -119.698485
 type: Coffee Shop / Roaster
 city: Santa Barbara
@@ -22,4 +21,3 @@ hours: |-
 coffee:
 - Handlebar Coffee
 ---
-
