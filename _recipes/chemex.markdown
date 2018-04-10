@@ -41,7 +41,7 @@ short_steps:
 - label: Zero Scale
   text: ''
   number: ''
-  class:
+  class: 
 - label: Step 2
   text: First Pour
   number: 0
@@ -53,7 +53,7 @@ short_steps:
 - label: Discard Filter
   text: ''
   number: ''
-  class:
+  class: 
 - label: Step 4
   text: Bypass Pour
   number: 0
@@ -63,3 +63,4 @@ long_steps: |-
   Zero the scale, and pour water over grounds to **0**{:.chemex-pour1}g in a circlular motion. Once the previous pour has drained, continue pouring to **0**{:.chemex-pour2}g.
   Lastly, once the final pour has drained, discard the coffee filter and add a **0**{:.chemex-bypass}g bypass pour directly into the brewed coffee.
 ---
+
