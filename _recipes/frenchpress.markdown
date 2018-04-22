@@ -11,6 +11,7 @@ ingredients:
   max: 3
   step: 1
   type: slider
+  show_images: true
   id: frenchpress-container
   class: frenchpress-container
 - label: Coffee in Grams
@@ -52,11 +53,11 @@ short_steps:
 - label: Wait 30 Seconds
   text: ''
   number: ''
-  class: 
+  class:
 - label: Step 3
   text: Stir with a<br/>wooden spoon
   number: ''
-  class: 
+  class:
 - label: Step 4
   text: Final Pour
   number: 0
@@ -64,10 +65,9 @@ short_steps:
 - label: Wait 4 Minutes
   text: ''
   number: ''
-  class: 
+  class:
 - label: Step 5
   text: Press Gently
   number: ''
 long_steps: "..."
 ---
-

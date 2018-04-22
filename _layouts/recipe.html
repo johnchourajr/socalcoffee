@@ -18,15 +18,23 @@ layout: default
           {% for item in page.ingredients %}
             {% if item.type == 'number' or item.type == 'text' %}
               <fieldset class="">
-                <legend>{{ item.label }}  {% if item.locked %}{% else %}<u>Editable</u>{% endif %}</legend>
+                <legend>{{ item.label }}  {% if item.locked %}{% else %}<u>Edit</u>{% endif %}</legend>
                 <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
                 <input id='{{ item.id }}' class="{{ item.class }} {% if item.locked %}disabled{% endif %}" value="{{ item.value }}" placeholder="{{ item.value }}" type="{{ item.type }}" onkeyup="{{ page.function }}" onchange="{{ page.function }}" {% if item.locked %}disabled{% endif %}>
               </fieldset>
             {% elsif item.type == 'slider' %}
+
               <fieldset class="">
-                <legend>{{ item.label }}  <u>Draggable</u></legend>
+                <legend>{{ item.label }}  <u>Drag</u></legend>
                 <label for="{{ item.label | downcase | remove: " " }}" class="hide">{{ item.label }}</label>
-                <input id='{{ item.id }}' class="{{ item.class }}" value="{{ item.value }}" min="{{ item.min }}" max="{{ item.max }}" step="{{ item.step }}" type="range" oninput="{{ page.function }}" >
+                {% if item.show_images %}
+                  <div class="slider-image">
+                    <img src="/assets/images/frenchpress-4cup.svg" alt="">
+                    <img src="/assets/images/frenchpress-8cup.svg" alt="">
+                    <img src="/assets/images/frenchpress-12cup.svg" alt="">
+                  </div>
+                {% endif %}
+                <input id='{{ item.id }}' class="{{ item.class }}{% if item.show_images %} slider-image-mod{% endif %}" value="{{ item.value }}" min="{{ item.min }}" max="{{ item.max }}" step="{{ item.step }}" type="range" oninput="{{ page.function }}" >
                 <output for='{{ item.id }}' id='{{ item.id }}-output'>
               </fieldset>
             {% endif %}

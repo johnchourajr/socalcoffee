@@ -1114,6 +1114,7 @@ fieldset {
     width: 1rem;
     border-radius: 1rem;
     background-color: rgba($text-primary,1);
+    margin: 2rem;
     margin-top: -0.25rem;
     -webkit-appearance: none;
   }
@@ -1165,4 +1166,40 @@ fieldset {
 
 input {
   border: 1;
+}
+
+.slider-image {
+  display: flex;
+  position: absolute;
+  width: calc(100% + .125em);
+  flex: 0;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 2.75em;
+  padding-left: 0;
+  margin-right: -0.25em;
+
+  @include media-query(md) {
+    margin-top: 2.25em;
+  }
+
+  img {
+    width: 1.25em;
+
+    &:nth-child(2) {
+      margin-left: .45em;
+    }
+
+    &:last-child {
+      width: 1.5625em;
+    }
+  }
+}
+
+.slider-image-mod {
+  padding-top: 6.45rem;
+
+  @include media-query(md) {
+    padding-top: 5.75rem;
+  }
 }
