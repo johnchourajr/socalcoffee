@@ -9,3 +9,4 @@ type: Coffee Shop
 city: Arts District
 coffee: Blue Bottle Coffee
 ---
+

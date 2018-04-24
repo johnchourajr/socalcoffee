@@ -9,3 +9,4 @@ type: Coffee Shop
 city: Venice
 coffee: Blue Bottle Coffee
 ---
+

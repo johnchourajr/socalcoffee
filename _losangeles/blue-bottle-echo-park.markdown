@@ -9,3 +9,4 @@ type: Coffee Shop
 city: Echo Park
 coffee: Blue Bottle Coffee
 ---
+
