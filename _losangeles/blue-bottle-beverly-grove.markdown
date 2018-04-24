@@ -9,3 +9,4 @@ type: Coffee Shop
 city: Beverly Grove
 coffee: Blue Bottle Coffee
 ---
+

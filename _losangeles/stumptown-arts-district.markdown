@@ -10,3 +10,4 @@ city: Arts District
 coffee:
 - Stumptown Coffee
 ---
+
