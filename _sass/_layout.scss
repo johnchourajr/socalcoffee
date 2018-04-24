@@ -263,11 +263,28 @@ nav {
 
 .hero-inner {
   padding: 6vw 0;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include media-query(sm) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 
   h1 {
     z-index: 2;
     position: relative;
+    margin-right: .75em;
+    margin-bottom: .25em;
+
+    @include media-query(sm) {
+      display: flex;
+      flex: .9;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -1200,5 +1217,64 @@ input {
 
   @include media-query(md) {
     padding-top: 5.75rem;
+  }
+}
+
+.open-now {
+  transition: opacity .6s $bez, transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(.8);
+  opacity: 0;
+  &[data-open='true'], &[data-open='false'], &[data-open='closed_forever'] {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-hero {
+    padding: .3em .4em;
+    border-radius: $border-radius;
+    margin-bottom: .75em;
+
+    &[data-open='true'] {
+      background: $fill-secondary;
+      color: $fill-primary;
+      box-shadow: rgba($fill-secondary, 1) 0 0 2em 0;
+    }
+    &[data-open='false'] {
+      background: transparent;
+      color: $text-white;
+      border-color: $text-white;
+      border-width: 1px;
+      border-style: solid;
+    }
+    &[data-open='closed_forever'] {
+      background: $fill-red;
+      color: white;
+    }
+  }
+
+  &-mini {
+    font-size: $text-6;
+    padding: .1em .4em;
+    margin-left: .2em;
+    bottom: .2em;
+    border-radius: $border-radius;
+
+    &[data-open='true'] {
+      background: $text-secondary;
+      color: $fill-white;
+    }
+    &[data-open='false'] {
+      background: $fill-white;
+      color: $text-secondary;
+      border-color: $text-secondary;
+      border-width: 1px;
+      border-style: solid;
+    }
+    &[data-open='closed_forever'] {
+      background: $fill-red;
+      color: white;
+    }
   }
 }

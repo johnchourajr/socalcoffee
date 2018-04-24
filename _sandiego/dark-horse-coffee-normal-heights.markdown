@@ -8,7 +8,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 32.763495,-117.123390
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: San Diego
 address: |-
   3260 Adams Ave,

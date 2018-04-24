@@ -11,7 +11,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.654443, -117.996608
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Huntington Beach
 address: |-
   21060 Pacific Coast Hwy, Space 170

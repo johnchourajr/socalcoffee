@@ -13,7 +13,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.694459,-117.9257367
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Costa Mesa
 address: |-
   The OC Mix

@@ -5,7 +5,7 @@ tags:
 shop_name: Rose Park Coffee
 website: http://www.roseparkroasters.com/
 map: 33.7715776,-118.15803
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Long Beach
 address: |-
   3044 E 4th St.

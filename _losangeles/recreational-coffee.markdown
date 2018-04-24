@@ -3,21 +3,11 @@ title: Recreational Coffee
 tags:
 - Indoor Seating
 shop_name: Recreational Coffee
+yelp_id: recreational-coffee-long-beach
 website: http://recreationalcoffee.com
-map: 33.770082,-118.191998
-type: Coffee Shop and Food
+type: Coffee Shop & Roaster
 city: Downtown Long Beach
-address: |-
-  237 Long Beach Blvd.
-  Long Beach, CA 90802
-phone: 562-436-4954
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Monday-Friday | 7a-7p |
-  | Saturday-Sunday | 7a-8p |
 coffee:
-- Portola Coffee
+- Recreational Coffee Roasters
 - Case Coffee
 ---
-

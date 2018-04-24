@@ -1,11 +1,10 @@
 ---
-title: Commodity Coffee Shop
-date: 2018-01-11 07:54:00 Z
-shop_name: Commodity Coffee Shop
-yelp_id: commodity-long-beach
-website: https://www.coffeeorwhatever.com/
+title: Dayglow Coffee Shop
+shop_name: Dayglow Coffee Shop
+yelp_id: dayglow-los-angeles-2
+website: https://dayglow.coffee/
 type: Coffee Shop
-city: Long Beach
+city: Silver Lake
 coffee:
 - Heart Coffee Roasters
 - St. Frank Coffee Roasters

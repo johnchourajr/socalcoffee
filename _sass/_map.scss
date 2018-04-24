@@ -27,6 +27,14 @@
 #map.shop {
   width: 100%;
   height: 400px;
+
+  @include media-query(md) {
+    height: 500px;
+  }
+
+  @include media-query(lg) {
+    height: 550px;
+  }
 }
 
 .mapboxgl {

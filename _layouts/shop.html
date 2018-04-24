@@ -3,18 +3,19 @@ layout: default
 hero: lg
 ---
 
-<section class="hero hero-sm">
+<section id="page_hero" class="hero hero-sm">
   <div class="wrapper">
     <div class="hero-inner">
-      <h1 class="text-white bold xs-pb0">{{ page.shop_name }}</h1>
+      <h1 id="shop_name" class="text-white bold xs-pb0">{{ page.shop_name }}</h1>
+      <span id="is_open_now_hero" class="open-now open-now-hero"></span>
     </div>
   </div>
-  <span class="img" style="background-image:url(/uploads/{{page.slug}}.jpg);"></span>
+  <span id="hero_image" class="img" style="background-image:url(/uploads/{{page.slug}}.jpg);"></span>
 </section>
 
 <section class="xs-inline-block">
   <div class="wrapper">
-    <div class="sm-col-8 col">
+    <div class="sm-col-9 col">
       <h2 class="bold text-primary xs-pb4 md-pb0">
         {% include chunks/shop-description.html %}
       </h2>
@@ -25,65 +26,182 @@ hero: lg
 <section class="xs-inline-block">
   <div class="wrapper">
 
-    <div class="xs-col-12 sm-col-6 col">
+    <div class="xs-col-12 sm-col-6 col xs-mb3 md-mb0">
       <div id='map' class="shop"></div>
     </div>
-    <div class="sm-col-5 sm-offset-1 col xs-relative">
+    <div class="xs-col-12 sm-col-5 sm-offset-1 col xs-relative">
       <span>
         <h4 class="text-secondary bold xs-pb3">Location & Contact</h4>
-        <h3 class="bold wrap text-primary"><a class="text-secondary underline" href="http://maps.google.com/?q={{page.address}}">{{page.address}}</a></h3>
-        <h3 class="bold wrap text-primary underline"><a href="tel:{{page.phone}}" class="text-secondary">{{page.phone}}</a></h3>
-        <h4 class="text-secondary bold xs-pt3 xs-pb3">Hours</h4>
-        {{page.hours | markdownify }}
+        <h3 class="bold wrap text-primary"><a id="address" class="text-secondary underline" href="http://maps.google.com/?q={{page.address}}">{{page.address}}</a></h3>
+        <h3 class="bold wrap text-primary underline"><a id="phone" href="tel:{{page.phone}}" class="text-secondary">{{page.phone}}</a></h3>
+        <h4 class="text-secondary bold xs-pt3 xs-pb3">Hours <span id="is_open_now" class="open-now open-now-mini"></span></h4>
+        {% if page.yelp_id %}
+          <table>
+            <thead>
+              <tr>
+                <th>Days</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody id="open_hours"></tbody>
+          </table>
+        {% else %}
+          {{ page.hours | markdownify }}
+        {% endif %}
       </span>
     </div>
   </div>
 </section>
 
-<section class="xs-block">
-  <div class="wrapper">
+<script type="text/javascript">
 
-    <div class="clearfix gutters pills">
+  function formatDate(time) {
+    // Check correct time format and split into components
+    time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
 
-      <h4 class="text-secondary bold xs-pb3">Attributes</h4>
-      <div class="col">
-        <span class="city">
-          <h3 class="bold text-primary"><a href="{% if page.website %}{{ page.website | remove: 'http://' | prepend: 'http://'}}{%else%}/search/?query={{ page.shop_name | replace: " ","+" | remove: "/+"}}{% endif %}">{{ page.shop_name | remove: ' Coffee Lab' }}</a></h3>
-        </span>
-      </div>
-      <div class="col">
-        <span class="city">
-          <h3 class="bold text-primary">{%if page.type%}<a href="/search/?query={{ page.type | replace: " ","+" | remove: "/+"}}">{{ page.type | remove: ' / Roaster' }}</a>{%else%}Coffee Shop{%endif%}</h3>
-        </span>
-      </div>
-      {% for city in page.city %}
-        <div class="col">
-          <span class="city">
-            <h3 class="bold text-primary">{{ city }}</h3>
-          </span>
-        </div>
-      {% endfor %}
+    if (time.length > 1) { // If time format correct
+      time = time.slice (1);  // Remove full string match value
+      time[5] = +time[0] < 12 ? 'a' : 'p'; // Set AM/PM
+      time[0] = +time[0] % 12 || 12; // Adjust hours
+    }
+    return time.join (''); // return adjusted time or original string
+  }
 
-      {% for spec in page.tags %}
-        <div class="col">
-          <span>
-            <h3 class="bold text-secondary">{{ spec }}</h3>
-          </span>
-        </div>
+  function formatTime(time) {
+    let timeStr = time
+        timeStr = timeStr.slice(0, 2) + ":" + timeStr.slice(2);
+        timeStr = formatDate(timeStr)
+        timeStr = timeStr.includes(":00") ? timeStr.replace(":00","") : timeStr
 
-      {% endfor %}
+    return timeStr
+  }
 
-      {% for coffee in page.coffee %}
-        <div class="col">
-          <span>
-            <h3 class="bold text-secondary">{{ coffee }}</h3>
-          </span>
-        </div>
+  function formatPhoneNumber(phone) {
+    phone = phone.replace("+1", "")
+    phone = phone.replace(/[^\d]/g, "");
+    if (phone.length == 10) {
+      return phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+    }
+    return null;
+  }
 
-      {% endfor %}
+  // The "callback" argument is called with either true or false
+  // depending on whether the image at "url" exists or not.
+  function imageExists(url, callback) {
+    var img = new Image();
+    img.onload = function() { callback(true); };
+    img.onerror = function() { callback(false); };
+    img.src = url;
+  }
 
-    </div>
-  </div>
-</section>
+  // // Sample usage
+  // var imageUrl = 'http://www.google.com/images/srpr/nav_logo14.png';
+  // imageExists(imageUrl, function(exists) {
+  //   console.log('RESULT: url=' + imageUrl + ', exists=' + exists);
+  // });
+  //
+  // function checkUrl(url){
+  //   var arr = [ "jpeg", "jpg", "gif", "png" ];
+  //   var ext = url.substring(url.lastIndexOf(".")+1);
+  //   if($.inArray(ext,arr)){
+  //     return true;
+  //   }
+  // }
+
+
+  const access_token = "_LAi__eFhDVZeVgsWuWyG9CwdXIcEjx50MHr-OOtRhpit59roVfsgtLQZaklHdCOv2QJ4bLI8D3CcQQNZaV-E0OmoMxpi2nCbWuzkUV8nAKTBFSqvvvD8oo5Fg7dWnYx";
+
+  let myHeaders = new Headers();
+  myHeaders.append("Authorization", "Bearer " + access_token);
+
+  {% if page.yelp_id %}
+
+    fetch("https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/{{ page.yelp_id }}", {
+      headers: myHeaders
+    }).then((resp) => {
+      return resp.json();
+    }).then((data) => {
+      console.log(data);
+
+      const closed_forever = data.is_closed
+      if (!closed_forever) {
+        const openHours = data.hours[0].open
+        const openHoursEl = document.getElementById("open_hours")
+        const openHourArr = openHours.map(item => {
+          let start = formatTime(item.start)
+          let end = formatTime(item.end)
+          let hours = `${start}–${end}`
+          let day = item.day === 0 ? 'Monday' : item.day === 1 ? 'Tuesday' : item.day === 2 ? 'Wednesday' : item.day === 3 ? 'Thursday' : item.day === 4 ? 'Friday' : item.day === 5 ? 'Saturday' : item.day === 6 ? 'Sunday' : ''
+          let object = `<tr><td>${day}</td><td>${hours}</td></tr>`
+          return object
+        })
+        const openHourList = openHourArr.join("")
+        openHoursEl.innerHTML = openHourList
+
+        const isOpenNow = data.hours[0].is_open_now
+        const isOpenNowStr = isOpenNow ? "Open Now!" : "Not Open"
+
+        const openNow = document.getElementById("is_open_now")
+        openNow.innerHTML = isOpenNowStr
+        openNow.setAttribute('data-open', isOpenNow)
+
+        const openNowHero = document.getElementById("is_open_now_hero")
+        openNowHero.innerHTML = isOpenNowStr
+        openNowHero.setAttribute('data-open', isOpenNow)
+
+      } else if (closed_forever) {
+        console.log("Closed: " + data.is_closed);
+        const isOpenNowStr = "Closed Permenantly"
+
+        const openNow = document.getElementById("is_open_now")
+        openNow.innerHTML = isOpenNowStr
+        openNow.setAttribute('data-open', 'closed_forever')
+
+        const openNowHero = document.getElementById("is_open_now_hero")
+        openNowHero.innerHTML = isOpenNowStr
+        openNowHero.setAttribute('data-open', 'closed_forever')
+
+        const pageHero = document.getElementById("page_hero")
+        pageHero.style.background = "rgba(255,0,0,.65)"
+
+      }
+
+      const addressEl = document.getElementById("address")
+      const address1 = data.location.address1 != null && data.location.address1  ? `${data.location.address1}` : ``
+      const address2 = data.location.address2 != null && data.location.address2  ? `${data.location.address2}` : ``
+      const address3 = data.location.address3 != null && data.location.address3  ? `${data.location.address3}` : ``
+      const city = data.location.city
+      const state = data.location.state
+      const zip_code = data.location.zip_code
+      const addressConcat = `${address1} ${address2} ${address3}\r${city}, ${state} ${zip_code}`
+      addressEl.innerHTML = addressConcat
+      addressEl.href = `http://maps.google.com/?q=${addressConcat}`
+
+      const phoneEl = document.getElementById("phone")
+      const phone = data.phone
+      phoneEl.innerHTML = formatPhoneNumber(phone)
+      phoneEl.href = `tel:${phone}`
+
+      const heroImage = '/uploads/{{page.slug}}.jpg'
+      const yelpImage = data.image_url
+      const heroImageExists = imageExists(heroImage, function(exists) {
+        console.log(exists);
+        if (!exists) {
+          imageExists(yelpImage, function(exists) {
+            if (exists) {
+              const imageEl = document.getElementById("hero_image")
+              imageEl.style.backgroundImage = `url(${yelpImage})`;
+            }
+          });
+        }
+      });
+
+    }).catch((error) => {
+      console.log("Shit fucked up! => " + error)
+    });
+
+  {% endif %}
+
+</script>
 
 {% include scripts/shop-map-js.html %}

@@ -5,6 +5,7 @@ tags:
 - Indoor Seating
 shop_name: Daydream  Surf Shop
 website: https://daydreamsurfshop.com/
+yelp_id: daydream-surf-shop-newport-beach
 featured_max_1: true
 map: 33.6319794,-117.9381236
 type: 'Coffee Shop '
@@ -15,4 +16,3 @@ hours: "| Days | Time |\n| ------ | ------ | \n|  Monday-Friday | 7a-6p |\n| Sat
 coffee:
 - Sight Glass Coffee
 ---
-

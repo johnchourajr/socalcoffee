@@ -8,7 +8,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 32.747133,-117.130432
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: San Diego
 address: |-
   3794 30th St,

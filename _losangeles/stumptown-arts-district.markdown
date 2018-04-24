@@ -3,9 +3,10 @@ title: Stumptown
 tags:
 - Indoor Seating
 shop_name: Stumptown Coffee Roasters
+yelp_id: stumptown-coffee-roasters-los-angeles
 website: https://www.stumptowncoffee.com/locations/losangeles
 map: 34.0332792,-118.22978660000001
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Arts District
 address: |-
   806 S Santa Fe Ave,
@@ -19,4 +20,3 @@ hours: |-
 coffee:
 - Stumptown Coffee
 ---
-

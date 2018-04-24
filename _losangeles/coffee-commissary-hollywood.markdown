@@ -3,6 +3,7 @@ title: Coffee Commissary Hollywood
 tags:
 - Indoor Seating
 shop_name: Coffee Commissary Hollywood
+yelp_id: coffee-commissary-los-angeles-2
 website: http://www.coffeecommissary.com/
 map: 34.0982293,-118.3239649
 type: Coffee Shop
@@ -22,4 +23,3 @@ coffee:
 - Chromatic Coffee Co.
 - Temple Coffee
 ---
-

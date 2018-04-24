@@ -6,9 +6,9 @@ tags:
 - Cold Brew
 - Free Wi-Fi
 - Outdoor Seating
+yelp_id: neat-coffee-costa-mesa
 shop_name: Neat Coffee
 website: neat.coffee
-map: 33.6788922,-117.8755038
 type: Pop-up Coffee Shop
 city: Costa Mesa
 address: |-
@@ -33,4 +33,3 @@ food-drink:
 - Craft Drinks
 - Espresso Drinks
 ---
-

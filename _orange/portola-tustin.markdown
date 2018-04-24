@@ -12,7 +12,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.6976351,-117.8275868
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Tustin
 address: |-
   Union Market

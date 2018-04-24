@@ -1,8 +1,9 @@
 ---
-title: Verve Coffee Roasters
+title: Verve Coffee Downtown
 tags:
 - Indoor Seating
 shop_name: Verve Coffee Downtown
+yelp_id: verve-coffee-roasters-los-angeles-2
 website: http://vervecoffee.com/
 map: 34.0423626,-118.2567205
 type: Coffee Shop
@@ -19,4 +20,3 @@ hours: |
 coffee:
 - Verve Coffee Roasters
 ---
-

@@ -3,6 +3,7 @@ title: Blue Bottle Abbot Kinney
 tags:
 - Indoor Seating
 shop_name: Blue Bottle Abbot Kinney
+yelp_id: blue-bottle-coffee-los-angeles-15
 website: https://bluebottlecoffee.com/cafes/abbot-kinney
 map: 33.991956,-118.4725305
 type: Coffee Shop
@@ -15,4 +16,3 @@ hours: |-
   | Friday-Saturday | 7a-7p |
 coffee: Blue Bottle Coffee
 ---
-

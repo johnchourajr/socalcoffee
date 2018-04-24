@@ -1,6 +1,7 @@
 ---
 title: Augies Claremont
 shop_name: Augies Coffee Claremont
+yelp_id: augies-coffee-house-claremont-2
 website: augies.coffee
 map: 34.09424,-117.7235609
 type: Coffee Shop
@@ -18,4 +19,3 @@ hours: |-
 coffee:
 - Augies Coffee
 ---
-

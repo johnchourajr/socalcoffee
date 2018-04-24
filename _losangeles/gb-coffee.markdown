@@ -4,19 +4,11 @@ tags:
 - Indoor Seating
 - Multi-roaster
 shop_name: G&B Coffee
+yelp_id: g-and-b-coffee-los-angeles-2
 website: http://gandbcoffee.com/
 map: 34.0510953,-118.251598
 type: Coffee Shop
 city: Downtown LA
-address: |-
-  C-19
-  317 S Broadway
-  Los Angeles, CA 90013
-phone: 213-265-7718
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Monday-Sunday | 7a-6p |
 coffee:
 - George Howell Coffee
 - Heart Coffee
@@ -25,4 +17,3 @@ coffee:
 - Ritual Coffee
 - Forty Ninth Parallel Coffee
 ---
-

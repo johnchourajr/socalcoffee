@@ -8,7 +8,7 @@ tags:
 shop_name: Beacon Coffee Ventura
 website: beaconcoffee.com
 map: 34.244289, -119.209895
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Ventura
 address: |-
   5777 Olivas Park Dr

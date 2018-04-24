@@ -2,24 +2,15 @@
 title: Civil Coffee
 tags:
 - Indoor Seating
-- "..."
 shop_name: Civil Coffee
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
-map: 
-type: 
-city: 
-address: |-
-  ...
-  ...
-phone: 
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Monday-Sunday | 7a-8p |
+yelp_id: civil-coffee-los-angeles-2
+website:
+rating:
+featured_min:
+featured_max_1:
+map:
+type:
+city:
 coffee:
-- "..."
+-
 ---
-

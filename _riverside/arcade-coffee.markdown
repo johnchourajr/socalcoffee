@@ -3,10 +3,11 @@ title: Arcade Coffee
 tags:
 - Outdoor Seating
 shop_name: Arcade Coffee Roasters
+yelp_id: arcade-coffee-roasters-riverside
 website: http://www.arcadecoffeeroasters.com
 featured_max_1: true
 map: 33.981935,-117.343110
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Riverside
 address: "3672 Chicago Ave Ste A \nRiverside, CA, 92507"
 phone: 951-266-6839
@@ -18,4 +19,3 @@ hours: |-
 coffee:
 - Arcade Coffee Roasters
 ---
-

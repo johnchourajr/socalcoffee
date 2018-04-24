@@ -6,6 +6,7 @@ tags:
 - Pourover
 - Espresso
 shop_name: Endorffeine Coffee
+yelp_id: endorffeine-los-angeles
 website: endorffeine.coffee
 map: 34.061446,-118.239771
 type: Coffee Shop
@@ -24,4 +25,3 @@ coffee:
 - Heart Coffee
 - Guest Coffee
 ---
-

@@ -11,7 +11,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.7481934,-117.8664136
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Santa Ana
 address: |-
   4th Street Market

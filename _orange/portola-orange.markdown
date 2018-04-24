@@ -11,7 +11,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.789085,-117.8529618
-type: Coffee Shop / Roaster / Bar
+type: Coffee Shop & Roaster / Bar
 city: Orange
 address: |-
   Provisions Market

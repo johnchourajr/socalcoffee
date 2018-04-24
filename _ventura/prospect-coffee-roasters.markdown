@@ -6,7 +6,7 @@ tags:
 shop_name: Prospect Coffee Roasters
 website: prospectcoffee.com
 map: 34.253812, -119.231960
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Ventura
 address: |-
   2100 Goodyear Ave #2,

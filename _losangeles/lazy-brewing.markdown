@@ -2,24 +2,10 @@
 title: Lazy Brewing
 tags:
 - Indoor Seating
-- "..."
 shop_name: Lazy Brewing
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
-map: 
-type: 
-city: 
-address: |-
-  ...
-  ...
-phone: 
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Monday-Sunday | 7a-8p |
+yelp_id: lazy-brewing-company-los-angeles
+type:
+city: Downtown LA
 coffee:
 - "..."
 ---
-

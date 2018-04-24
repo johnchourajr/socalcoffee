@@ -2,24 +2,9 @@
 title: Tactile Coffee
 tags:
 - Indoor Seating
-- "..."
 shop_name: Tactile Coffee
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
-map: 
-type: 
-city: 
-address: |-
-  ...
-  ...
-phone: 
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Monday-Sunday | 7a-8p |
+yelp_id: tactile-coffee-los-angeles-3
+city: Rampart Village
 coffee:
 - "..."
 ---
-

@@ -8,7 +8,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 32.714007,-117.139866
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: San Diego
 address: |-
   811 25th St,

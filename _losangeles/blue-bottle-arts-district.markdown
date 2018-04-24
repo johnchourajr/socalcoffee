@@ -3,6 +3,7 @@ title: Blue Bottle Arts District
 tags:
 - Indoor Seating
 shop_name: Blue Bottle Arts District
+yelp_id: blue-bottle-coffee-los-angeles-12
 website: https://bluebottlecoffee.com/cafes/arts-district
 map: 34.0390863,-118.2347204
 type: Coffee Shop
@@ -17,4 +18,3 @@ hours: |-
   | Daily | 7a-6p |
 coffee: Blue Bottle Coffee
 ---
-

@@ -8,7 +8,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.852006, -117.556513
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Riverside
 address: |-
   2331 Kellogg Ave

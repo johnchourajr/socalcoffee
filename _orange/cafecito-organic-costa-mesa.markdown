@@ -11,7 +11,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.6775404,-117.8861032
-type: Coffee Shop / Roaster
+type: Coffee Shop & Roaster
 city: Costa Mesa
 address: |-
   The Lab
