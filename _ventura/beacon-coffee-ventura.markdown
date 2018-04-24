@@ -4,7 +4,6 @@ date: 2016-09-16 15:48:00 Z
 tags:
 - Indoor Seating
 - Food
-- 
 shop_name: Beacon Coffee Ventura
 website: beaconcoffee.com
 map: 34.244289, -119.209895

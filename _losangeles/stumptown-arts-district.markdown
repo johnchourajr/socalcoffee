@@ -20,3 +20,4 @@ hours: |-
 coffee:
 - Stumptown Coffee
 ---
+

@@ -85,20 +85,20 @@ defaults:
     path: ''
   values:
     layout: shop
-    title:
+    title: 
     tags:
     - Indoor Seating
-    shop_name:
-    yelp_id:
-    website:
-    rating:
+    shop_name: 
+    yelp_id: 
+    website: 
+    rating: 
     featured_min: false
     featured_max_1: false
-    map:
+    map: 
     type: Coffee Shop
-    city:
-    address: |-
-    phone:
+    city: 
+    address: ''
+    phone: 
     hours: |-
       | Days   | Time   |
       | ------ | ------ |
@@ -111,6 +111,6 @@ exclude:
 - Gemfile.lock
 - README*
 - ".gitignore"
-sass:
+sass: 
 port: 8888
-baseurl:
+baseurl: 

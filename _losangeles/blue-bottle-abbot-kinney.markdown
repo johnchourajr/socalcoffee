@@ -16,3 +16,4 @@ hours: |-
   | Friday-Saturday | 7a-7p |
 coffee: Blue Bottle Coffee
 ---
+
