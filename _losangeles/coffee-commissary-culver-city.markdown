@@ -5,17 +5,8 @@ tags:
 shop_name: Coffee Commissary Culver City
 yelp_id: coffee-commissary-los-angeles-4
 website: http://www.coffeecommissary.com
-map: 34.0860512,-118.3641633
 type: Coffee Shop
 city: Culver City
-address: |-
-  3417 Motor Ave,
-  Culver City, CA 90034
-phone: 818.556.6055
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Daily | 7a-8p |
 coffee:
 - Coava Coffee
 - Victrola Coffee
@@ -23,4 +14,3 @@ coffee:
 - Chromatic Coffee Co.
 - Temple Coffee
 ---
-

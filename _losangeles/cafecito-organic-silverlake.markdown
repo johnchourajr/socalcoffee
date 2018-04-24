@@ -6,10 +6,8 @@ tags:
 shop_name: Cafecito Organico Silver Lake
 yelp_id: cafecito-organico-los-angeles
 website: http://cafecitoorganico.com
-map: 34.0800355,-118.2880276
 type: Coffee Shop
 city: Silver Lake
 coffee:
 - Cafecito Organico
 ---
-

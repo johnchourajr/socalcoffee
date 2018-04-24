@@ -6,7 +6,6 @@ tags:
 shop_name: G&B Coffee
 yelp_id: g-and-b-coffee-los-angeles-2
 website: http://gandbcoffee.com/
-map: 34.0510953,-118.251598
 type: Coffee Shop
 city: Downtown LA
 coffee:
@@ -17,4 +16,3 @@ coffee:
 - Ritual Coffee
 - Forty Ninth Parallel Coffee
 ---
-

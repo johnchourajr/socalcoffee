@@ -1,6 +1,5 @@
 ---
 title: Commodity Coffee Shop
-date: 2018-01-11 07:54:00 Z
 shop_name: Commodity Coffee Shop
 yelp_id: commodity-long-beach
 website: https://www.coffeeorwhatever.com/
@@ -14,4 +13,3 @@ coffee:
 - Belleville Coffee Roasters
 - Parlor Coffee Roasters
 ---
-

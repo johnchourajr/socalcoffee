@@ -4,7 +4,6 @@ tags:
 - Indoor Seating
 shop_name: Cognoscenti Coffee Glendale
 yelp_id: cognoscenti-los-angeles
-map: 34.117311,-118.2693893
 type: Coffee Shop
 city: Fashion District
 coffee:
@@ -15,4 +14,3 @@ coffee:
 - Phil & Sebastian Coffee
 - Various
 ---
-
