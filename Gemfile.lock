@@ -50,6 +50,9 @@ GEM
 PLATFORMS
   ruby
 
+RUBY VERSION
+   ruby 2.1.1p76
+
 DEPENDENCIES
   jekyll
   siteleaf (= 2.0.0.pre.beta9)
