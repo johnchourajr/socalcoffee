@@ -8,5 +8,5 @@ type: Coffee Shop & Roaster
 city: Long Beach
 coffee:
 - Rose Park Coffee
+map: 33.7715776,-118.15803
 ---
-

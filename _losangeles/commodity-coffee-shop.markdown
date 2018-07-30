@@ -12,5 +12,5 @@ coffee:
 - Methodical Coffee Roasters
 - Belleville Coffee Roasters
 - Parlor Coffee Roasters
+map: 33.783147,-118.153295
 ---
-

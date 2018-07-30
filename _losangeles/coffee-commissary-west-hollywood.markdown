@@ -13,5 +13,5 @@ coffee:
 - Madcap Coffee
 - Chromatic Coffee Co.
 - Temple Coffee
+map: 34.0860512,-118.3641633
 ---
-

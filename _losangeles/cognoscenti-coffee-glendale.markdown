@@ -13,5 +13,5 @@ coffee:
 - Heart Coffee
 - Phil & Sebastian Coffee
 - Various
+map: 34.117311,-118.2693893
 ---
-

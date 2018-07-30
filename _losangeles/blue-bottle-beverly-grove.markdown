@@ -8,5 +8,5 @@ website: https://bluebottlecoffee.com/cafes/beverly-grove
 type: Coffee Shop
 city: Beverly Grove
 coffee: Blue Bottle Coffee
+map: 34.0762717,-118.3723989
 ---
-

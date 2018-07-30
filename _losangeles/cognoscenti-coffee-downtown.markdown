@@ -13,6 +13,5 @@ coffee:
 - Kuma Coffee
 - Phil & Sebastian Coffee
 - Heart Coffee
-- Various
+map: 34.044562,-118.2604816
 ---
-

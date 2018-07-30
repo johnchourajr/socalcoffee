@@ -12,5 +12,5 @@ coffee:
 - George Howell Coffee
 - Heart Coffee
 - Various
+map: 34.075612,-118.3255138
 ---
-

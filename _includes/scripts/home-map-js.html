@@ -10,25 +10,62 @@
     zoom: 8
   });
 
+  function featureCoordinates(map, yelp_id) {
+
+    // async function data() {
+    //   const getData = async () => fetch("https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/{{ page.yelp_id }}", {
+    //     headers: myHeaders
+    //   }).then(response => response.json()).catch((error) => {
+    //     console.log(error)
+    //   });
+    //
+    //   const dataObj = await getData();
+    //
+    //   return dataObj
+    // }
+
+    // const DATA = data()
+
+    let latitude = null
+    let longitude = null
+
+    // if (map) {
+      map = map.split(",")
+      latitude = map[0]
+      longitude = map[1]
+    // } else {
+    //   latitude = DATA.coordinates.latitude
+    //   longitude = DATA.coordinates.longitude
+    // }
+
+    return [longitude, latitude]
+  }
+
+  const featuresJSON = [
+    {% assign sections = site.collections %}{% for section in sections %}{% assign documents = section.docs %}{% for document in documents %}{% if item.title == section.title %}{% else %}
+    {
+        type: 'Feature',
+        properties: {
+            title: '{{document.title}}',
+            icon: 'circle',
+            url: '{{document.url}}',
+            description: '<a href="{{document.url}}">{{document.title}} ➝</a>'
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: featureCoordinates('{{document.map}}', '{{document.yelp_id}}')
+        }
+    },{% endif %}{% endfor %}{% endfor %}
+  ]
+
+  console.log(featuresJSON);
+
   map.on('load', function () {
     map.addSource("points", {
         type: "geojson",
         data: {
             "type": "FeatureCollection",
-            "features": [{% assign sections = site.collections %}{% for section in sections %}{% assign documents = section.docs %}{% for document in documents %}{% if item.title == section.title %}{% else %}{% if document.map %}
-            {
-                type: 'Feature',
-                properties: {
-                    title: '{{document.title}}',
-                    icon: 'circle',
-                    url: '{{document.url}}',
-                    description: '<a href="{{document.url}}">{{document.title}} ➝</a>'
-                },
-                geometry: {
-                    type: 'Point',
-                    coordinates: [{% assign point = {{document.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}]
-                }
-            },{% endif %}{% endif %}{% endfor %}{% endfor %}]
+            "features": featuresJSON
         },
         cluster: true,
         clusterMaxZoom: 30, // Max zoom to cluster points on
@@ -115,7 +152,7 @@
 
 
 // var isAtStart = true;
-// 
+//
 // {% assign sections = site.collections %}
 // {% for section in sections %}
 // {% if section.title and section.meta.in_nav == true %}

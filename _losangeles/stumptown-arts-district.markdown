@@ -9,5 +9,5 @@ type: Coffee Shop & Roaster
 city: Arts District
 coffee:
 - Stumptown Coffee
+map: 34.0332792,-118.22978660000001
 ---
-

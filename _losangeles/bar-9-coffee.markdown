@@ -8,5 +8,5 @@ type: Coffee Shop
 city: Culver City
 coffee:
 - Bar Nine
+map: 34.0268383,-118.3858297
 ---
-

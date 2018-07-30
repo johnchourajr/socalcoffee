@@ -8,5 +8,5 @@ website: https://bluebottlecoffee.com/cafes/echo-park
 type: Coffee Shop
 city: Echo Park
 coffee: Blue Bottle Coffee
+map: 34.0772369,-118.2611829
 ---
-

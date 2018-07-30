@@ -4,7 +4,7 @@
   const getData = async () => fetch("https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/{{ page.yelp_id }}", {
     headers: myHeaders
   }).then(response => response.json()).catch((error) => {
-    console.log("Shit fucked up! => " + error)
+    console.log(error)
   });
 
   const mapFunction = async () => {
@@ -93,6 +93,14 @@
     map.doubleClickZoom.disable();
     // map.scrollWheelZoom.disable();
     map.addControl(new mapboxgl.Navigation());
+
+    // Add geolocate control to the map.
+    map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
   }
 
   mapFunction()

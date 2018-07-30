@@ -12,5 +12,5 @@ city: La Mirada
 coffee:
 - Recreational Coffee Roasters
 - Arcade Coffee Roasters
+map: 33.910047, -117.976695
 ---
-

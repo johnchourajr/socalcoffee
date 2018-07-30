@@ -8,5 +8,5 @@ type: Pop Up Coffee Shop
 city: Highland Park
 coffee:
 - Bar Nine
+map: 34.1188224, -118.17903519999999
 ---
-

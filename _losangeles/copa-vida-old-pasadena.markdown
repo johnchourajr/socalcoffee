@@ -9,5 +9,5 @@ type: 'Coffee Shop and Restaurant '
 city: Pasadena
 coffee:
 - Copa Vida
+map: 34.061446,-118.239771
 ---
-
