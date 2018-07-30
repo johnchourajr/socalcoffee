@@ -12,5 +12,5 @@ coffee:
 - Heart Coffee Roasters
 - Huckleberry Roasters
 - Rose Park Roasters
+map: 33.826417, -118.189171
 ---
-

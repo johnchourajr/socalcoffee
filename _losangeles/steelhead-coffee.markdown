@@ -15,5 +15,5 @@ coffee:
 - Rival Bros Coffee
 - Dogwood Coffee Co
 - Arcade Coffee Roasters
+map: 33.8187944,-118.1782147
 ---
-

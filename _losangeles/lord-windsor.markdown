@@ -12,5 +12,5 @@ type: Coffee Shop & Roaster
 city: Long Beach
 coffee:
 - Lord Windsor Coffee
+map: 33.770468, -118.178155
 ---
-

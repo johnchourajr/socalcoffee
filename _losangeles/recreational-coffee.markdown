@@ -10,5 +10,5 @@ city: Downtown Long Beach
 coffee:
 - Recreational Coffee Roasters
 - Case Coffee
+map: 33.770082,-118.191998
 ---
-
