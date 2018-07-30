@@ -12,3 +12,4 @@ coffee:
 - Cafecito Organico
 map: 34.0800355,-118.2880276
 ---
+

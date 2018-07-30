@@ -12,3 +12,4 @@ coffee:
 - Stereoscope Coffee Roasters
 map: 33.895208, -117.987596
 ---
+
