@@ -9,7 +9,7 @@ tags:
 yelp_id: neat-coffee-costa-mesa
 shop_name: Neat Coffee
 website: neat.coffee
-type: Pop-up Coffee Shop
+type: Pop Up Coffee Shop
 city: Costa Mesa
 address: |-
   270 Baker St E #200

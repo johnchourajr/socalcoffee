@@ -3,7 +3,7 @@ backend:
   repo: johnchourajr/socalcoffee
   branch: master
   site_domain: socalcoffee.netlify.com
-media_folder: "uploads"
+media_folder: "_uploads"
 collections:
   - name: "recipes"
     label: "Recipes"
@@ -49,8 +49,8 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
   - name: "orange"
@@ -64,8 +64,8 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
   - name: "riverside"
@@ -79,8 +79,8 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
   - name: "sanbernadino"
@@ -94,8 +94,8 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
   - name: "sandiego"
@@ -109,8 +109,8 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
   - name: "santabarbara"
@@ -124,8 +124,8 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
   - name: "ventura"
@@ -139,7 +139,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
-      - {label: Tags, name: Tags, widget: list}
+      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}

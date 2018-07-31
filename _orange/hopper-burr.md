@@ -10,7 +10,7 @@ rating:
 featured_min: 
 featured_max_1: 
 map: 33.7472556,-117.8699761
-type: Pop-up Coffee Shop
+type: Pop Up Coffee Shop
 city: Santa Ana
 address: |-
   300 N Main St
