@@ -1,0 +1,123 @@
+backend:
+  name: github
+  repo: johnchourajr/socalcoffee
+  branch: master
+  site_domain: socalcoffee.netlify.com
+media_folder: "uploads"
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "_recipes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Cover Art, name: cover, widget: image}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Body, name: body, widget: markdown}
+  - name: "losangeles"
+    label: "Los Angeles"
+    folder: "_losangeles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
+  - name: "orange"
+    label: "Orange"
+    folder: "_orange"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
+  - name: "riverside"
+    label: "Riverside"
+    folder: "_riverside"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
+  - name: "sanbernadino"
+    label: "San Bernadino"
+    folder: "_sanbernadino"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
+  - name: "sandiego"
+    label: "San Diego"
+    folder: "_sandiego"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
+  - name: "santabarbara"
+    label: "Santa Barbara"
+    folder: "_santabarbara"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
+  - name: "ventura"
+    label: "Ventura"
+    folder: "_ventura"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: Layout, name: layout, widget: hidden, default: post}
+      - {label: Title, name: title, widget: string}
+      - {label: Shop Name, name: shop_name, widget: string}
+      - {label: City, name: city, widget: string}
+      - {label: Yelp ID, name: yelp_id, widget: string}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Tags, name: Tags, widget: list}
+      - {label: Coffee, name: coffee, widget: list}
+      - {label: Map, name: map, widget: string}
