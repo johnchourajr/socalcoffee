@@ -13,9 +13,31 @@ collections:
     fields:
       - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
-      - {label: Cover Art, name: cover, widget: image}
-      - {label: Tags, name: Tags, widget: list}
-      - {label: Body, name: body, widget: markdown}
+      - {label: Background, name: background, widget: image}
+      - {label: Ratio, name: ratio, widget: string}
+      - {label: Function, name: function, widget: string}
+      - label: Ingredients
+        name: ingredients
+        widget: list
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Value, name: value, widget: string}
+          - {label: Type, name: type, widget: string}
+          - {label: Class, name: class, widget: string}
+      - label: Equipment
+        name: equipment
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Link, name: link, widget: string}
+      - label: Steps
+        name: short_steps
+        widget: list
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Text, name: text, widget: string}
+          - {label: Number, name: number, widget: string}
+          - {label: Class, name: class, widget: string}
   - name: "losangeles"
     label: "Los Angeles"
     folder: "_losangeles"
