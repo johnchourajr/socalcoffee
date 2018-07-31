@@ -49,7 +49,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
@@ -64,7 +64,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
@@ -79,7 +79,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
@@ -94,7 +94,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
@@ -109,7 +109,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
@@ -124,7 +124,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
@@ -139,7 +139,7 @@ collections:
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
       - {label: Yelp ID, name: yelp_id, widget: string}
-      - {label: Type, name: type, widget: select, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
+      - {label: Type, name: type, widget: select, default: Coffee Shop, options: [Coffee Shop, Coffee Shop & Roaster, Coffee Roaster, Pop Up Coffee Shop]}
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
