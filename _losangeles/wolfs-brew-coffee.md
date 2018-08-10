@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Wolfs Brew Coffee
 shop_name: Wolfs Brew Coffee
 city: Long Beach
@@ -14,4 +13,3 @@ coffee:
   - ''
 map: '33.833185, -118.141810'
 ---
-

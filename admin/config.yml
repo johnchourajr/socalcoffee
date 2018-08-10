@@ -11,7 +11,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Background, name: background, widget: image}
       - {label: Ratio, name: ratio, widget: string}
@@ -44,7 +43,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -53,13 +51,15 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
   - name: "orange"
     label: "Orange"
     folder: "_orange"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -68,13 +68,15 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
   - name: "riverside"
     label: "Riverside"
     folder: "_riverside"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -83,13 +85,15 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
   - name: "sanbernadino"
     label: "San Bernadino"
     folder: "_sanbernadino"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -98,13 +102,15 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
   - name: "sandiego"
     label: "San Diego"
     folder: "_sandiego"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -113,13 +119,15 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
   - name: "santabarbara"
     label: "Santa Barbara"
     folder: "_santabarbara"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -128,13 +136,15 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
   - name: "ventura"
     label: "Ventura"
     folder: "_ventura"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: post}
       - {label: Title, name: title, widget: string}
       - {label: Shop Name, name: shop_name, widget: string}
       - {label: City, name: city, widget: string}
@@ -143,3 +153,6 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
+      - {label: Website, name: website, widget: string}
+      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
+      - {lable: Featured Secondary, name: featured_min, widget: boolean}
