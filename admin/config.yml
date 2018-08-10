@@ -51,9 +51,9 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
   - name: "orange"
     label: "Orange"
     folder: "_orange"
@@ -68,9 +68,9 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
   - name: "riverside"
     label: "Riverside"
     folder: "_riverside"
@@ -85,9 +85,9 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
   - name: "sanbernadino"
     label: "San Bernadino"
     folder: "_sanbernadino"
@@ -102,9 +102,9 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
   - name: "sandiego"
     label: "San Diego"
     folder: "_sandiego"
@@ -119,9 +119,9 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
   - name: "santabarbara"
     label: "Santa Barbara"
     folder: "_santabarbara"
@@ -136,9 +136,9 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
   - name: "ventura"
     label: "Ventura"
     folder: "_ventura"
@@ -153,6 +153,6 @@ collections:
       - {label: Tags, name: tags, widget: list}
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
-      - {label: Website, name: website, widget: string}
-      - {label: Featured Primary, name: featured_max_1, widget: boolean}
-      - {label: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
+      - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
