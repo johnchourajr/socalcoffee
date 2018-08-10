@@ -52,8 +52,8 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
   - name: "orange"
     label: "Orange"
     folder: "_orange"
@@ -69,8 +69,8 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
   - name: "riverside"
     label: "Riverside"
     folder: "_riverside"
@@ -86,8 +86,8 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
   - name: "sanbernadino"
     label: "San Bernadino"
     folder: "_sanbernadino"
@@ -103,8 +103,8 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
   - name: "sandiego"
     label: "San Diego"
     folder: "_sandiego"
@@ -120,8 +120,8 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
   - name: "santabarbara"
     label: "Santa Barbara"
     folder: "_santabarbara"
@@ -137,8 +137,8 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
   - name: "ventura"
     label: "Ventura"
     folder: "_ventura"
@@ -154,5 +154,5 @@ collections:
       - {label: Coffee, name: coffee, widget: list}
       - {label: Map, name: map, widget: string}
       - {label: Website, name: website, widget: string}
-      - {lable: Featured Primary, name: featured_max_1, widget: boolean}
-      - {lable: Featured Secondary, name: featured_min, widget: boolean}
+      - {label: Featured Primary, name: featured_max_1, widget: boolean}
+      - {label: Featured Secondary, name: featured_min, widget: boolean}
