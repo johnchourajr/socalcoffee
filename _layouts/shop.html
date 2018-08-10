@@ -170,7 +170,7 @@ hero: lg
       const heroImage = '/uploads/{{page.slug}}.jpg'
       const yelpImage = data.image_url
       const heroImageExists = imageExists(heroImage, function(exists) {
-        console.log(exists);
+        console.log("Has Image: " + exists);
         if (!exists) {
           imageExists(yelpImage, function(exists) {
             if (exists) {
@@ -183,6 +183,7 @@ hero: lg
 
     }).catch((error) => {
       console.log("Shit fucked up! => " + error)
+
     });
 
   {% endif %}
