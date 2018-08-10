@@ -108,9 +108,9 @@ hero: lg
     }).then((data) => {
       console.log(data);
 
-      const closed_forever = data.is_closed
+      const closed_forever = data.is_closed ? data.is_closed : null
       if (!closed_forever) {
-        const openHours = data.hours[0].open
+        const openHours = data.hours ? data.hours[0].open : []
         const openHoursEl = document.getElementById("open_hours")
         const openHourArr = openHours.map(item => {
           let start = formatTime(item.start)
@@ -123,7 +123,7 @@ hero: lg
         const openHourList = openHourArr.join("")
         openHoursEl.innerHTML = openHourList
 
-        const isOpenNow = data.hours[0].is_open_now
+        const isOpenNow = data.hours ? data.hours[0].is_open_now : null
         const isOpenNowStr = isOpenNow ? "Open Now!" : "Not Open"
 
         const openNow = document.getElementById("is_open_now")
@@ -163,12 +163,12 @@ hero: lg
       addressEl.href = `http://maps.google.com/?q=${addressConcat}`
 
       const phoneEl = document.getElementById("phone")
-      const phone = data.phone
+      const phone = data.phone ? data.phone : ``
       phoneEl.innerHTML = formatPhoneNumber(phone)
       phoneEl.href = `tel:${phone}`
 
       const heroImage = '/uploads/{{page.slug}}.jpg'
-      const yelpImage = data.image_url
+      const yelpImage = data.image_url ? data.image_url : ``
       const heroImageExists = imageExists(heroImage, function(exists) {
         console.log("Has Image: " + exists);
         if (!exists) {
