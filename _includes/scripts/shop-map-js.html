@@ -94,13 +94,6 @@
     // map.scrollWheelZoom.disable();
     map.addControl(new mapboxgl.Navigation());
 
-    // Add geolocate control to the map.
-    map.addControl(new mapboxgl.GeolocateControl({
-      positionOptions: {
-        enableHighAccuracy: true
-      },
-      trackUserLocation: true
-    }));
   }
 
   mapFunction()
