@@ -12,4 +12,6 @@ coffee:
   - Recreational Coffee Roasters
   - ''
 map: '33.833185, -118.141810'
+featured_max_1: true
 ---
+
