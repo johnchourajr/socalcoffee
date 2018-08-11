@@ -262,25 +262,13 @@ $(function(){
         type: "geojson",
         data: {
             "type": "FeatureCollection",
-            "features": [{% assign sections = site.collections %}{% for section in sections %}{% assign documents = section.docs %}{% for document in documents %}{% if item.title == section.title %}{% else %}{% if document.map %}
-            {
-                type: 'Feature',
-                properties: {
-                    title: '{{document.title}}',
-                    icon: 'circle',
-                    url: '{{document.url}}',
-                    description: '<a href="{{document.url}}">{{document.title}} ➝</a>'
-                },
-                geometry: {
-                    type: 'Point',
-                    coordinates: [{% assign point = {{document.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}]
-                }
-            },{% endif %}{% endif %}{% endfor %}{% endfor %}]
+            "features": JSON.parse(localStorage.getItem('shops')),
         },
         cluster: true,
         clusterMaxZoom: 30, // Max zoom to cluster points on
         clusterRadius: 14
     });
+
 
     var layers = [
         [150, '#00FBD5'],
