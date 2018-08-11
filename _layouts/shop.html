@@ -87,9 +87,15 @@ hero: lg
         })
         const openHourList = openHourArr.join("")
         openHoursEl.innerHTML = openHourList
+        let isOpenNowStr = ""
+        const isOpenNow = data.hours ? data.hours[0].is_open_now : false
 
-        const isOpenNow = data.hours ? data.hours[0].is_open_now : null
-        const isOpenNowStr = isOpenNow ? "Open Now!" : "Not Open"
+        if (data.hours) {
+          isOpenNowStr = isOpenNow ? "Open Now!" : "Not Open"
+        } else {
+          isOpenNowStr = "Hours Unavailable"
+        }
+
 
         const openNow = document.getElementById("is_open_now")
         openNow.innerHTML = isOpenNowStr

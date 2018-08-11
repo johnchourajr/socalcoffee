@@ -3,6 +3,7 @@ title: Vacancy Coffee Bar
 date: 2018-01-11 07:42:00 Z
 shop_name: Vacancy Coffee Bar
 website: https://www.vacancycoffeebar.com/
+yelp_id: vacancy-coffee-bar-newport-beach
 featured_min: true
 map: 33.627308,-117.9525905
 type: Coffee Shop
@@ -19,4 +20,3 @@ hours: |-
 coffee:
 - Toby's Estate Coffee
 ---
-

@@ -1291,7 +1291,7 @@ input {
     &[data-open='true'] {
       background: $fill-secondary;
       color: $fill-primary;
-      box-shadow: rgba($fill-secondary, 1) 0 0 2em 0;
+      box-shadow: rgba($fill-secondary, .5) 0 0 2em 0;
     }
     &[data-open='false'] {
       background: transparent;
