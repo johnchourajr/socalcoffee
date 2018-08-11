@@ -11,5 +11,6 @@ coffee:
 map: '33.6319794,-117.9381236'
 website: 'https://daydreamsurfshop.com/'
 featured_max_1: false
+featured_min: true
 ---
 
