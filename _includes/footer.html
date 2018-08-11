@@ -22,6 +22,8 @@
   </div> -->
 </section>
 
+<script src="{{ "/assets/js/util.js" | prepend: site.baseurl }}"></script>
+
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 
 <script src="{{ "/assets/js/lunr.min.js" | prepend: site.baseurl }}"></script>
@@ -37,3 +39,109 @@
 </script>
 
 {% include /scripts/search-js.html %}
+
+
+
+<script type="text/javascript">
+
+  // const allShopsGraphiQL = [
+  //   {% graphql endpoint: "yelp", query: "allShops" %}
+  //     {% for shop in data["viewer"]["business"] %}
+  //       {
+  //         geometry: {
+  //             coordinates: [{{ shop.['coordinates']['latitude'] }}, {{ shop.['coordinates']['longitude'] }}]
+  //         }
+  //       },
+  //     {% endfor %}
+  //
+  //   {% endgraphql %}
+  // ]
+
+
+  const access_token = "_LAi__eFhDVZeVgsWuWyG9CwdXIcEjx50MHr-OOtRhpit59roVfsgtLQZaklHdCOv2QJ4bLI8D3CcQQNZaV-E0OmoMxpi2nCbWuzkUV8nAKTBFSqvvvD8oo5Fg7dWnYx";
+
+  let myHeaders = new Headers();
+  myHeaders.append("Authorization", "Bearer " + access_token);
+
+  const allShops = [
+    {% assign places = site.collections %} {% for place in places %}
+      {% assign shops = place.docs %} {% for shop in shops %}
+        {
+          shop_name: `{{ shop.shop_name }}`,
+          url: `{{ shop.url }}`,
+          yelp_id: `{{ shop.yelp_id }}`,
+          geometry: {
+              coordinates: [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
+          }
+        },
+      {% endfor %}
+    {% endfor %}
+  ]
+
+  let shopsGeoJSON = []
+
+  // const getYelpApi = async (yelp_id) => {
+  //   const getData = async () => fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/${yelp_id}`, {
+  //     headers: myHeaders
+  //   }).then(response => response.json()).catch((error) => {
+  //     console.log(error)
+  //   });
+  //   return data = await getData();
+  // }
+
+  for (var i=0; i<allShops.length; i++) {
+    let details = {
+      shop_name: allShops[i].shop_name,
+      url: allShops[i].url,
+      coordinates: allShops[i].geometry.coordinates,
+    }
+
+
+    // if (allShops[i].yelp_id) {
+    //   const data = getYelpApi(allShops[i].yelp_id)
+    //   if (data.coordinates) {
+    //     var latitude = data.coordinates.latitude
+    //     var longitude = data.coordinates.longitude
+    //
+    //     details = {
+    //       coordinates: [latitude, longitude],
+    //     }
+    //   }
+    // }
+
+    const newObj = {
+      type: 'Feature',
+      properties: {
+          title: details.shop_name,
+          icon: `circle`,
+          url: details.url,
+          description: `<a href="${details.url}">${details.shop_name} ➝</a>`,
+
+      },
+      geometry: {
+          type: `Point`,
+          coordinates: details.coordinates,
+      }
+    }
+
+    shopsGeoJSON.push(newObj)
+  }
+
+  function initShops() {
+    if (storageAvailable('localStorage')) {
+      // console.log("localStorage exists");
+      if (!localStorage.shops) {
+        localStorage.setItem("shops", JSON.stringify(shopsGeoJSON))
+        // console.log("localStorage.shops initialized");
+      } else {
+        // console.log("localStorage.shops exists in localStore");
+      }
+    }
+    else {
+      // console.log("No localStorage in existence");
+    }
+  }
+
+  initShops()
+
+</script>
