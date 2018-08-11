@@ -1,0 +1,18 @@
+<script type="text/javascript">
+
+  const allShops = [
+    {% assign places = site.collections %} {% for place in places %}
+      {% assign shops = place.docs %} {% for shop in shops %}
+        {
+          shop_name: `{{ shop.shop_name }}`,
+          url: `{{ shop.url }}`,
+          yelp_id: `{{ shop.yelp_id }}`,
+          geometry: {
+            coordinates: [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
+          }
+        },
+      {% endfor %}
+    {% endfor %}
+  ]
+
+</script>

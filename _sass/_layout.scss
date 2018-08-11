@@ -1220,10 +1220,61 @@ input {
   }
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#info_block {
+  &[data-loading='pending'] {
+    h4 {
+      position: relative;
+
+      &:after {
+        content: "Loading...";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: $text-5;
+        color: $text-secondary-lighter;
+        animation: blinker 1s linear infinite;
+      }
+    }
+  }
+  &[data-loading='failed'] {
+    h4 {
+      position: relative;
+
+      &:after {
+        content: "Info Not Available...";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: $text-5;
+        color: $text-secondary-lighter;
+      }
+    }
+  }
+}
+
 .open-now {
   transition: opacity .6s $bez, transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: scale(.8);
-  opacity: 0;
+  position: relative;
+
+  &[data-loading='pending'] {
+    &:after {
+      content: "Loading...";
+      position: absolute;
+      right: .3em;
+      bottom: .4em;
+      font-size: $text-5;
+      color: $text-primary;
+      animation: blinker 1s linear infinite;
+    }
+  }
+
   &[data-open='true'], &[data-open='false'], &[data-open='closed_forever'] {
     transform: scale(1);
     opacity: 1;
@@ -1235,6 +1286,7 @@ input {
     padding: .3em .4em;
     border-radius: $border-radius;
     margin-bottom: .75em;
+    z-index: 9999;
 
     &[data-open='true'] {
       background: $fill-secondary;

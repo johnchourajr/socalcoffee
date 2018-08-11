@@ -22,7 +22,7 @@
   </div> -->
 </section>
 
-<script src="{{ "/assets/js/util.js" | prepend: site.baseurl }}"></script>
+
 
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 
@@ -43,26 +43,6 @@
 
 
 <script type="text/javascript">
-
-  const access_token = "_LAi__eFhDVZeVgsWuWyG9CwdXIcEjx50MHr-OOtRhpit59roVfsgtLQZaklHdCOv2QJ4bLI8D3CcQQNZaV-E0OmoMxpi2nCbWuzkUV8nAKTBFSqvvvD8oo5Fg7dWnYx";
-
-  let myHeaders = new Headers();
-  myHeaders.append("Authorization", "Bearer " + access_token);
-
-  const allShops = [
-    {% assign places = site.collections %} {% for place in places %}
-      {% assign shops = place.docs %} {% for shop in shops %}
-        {
-          shop_name: `{{ shop.shop_name }}`,
-          url: `{{ shop.url }}`,
-          yelp_id: `{{ shop.yelp_id }}`,
-          geometry: {
-              coordinates: [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
-          }
-        },
-      {% endfor %}
-    {% endfor %}
-  ]
 
   let shopsGeoJSON = []
 
@@ -115,16 +95,16 @@
 
   function initShops() {
     if (storageAvailable('localStorage')) {
-      // console.log("localStorage exists");
+      console.log("localStorage exists");
       if (!localStorage.shops) {
         localStorage.setItem("shops", JSON.stringify(shopsGeoJSON))
-        // console.log("localStorage.shops initialized");
+        console.log("localStorage.shops initialized");
       } else {
-        // console.log("localStorage.shops exists in localStore");
+        console.log("localStorage.shops exists in localStore");
       }
     }
     else {
-      // console.log("No localStorage in existence");
+      console.log("No localStorage in existence");
     }
   }
 
