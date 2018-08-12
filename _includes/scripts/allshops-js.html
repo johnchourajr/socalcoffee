@@ -1,18 +1,30 @@
 <script type="text/javascript">
 
   const allShops = [
+    {% assign count = 0 %}
     {% assign places = site.collections %} {% for place in places %}
       {% assign shops = place.docs %} {% for shop in shops %}
-        {
-          shop_name: `{{ shop.shop_name }}`,
-          url: `{{ shop.url }}`,
-          yelp_id: `{{ shop.yelp_id }}`,
-          geometry: {
-            coordinates: [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
-          }
-        },
+        {% if shop.title == place.title %}{% else %}
+          {
+            "id": {{ count }},
+            "title": "{{ shop.shop_name | xml_escape }}",
+            "type": "{{ shop.type | xml_escape }}",
+            "city": "{{ shop.city | xml_escape }}",
+            "county": "{{ place.title | xml_escape }}",
+            "coffee": {{ shop.coffee | strip_html | strip_newlines | jsonify }},
+            "content": {{ shop.tags | strip_html | strip_newlines | jsonify }},
+            "url": "{{ shop.url | xml_escape }}",
+            "shop_name": `{{ shop.shop_name | xml_escape }}`,
+            "yelp_id": `{{ shop.yelp_id | xml_escape }}`,
+            "geometry": {
+              "coordinates": [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
+            }
+          },
+        {% assign count = count | plus: 1 %}{% endif %}
       {% endfor %}
     {% endfor %}
   ]
+
+  // console.log(allShops);
 
 </script>

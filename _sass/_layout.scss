@@ -14,6 +14,14 @@
   @include media-query(lg) {
     padding: 0 12vw !important;
   }
+
+  @include media-query(xl) {
+    padding: 0 12vw !important;
+  }
+
+  @include media-query(xxl) {
+    padding: 0 16vw !important;
+  }
 }
 
 .card {
@@ -227,6 +235,14 @@ nav {
 .hero {
   background: $fill-secondary-lightest;
   padding-top: 9em;
+
+  @include media-query(lg) {
+    padding-top: 12em;
+  }
+
+  @include media-query(xxl) {
+    padding-top: 18em;
+  }
 
   &--naked {
     background: transparent !important;
@@ -1268,7 +1284,7 @@ input {
       content: "Loading...";
       position: absolute;
       right: .3em;
-      bottom: .4em;
+      bottom: .3em;
       font-size: $text-5;
       color: $text-primary;
       animation: blinker 1s linear infinite;
@@ -1291,7 +1307,7 @@ input {
     &[data-open='true'] {
       background: $fill-secondary;
       color: $fill-primary;
-      box-shadow: rgba($fill-secondary, .5) 0 0 2em 0;
+      box-shadow: rgba($fill-secondary, 1) 0 0 2em 0;
     }
     &[data-open='false'] {
       background: transparent;

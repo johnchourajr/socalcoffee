@@ -20,17 +20,10 @@
     city: {{shop.city | jsonify}},
     tags: {{shop.tags | strip_html | strip_newlines | jsonify}}
   });{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{% endfor %}
-  // console.log( jQuery.type(index) );
+  // console.log(index);
   // builds reference data
-  var store = [{% assign places = site.collections %}{% for place in places %}{% assign shops = place.docs %}{% for shop in shops %}{% if shop.title == place.title %}{% else %}{
-    "title": "{{ shop.shop_name | xml_escape }}",
-    "type": "{{ shop.type | xml_escape }}",
-    "city": "{{ shop.city | xml_escape }}",
-    "county": "{{ place.title | xml_escape }}",
-    "coffee": {{ shop.coffee | strip_html | strip_newlines | jsonify }},
-    "content": {{ shop.tags | strip_html | strip_newlines | jsonify }},
-    "url": "{{ shop.url | xml_escape }}"
-  },{% endif %}{% endfor %}{% endfor %}]
+  var store = allShops
+  // console.log(store);
   // builds search
 
   $(document).ready(function() {

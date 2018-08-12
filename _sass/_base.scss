@@ -31,13 +31,20 @@ h1, .h1, .text-1 {
   font-size:   ($text-1 * .8);
   line-height: $line-height-1;
 
+  @include media-query(sm) {
+    font-size: $text-1 * .75;
+  }
   @include media-query(md) {
-    font-size:   $text-1;
-    line-height: $line-height-1;
+    font-size: $text-1;
   }
   @include media-query(lg) {
-    font-size:   ($text-1 * 1.2);
-    line-height: $line-height-1;
+    font-size: $text-1 * 1.15;
+  }
+  @include media-query(xl) {
+    font-size: $text-1 * 1.35;
+  }
+  @include media-query(xxl) {
+    font-size: $text-1 * 1.65;
   }
 }
 
@@ -45,13 +52,20 @@ h2, .text-2 {
   font-size:   ($text-2 * .8);
   line-height: $line-height-2;
 
+  @include media-query(sm) {
+    font-size: $text-2 * .75;
+  }
   @include media-query(md) {
-    font-size:   $text-2;
-    line-height: $line-height-2;
+    font-size: $text-2;
   }
   @include media-query(lg) {
-    font-size:   ($text-2 * 1.2);
-    line-height: $line-height-2;
+    font-size: $text-2 * 1.15;
+  }
+  @include media-query(xl) {
+    font-size: $text-2 * 1.25;
+  }
+  @include media-query(xxl) {
+    font-size: $text-2 * 1.5;
   }
 }
 
