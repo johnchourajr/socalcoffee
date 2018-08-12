@@ -88,9 +88,9 @@ collections:
       - {label: Website, name: website, widget: string, required: false}
       - {label: Featured Primary, name: featured_max_1, widget: boolean, required: false}
       - {label: Featured Secondary, name: featured_min, widget: boolean, required: false}
-  - name: "sanbernadino"
-    label: "San Bernadino"
-    folder: "_sanbernadino"
+  - name: "sanbernardino"
+    label: "San Bernardino"
+    folder: "_sanbernardino"
     create: true
     slug: "{{slug}}"
     fields:

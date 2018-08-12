@@ -1261,7 +1261,7 @@ input {
 }
 
 #info_block {
-  &[data-loading='pending'] {
+  &[data-='pending'] {
     h4 {
       position: relative;
 
@@ -1299,10 +1299,12 @@ input {
 
   &[data-loading='pending'] {
     &:after {
-      content: "Loading...";
+      content: "Checking...";
       position: absolute;
       right: .3em;
       bottom: .3em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
       font-size: $text-5;
       color: $text-primary;
       animation: blinker 1s linear infinite;

@@ -36,8 +36,8 @@ collections:
       cord: "-116.18,33.70"
       zoom: 8
       in_nav: true
-  sanbernadino:
-    title: San Bernadino County
+  sanbernardino:
+    title: San Bernardino County
     output: true
     permalink: "/:collection/:path/"
     meta:
