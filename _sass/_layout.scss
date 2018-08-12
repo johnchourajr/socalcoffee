@@ -1260,9 +1260,9 @@ input {
   }
 }
 
-#info_block {
-  &[data-='pending'] {
-    h4 {
+.info-block {
+  &[data-loading='pending'] {
+    .info-block-header {
       position: relative;
 
       &:after {
@@ -1277,7 +1277,7 @@ input {
     }
   }
   &[data-loading='failed'] {
-    h4 {
+    .info-block-header {
       position: relative;
 
       &:after {

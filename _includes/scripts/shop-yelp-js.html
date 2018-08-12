@@ -16,11 +16,9 @@
       const closed_forever = passBool(data.is_closed)
       const openHoursEl = document.getElementById("open_hours")
 
+
       if (!closed_forever) {
         const openHours = data.hours ? data.hours[0].open : []
-        const openNow = document.getElementById("is_open_now")
-        const openNowHero = document.getElementById("is_open_now_hero")
-        const pageHero = document.getElementById("page_hero")
 
         const openHourArr = openHours.map(item => {
           let start = formatTime(item.start)
@@ -41,8 +39,11 @@
           isOpenNowStr = "Hours Unavailable"
         }
 
+        const openNow = document.getElementById("is_open_now")
         openNow.innerHTML = isOpenNowStr
         openNow.setAttribute('data-open', isOpenNow)
+
+        const openNowHero = document.getElementById("is_open_now_hero")
         openNowHero.innerHTML = isOpenNowStr
         openNowHero.setAttribute('data-open', isOpenNow)
 
@@ -50,11 +51,17 @@
         console.log("Closed: " + data.is_closed);
         const isOpenNowStr = "Closed Permenantly"
 
+        const openNow = document.getElementById("is_open_now")
         openNow.innerHTML = isOpenNowStr
         openNow.setAttribute('data-open', 'closed_forever')
+
+        const openNowHero = document.getElementById("is_open_now_hero")
         openNowHero.innerHTML = isOpenNowStr
         openNowHero.setAttribute('data-open', 'closed_forever')
+
+        const pageHero = document.getElementById("page_hero")
         pageHero.style.background = "rgba(255,0,0,.65)"
+
       }
 
       const addressEl = document.getElementById("address")

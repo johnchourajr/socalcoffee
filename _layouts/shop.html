@@ -29,12 +29,12 @@ hero: lg
     <div class="xs-col-12 sm-col-6 col xs-mb3 md-mb0">
       <div id='map' class="shop"></div>
     </div>
-    <div id="info_block" class="xs-col-12 sm-col-5 sm-offset-1 col xs-relative">
+    <div id="info_block" class="info-block xs-col-12 sm-col-5 sm-offset-1 col xs-relative">
       <span>
-        <h4 class="text-secondary bold xs-pb3">Location & Contact</h4>
+        <h4 class="text-secondary info-block-header bold xs-pb3">Location & Contact</h4>
         <h3 class="bold wrap text-primary"><a id="address" class="text-secondary underline" href="http://maps.google.com/?q={{page.address}}">{{page.address}}</a></h3>
         <h3 class="bold wrap text-primary underline"><a id="phone" href="tel:{{page.phone}}" class="text-secondary">{{page.phone}}</a></h3>
-        <h4 class="text-secondary bold xs-pt3 xs-pb3">Hours <span id="is_open_now" class="open-now open-now-mini"></span></h4>
+        <h4 class="text-secondary info-block-header bold xs-pt3 xs-pb3">Hours <span id="is_open_now" class="open-now open-now-mini"></span></h4>
         {% if page.yelp_id %}
           <table>
             <thead>
