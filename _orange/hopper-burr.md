@@ -1,14 +1,14 @@
 ---
-title: Hopper Burr
+title: Hopper & Burr
 tags:
 - Pop-up
 - Indoor Seating
 - Multi-roaster
 shop_name: Hopper & Burr
 website: hopperandburr.com/
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 33.7472556,-117.8699761
 type: Pop Up Coffee Shop
 city: Santa Ana
@@ -24,5 +24,5 @@ hours: |-
 coffee:
 - Heart Coffee
 - Hidden House Coffee
+yelp_id: hopper-and-burr-santa-ana-2
 ---
-

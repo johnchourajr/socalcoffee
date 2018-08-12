@@ -9,9 +9,9 @@ tags:
 - Free Wi-Fi
 shop_name: Portola Costa Mesa
 website: http://www.portolacoffeelab.com/
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 33.694459,-117.9257367
 type: Coffee Shop & Roaster
 city: Costa Mesa
@@ -28,5 +28,5 @@ hours: |-
   | Sunday | 7a-8p |
 coffee:
 - Portola Coffee
+yelp_id: portola-coffee-roasters-costa-mesa
 ---
-

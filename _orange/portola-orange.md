@@ -7,9 +7,9 @@ tags:
 - Outdoor Seating
 shop_name: Portola Orange
 website: http://www.portolacoffeelab.com/
-rating: 
-featured_min: 
-featured_max_1: 
+rating:
+featured_min:
+featured_max_1:
 map: 33.789085,-117.8529618
 type: Coffee Shop & Roaster / Bar
 city: Orange
@@ -25,5 +25,5 @@ hours: |-
   | Thursday-Saturday | 11a-12p |
 coffee:
 - Portola Coffee
+yelp_id: portola-coffee-roasters-orange-2
 ---
-

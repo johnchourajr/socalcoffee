@@ -3,17 +3,18 @@ title: Hidden House
 tags:
 - Indoor Seating
 shop_name: Hidden House Coffee
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
-map: 
+yelp_id: hidden-house-coffee-san-juan-capistrano
+website:
+rating:
+featured_min:
+featured_max_1:
+map: 33.5008297,-117.6644845
 type: Coffee Shop
 city: San Juan Capistrano
 address: |-
   Line One
   Line Two
-phone: 
+phone:
 hours: |-
   | Days   | Time   |
   | ------ | ------ |
@@ -21,4 +22,3 @@ hours: |-
 coffee:
 - Hidden House Coffee
 ---
-

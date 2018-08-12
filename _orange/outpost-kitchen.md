@@ -9,9 +9,10 @@ tags:
 - Lunch
 shop_name: Outpost Kitchen
 website: outpostkitchen.com/outpost-kitchen
-rating: 
-featured_min: 
-featured_max_1: 
+yelp_id: outpost-kitchen-costa-mesa
+rating:
+featured_min:
+featured_max_1:
 map: 33.6393521,-117.9360614
 type: Coffee Shop / Café
 city: Costa Mesa
@@ -26,4 +27,3 @@ hours: |-
 coffee:
 - Four Barrel Coffee
 ---
-

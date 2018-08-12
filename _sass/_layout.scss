@@ -452,6 +452,24 @@ section {
       width: 33.3333%;
     }
   }
+  &:nth-child(3) {
+
+    @include media-query(md) {
+      width: 40%;
+    }
+    @include media-query(lg) {
+      width: 33.3333%;
+    }
+  }
+  &:nth-child(4) {
+
+    @include media-query(md) {
+      width: 60%;
+    }
+    @include media-query(lg) {
+      width: 66.6666%;
+    }
+  }
 }
 
 .feature-min {

@@ -5,7 +5,7 @@ tags:
 shop_name: Arcade Coffee Roasters
 yelp_id: arcade-coffee-roasters-riverside
 website: http://www.arcadecoffeeroasters.com
-featured_max_1: true
+featured_max_1: false
 map: 33.981935,-117.343110
 type: Coffee Shop & Roaster
 city: Riverside
@@ -19,4 +19,3 @@ hours: |-
 coffee:
 - Arcade Coffee Roasters
 ---
-

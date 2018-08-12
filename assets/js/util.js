@@ -59,3 +59,16 @@ function imageExists(url, callback) {
   img.onerror = function() { callback(false); };
   img.src = url;
 }
+
+function loadingHandler(elementId, dataAttr, dataValue) {
+  const el = document.getElementById(elementId)
+  el.setAttribute(dataAttr, dataValue)
+}
+
+function passString(string) {
+  return string != null && string ? `${string}` : ``
+}
+
+function passBool(bool) {
+  return bool ? `${bool}` : false
+}

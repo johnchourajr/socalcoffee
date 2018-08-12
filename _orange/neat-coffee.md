@@ -32,5 +32,5 @@ food-drink:
 - Pastries
 - Craft Drinks
 - Espresso Drinks
+map: "33.6789948729951,-117.875605723943"
 ---
-

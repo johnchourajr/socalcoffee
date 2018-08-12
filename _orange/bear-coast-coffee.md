@@ -22,5 +22,6 @@ coffee:
 - 49th Parallel Coffee
 - Heart Coffee
 layout: shop
+yelp_id: bear-coast-coffee-san-clemente
+map: 33.4200861775673,-117.619638964534
 ---
-
