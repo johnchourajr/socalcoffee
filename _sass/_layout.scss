@@ -1301,13 +1301,19 @@ input {
     &:after {
       content: "Checking...";
       position: absolute;
-      right: .3em;
-      bottom: .3em;
       letter-spacing: .1em;
       text-transform: uppercase;
       font-size: $text-5;
       color: $text-primary;
       animation: blinker 1s linear infinite;
+
+      @media (max-width: 40rem) {
+        left: 0;
+        top: .3em;
+      }
+
+      @include media-query(sm) { right: .3em; }
+      @include media-query(md) { bottom: .3em; }
     }
   }
 
