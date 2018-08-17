@@ -1,11 +1,19 @@
+// Config Variables
+
 const yelp_url = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/"
 const yelp_access_token = "_LAi__eFhDVZeVgsWuWyG9CwdXIcEjx50MHr-OOtRhpit59roVfsgtLQZaklHdCOv2QJ4bLI8D3CcQQNZaV-E0OmoMxpi2nCbWuzkUV8nAKTBFSqvvvD8oo5Fg7dWnYx";
 
 const mapbox_access_token = "pk.eyJ1IjoiamNob3VyYSIsImEiOiI4dUd0bF9RIn0.gjN9GZul3zPeCXfDDIMSXA"
 const mapbox_style = "mapbox://styles/jchoura/cis3mh21n001agrm8uhrg5afy"
 
+
+// API Header
+
 const myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + yelp_access_token);
+
+
+// API Init
 
 function initShops(data) {
   if (storageAvailable('localStorage')) {

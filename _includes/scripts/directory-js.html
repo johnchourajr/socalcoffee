@@ -227,11 +227,11 @@ $(function(){
 
 <script>
 
-  mapboxgl.accessToken = 'pk.eyJ1IjoiamNob3VyYSIsImEiOiI4dUd0bF9RIn0.gjN9GZul3zPeCXfDDIMSXA';
+  mapboxgl.accessToken = mapbox_access_token;
   var start = [-117.7037413,33.7129067];
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/jchoura/cis3mh21n001agrm8uhrg5afy',
+    style: mapbox_style,
     center: start,
     zoom: 8
   });
