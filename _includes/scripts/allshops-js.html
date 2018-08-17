@@ -4,7 +4,7 @@
     {% assign count = 0 %}
     {% assign places = site.collections %} {% for place in places %}
       {% assign shops = place.docs %} {% for shop in shops %}
-        {% if shop.title == place.title %}{% else %}
+        {% if shop.title == place.title %}{% elsif place.title == "Recipes" %}{% else %}
           {
             "id": {{ count }},
             "title": "{{ shop.shop_name | xml_escape }}",
