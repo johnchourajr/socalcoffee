@@ -49,10 +49,12 @@ hero: lg
           {{ page.hours | markdownify }}
         {% endif %}
       </span>
+      <span>
+        <h4 class="text-secondary info-block-header bold xs-pb3">Categories</h4>
+        <h3 id="categories" class="bold wrap text-primary"></h3>
+      </span>
     </div>
   </div>
 </section>
 
-{% include scripts/shop-yelp-js.html %}
-
-{% include scripts/shop-map-js.html %}
+{% include scripts/shop-js.html %}

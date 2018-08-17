@@ -5,7 +5,7 @@ background: "/uploads/aeropress.png"
 ratio: 16
 function: aeropressmath()
 ingredients:
-- label: Coffee in Grams
+- label: Coffee Grams
   value: 17
   type: number
   class: aeropress-coffee
@@ -14,7 +14,7 @@ ingredients:
   value: Fine
   type: text
   locked: true
-- label: Water in Grams
+- label: Water Grams/ml
   value: 630
   type: number
   locked: true
@@ -38,11 +38,11 @@ short_steps:
 - label: Step 1
   text: Wash Filter
   number: ''
-  class: 
+  class:
 - label: Step 2
   text: Add Coffee
   number: ''
-  class: 
+  class:
 - label: Step 3
   text: Pour Water in 10 Seconds
   number: 0
@@ -50,19 +50,18 @@ short_steps:
 - label: Step 4
   text: Stir for 10 seconds
   number: ''
-  class: 
+  class:
 - label: Wait 1 Minute 45 Seconds
   text: ''
   number: ''
-  class: 
+  class:
 - label: Step 6
   text: Stir for 10 seconds
   number: ''
-  class: 
+  class:
 - label: Step 4
   text: Plunge firmly
   number: ''
-  class: 
+  class:
 long_steps: "..."
 ---
-

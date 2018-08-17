@@ -1,0 +1,32 @@
+<script type="text/javascript">
+
+  let shopsGeoJSON = []
+
+  for (var i=0; i<allShops.length; i++) {
+    let details = {
+      shop_name: allShops[i].shop_name,
+      url: allShops[i].url,
+      coordinates: allShops[i].geometry.coordinates,
+    }
+
+    const newObj = {
+      type: 'Feature',
+      properties: {
+          title: details.shop_name,
+          icon: `circle`,
+          url: details.url,
+          description: `<a href="${details.url}">${details.shop_name} ➝</a>`,
+
+      },
+      geometry: {
+          type: `Point`,
+          coordinates: details.coordinates,
+      }
+    }
+
+    shopsGeoJSON.push(newObj)
+  }
+
+  initShops(shopsGeoJSON)
+
+</script>

@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // To keep our code clean and modular, all custom functionality will be contained inside a single object literal called "buttonFilter".
 
 var buttonFilter = {
@@ -127,5 +126,3 @@ $(function(){
     }
   });
 });
-
-</script>

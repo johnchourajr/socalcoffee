@@ -1260,8 +1260,8 @@ input {
   }
 }
 
-.info-block {
-  &[data-loading='pending'] {
+.body {
+  &[yelp-data='pending'] {
     .info-block-header {
       position: relative;
 
@@ -1275,8 +1275,28 @@ input {
         animation: blinker 1s linear infinite;
       }
     }
+
+    #is_open_now_hero.open-now {
+      &:after {
+        content: "Checking...";
+        position: absolute;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        font-size: $text-5;
+        color: $text-primary;
+        animation: blinker 1s linear infinite;
+
+        @media (max-width: 40rem) {
+          left: 0;
+          top: .3em;
+        }
+
+        @include media-query(sm) { right: .3em; }
+        @include media-query(md) { bottom: .3em; }
+      }
+    }
   }
-  &[data-loading='failed'] {
+  &[yelp-data='failed'] {
     .info-block-header {
       position: relative;
 
@@ -1296,26 +1316,6 @@ input {
   transition: opacity .6s $bez, transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: scale(.8);
   position: relative;
-
-  &[data-loading='pending'] {
-    &:after {
-      content: "Checking...";
-      position: absolute;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      font-size: $text-5;
-      color: $text-primary;
-      animation: blinker 1s linear infinite;
-
-      @media (max-width: 40rem) {
-        left: 0;
-        top: .3em;
-      }
-
-      @include media-query(sm) { right: .3em; }
-      @include media-query(md) { bottom: .3em; }
-    }
-  }
 
   &[data-open='true'], &[data-open='false'], &[data-open='closed_forever'] {
     transform: scale(1);

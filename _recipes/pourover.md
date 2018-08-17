@@ -5,7 +5,7 @@ background: "/uploads/pourover.png"
 ratio: 15
 function: pourovermath()
 ingredients:
-- label: Coffee in Grams
+- label: Coffee Grams
   value: 30
   type: number
   class: pourover-coffee
@@ -13,7 +13,7 @@ ingredients:
   value: Medium
   type: text
   locked: true
-- label: Water in Grams
+- label: Water Grams/ml
   value: 0
   type: number
   locked: true
@@ -41,7 +41,7 @@ short_steps:
 - label: Wait 30 Seconds
   text: ''
   number: ''
-  class: 
+  class:
 - label: Step 2
   text: First Pour
   number: 0
@@ -49,7 +49,7 @@ short_steps:
 - label: Wait 45-60 Seconds
   text: ''
   number: ''
-  class: 
+  class:
 - label: Step 3
   text: Second Pour
   number: 0
@@ -57,11 +57,10 @@ short_steps:
 - label: Wait 15 Seconds
   text: ''
   number: ''
-  class: 
+  class:
 - label: Step 4
   text: Third Pour
   number: 0
   class: pourover-pour3
 long_steps: "..."
 ---
-

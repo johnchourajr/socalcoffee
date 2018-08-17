@@ -1,0 +1,34 @@
+<script>
+
+  // Init with yelp as non-existent
+  loadingHandler("top", "yelp-data-exists", "false")
+
+  // Liquid handler for if page has a yelp instance
+  {% if page.yelp_id %}
+    // Update that yelp data exists
+    loadingHandler("top", "yelp-data-exists", "true")
+    // Set status to pending for yelp data
+    loadingHandler("top", "yelp-data", "pending")
+
+    // Init fetch() API call to Yelp
+    fetch(`${yelp_url}{{ page.yelp_id }}`, {
+      // Init headers
+      headers: myHeaders
+    }).then((resp) => {
+      // Parse into JSON
+      return resp.json();
+    }).then((data) => {
+      // Function for processing and placing all data
+      getYelpShopData(data, "{{page.slug}}")
+    }).catch((error) => {
+      // If there is a fetch() error
+      console.log("Error => " + error)
+      // Set status to failed for yelp data
+      loadingHandler("top", "yelp-data", "failed")
+    });
+  {% endif %}
+
+  // Init Mapbox API 
+  mapInit("{{ page.yelp_id }}", "{{ page.map }}", "{{ page.shop_name }}")
+
+</script>
