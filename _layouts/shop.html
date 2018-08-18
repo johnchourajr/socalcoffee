@@ -24,8 +24,7 @@ hero: lg
 </section>
 
 <section class="xs-inline-block">
-  <div class="wrapper">
-
+  <div class="xs-inline-block wrapper">
     <div class="xs-col-12 sm-col-6 col xs-mb3 md-mb0">
       <div id='map' class="shop"></div>
     </div>
@@ -49,7 +48,20 @@ hero: lg
           {{ page.hours | markdownify }}
         {% endif %}
       </span>
-
+    </div>
+  </div>
+  <div class="xs-inline-block wrapper yelp-data-block">
+    <div class="xs-col-12 col xs-mb3 md-mb0">
+      <span class="xs-block xs-pt3">
+        <h4 class="text-secondary info-block-header bold xs-pt3 xs-pb3">Photos</h4>
+        <span id="photos" class="photo-gallery bold wrap text-primary"></span>
+      </span>
+    </div>
+    <div class="xs-col-12 col xs-mb3 md-mb0">
+      <span class="xs-block xs-pt3">
+        <h4 class="text-secondary info-block-header bold xs-pt3 xs-pb3">Categories</h4>
+        <h3 id="categories" class="bold wrap text-primary"></h3>
+      </span>
     </div>
   </div>
 </section>

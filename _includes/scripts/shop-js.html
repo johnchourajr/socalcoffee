@@ -1,3 +1,6 @@
+<script src="{{ "/assets/js/vendor/slick.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/shop.js" | prepend: site.baseurl }}"></script>
+
 <script>
 
   // Init with yelp as non-existent
@@ -28,7 +31,7 @@
     });
   {% endif %}
 
-  // Init Mapbox API 
+  // Init Mapbox API
   mapInit("{{ page.yelp_id }}", "{{ page.map }}", "{{ page.shop_name }}")
 
 </script>

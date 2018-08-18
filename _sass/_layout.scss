@@ -1261,6 +1261,11 @@ input {
 }
 
 .body {
+  &[yelp-data-exists='false'] {
+    .yelp-data-block {
+      display: none !important;
+    }
+  }
   &[yelp-data='pending'] {
     .info-block-header {
       position: relative;
@@ -1369,6 +1374,72 @@ input {
     &[data-open='closed_forever'] {
       background: $fill-red;
       color: white;
+    }
+  }
+}
+
+.slick-slider {
+  .slick-list {
+    overflow: visible;
+  }
+  .slick-track {
+
+    .slick-slide {
+      outline: none;
+      img {
+        height: 50vw;
+
+        @include media-query(md) {
+          height: 60vw;
+        }
+      }
+    }
+  }
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    bottom: 24vw;
+    z-index: 9999;
+    color: transparent;
+
+    @include media-query(md) {
+      bottom: 29vw;
+    }
+
+    &:after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border: solid 3px $fill-black;
+      border-width: 3px 0 0 3px;
+
+      display: block;
+      position: absolute;
+    }
+  }
+  .slick-prev {
+    left: -4vw;
+    &:after {
+      transform: rotateZ(-45deg);
+    }
+  }
+  .slick-next {
+    right: -4vw;
+    &:after {
+      transform: rotateZ(135deg);
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      list-style: none;
+    }
+    button {
+      color: transparent;
     }
   }
 }
