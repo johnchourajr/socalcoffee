@@ -461,7 +461,7 @@ function handleSearch(array) {
   });
 
   // builds reference data
-  var store = JSON.parse(localStorage.getItem('shops'))
+  var store = JSON.parse(localStorage.getItem('allShops'))
 
   // builds search
   $(document).ready(function() {
