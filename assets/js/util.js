@@ -131,7 +131,16 @@ function outputCategoryArray(HTMLelement, array) {
   HTMLelement.innerHTML = HTMLarray.join("")
 }
 
-function outputAddressArray(HTMLelement, array) {
+function outputImageArray(HTMLelement, array) {
+  let HTMLarray = array.map((item, i) => {
+    let object = `<div><img src="${item}"/></div>`
+    return object
+  })
+
+  HTMLelement.innerHTML = HTMLarray.join("")
+}
+
+function outputHoursArray(HTMLelement, array) {
   let HTMLarray = array.map(item => {
     let start = formatTime(item.start)
     let end = formatTime(item.end)
@@ -142,6 +151,22 @@ function outputAddressArray(HTMLelement, array) {
   })
 
   HTMLelement.innerHTML = HTMLarray.join("")
+}
+
+function getStars(rating) {
+  rating = Math.round(rating * 2) / 2;
+  let output = [];
+
+  for (var i = rating; i >= 1; i--)
+    output.push('<img class="star" src="/assets/images/star-whole.svg" />&nbsp;');
+
+  if (i == .5) output.push('<img class="star" src="/assets/images/star-half.svg" />&nbsp;');
+
+  for (let i = (5 - rating); i >= 1; i--)
+    output.push('<img class="star" src="/assets/images/star-empty.svg" />&nbsp;');
+
+  return output.join('');
+
 }
 
 function innerHTMLDdataChange(HTMLelement, innerHTML, dataAttr, dataValue) {

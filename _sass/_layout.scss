@@ -1386,8 +1386,13 @@ input {
 
     .slick-slide {
       outline: none;
+
       img {
-        height: 50vw;
+        height: 90vw;
+
+        @include media-query(sm) {
+          height: 70vw;
+        }
 
         @include media-query(md) {
           height: 60vw;
@@ -1398,19 +1403,25 @@ input {
 
   .slick-prev, .slick-next {
     position: absolute;
-    bottom: 24vw;
+    bottom: calc(100vw / 2);
     z-index: 9999;
     color: transparent;
+    width: 20px;
+    height: 20px;
+
+    @include media-query(sm) {
+      bottom: calc(80vw / 2);
+    }
 
     @include media-query(md) {
-      bottom: 29vw;
+      bottom: calc(70vw / 2);
     }
 
     &:after {
       content: "";
       width: 20px;
       height: 20px;
-      border: solid 3px $fill-black;
+      border: solid 3px $fill-secondary;
       border-width: 3px 0 0 3px;
 
       display: block;
@@ -1418,13 +1429,23 @@ input {
     }
   }
   .slick-prev {
-    left: -4vw;
+    left: 0vw;
+
+    @include media-query(md) {
+      left: -4vw;
+    }
+
     &:after {
       transform: rotateZ(-45deg);
     }
   }
   .slick-next {
-    right: -4vw;
+    right: 0vw;
+
+    @include media-query(md) {
+      right: -4vw;
+    }
+
     &:after {
       transform: rotateZ(135deg);
     }
@@ -1440,6 +1461,22 @@ input {
     }
     button {
       color: transparent;
+    }
+  }
+}
+
+.star-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
+  .star {
+    width: 1.5em;
+    padding-right: .25em;
+
+    @include media-query(md) {
+      width: 2em;
     }
   }
 }

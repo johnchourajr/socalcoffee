@@ -27,13 +27,14 @@
 #map.shop {
   width: 100%;
   height: 400px;
+  background-color: $fill-secondary-lightest;
 
   @include media-query(md) {
-    height: 500px;
+    height: 550px;
   }
 
   @include media-query(lg) {
-    height: 550px;
+    height: 600px;
   }
 }
 

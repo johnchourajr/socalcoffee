@@ -10,12 +10,12 @@ hero: lg
       <span id="is_open_now_hero" class="open-now open-now-hero"></span>
     </div>
   </div>
-  <span id="hero_image" class="img" style="background-image:url(/uploads/{{page.slug}}.jpg);"></span>
+  <span id="hero_image" class="img"></span>
 </section>
 
 <section class="xs-inline-block">
   <div class="wrapper">
-    <div class="sm-col-9 col">
+    <div class="sm-col-10 col">
       <h2 class="bold text-primary xs-pb4 md-pb0">
         {% include chunks/shop-description.html %}
       </h2>
@@ -26,13 +26,20 @@ hero: lg
 <section class="xs-inline-block">
   <div class="xs-inline-block wrapper">
     <div class="xs-col-12 sm-col-6 col xs-mb3 md-mb0">
+      <h4 class="text-secondary bold xs-pb3">Map</h4>
       <div id='map' class="shop"></div>
     </div>
     <div id="info_block" class="info-block xs-col-12 sm-col-5 sm-offset-1 col xs-relative">
+      <span class="yelp-data-block xs-pb3">
+        <span class="xs-flex xs-flex-align-baseline"><h4 class="text-secondary info-block-header bold xs-pb2">Rating&nbsp;&nbsp;</h4> <h6 class="text-secondary"><a id="review_count"  class="text-secondary underline" href="#" target="_blank"></a></h6></span>
+        <div id="rating" class="star-wrap xs-pb3"></div>
+      </span>
       <span>
-        <h4 class="text-secondary info-block-header bold xs-pb3">Location & Contact</h4>
+        <h4 class="text-secondary info-block-header bold xs-pt3 xs-pb3">Location & Contact</h4>
         <h3 class="bold wrap text-primary"><a id="address" class="text-secondary underline" href="http://maps.google.com/?q={{page.address}}">{{page.address}}</a></h3>
         <h3 class="bold wrap text-primary underline"><a id="phone" href="tel:{{page.phone}}" class="text-secondary">{{page.phone}}</a></h3>
+      </span>
+      <span>
         <h4 class="text-secondary info-block-header bold xs-pt3 xs-pb3">Hours <span id="is_open_now" class="open-now open-now-mini"></span></h4>
         {% if page.yelp_id %}
           <table>
@@ -57,10 +64,15 @@ hero: lg
         <span id="photos" class="photo-gallery bold wrap text-primary"></span>
       </span>
     </div>
-    <div class="xs-col-12 col xs-mb3 md-mb0">
+    <div class="xs-col-12 sm-col-6 col xs-mb3 md-mb0">
       <span class="xs-block xs-pt3">
         <h4 class="text-secondary info-block-header bold xs-pt3 xs-pb3">Categories</h4>
         <h3 id="categories" class="bold wrap text-primary"></h3>
+      </span>
+    </div>
+    <div class="xs-col-12 sm-col-6 col xs-mb3 md-mb0">
+      <span class="xs-block xs-pt5">
+        <h5 id="yelp-link" class="bold wrap text-secondary sm-text-right">Shop Data Served by the <a class="underline text-secondary" href="https://www.yelp.com/fusion">Yelp Fusion API</a></h5>
       </span>
     </div>
   </div>
