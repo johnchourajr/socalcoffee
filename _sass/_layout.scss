@@ -994,6 +994,12 @@ table {
     text-transform: capitalize;
     padding-right: 1em;
     margin-bottom: -2px;
+
+    @media (max-width: 40rem) {
+      font-size: $text-2;
+      margin: .2875em 0 !important;
+    }
+
     &:focus, &:hover, &:active {
       -webkit-appearance: none;
       outline: none;
@@ -1348,7 +1354,6 @@ input {
     opacity: 1;
     position: relative;
     z-index: 2;
-    animation: rotate360 20s linear infinite;
   }
 
   &-hero {
@@ -1359,22 +1364,15 @@ input {
       content: "" !important;
     }
 
-    // &[data-open='true'] {
-    //   // background: $fill-secondary;
-    //   // color: $fill-primary;
-    //   // box-shadow: rgba($fill-secondary, 1) 0 0 2em 0;
-    // }
-    // &[data-open='false'] {
-    //   // background: transparent;
-    //   // color: $text-white;
-    //   // border-color: $text-white;
-    //   // border-width: 1px;
-    //   // border-style: solid;
-    // }
-    // &[data-open='closed_forever'] {
-    //   // background: $fill-red;
-    //   // color: white;
-    // }
+    &[data-open='true'] {
+      animation: rotate360 20s linear infinite;
+    }
+    &[data-open='false'] {
+      animation: rotate360 20s linear infinite;
+    }
+    &[data-open='closed_forever'] {
+      animation: rotate360 20s linear infinite;
+    }
   }
 
   &-mini {
