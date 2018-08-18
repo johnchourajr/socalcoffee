@@ -1397,6 +1397,10 @@ input {
         @include media-query(md) {
           height: 60vw;
         }
+
+        @include media-query(lg) {
+          height: 50vw;
+        }
       }
     }
   }
@@ -1415,6 +1419,10 @@ input {
 
     @include media-query(md) {
       bottom: calc(70vw / 2);
+    }
+
+    @include media-query(lg) {
+      bottom: calc(60vw / 2);
     }
 
     &:after {
