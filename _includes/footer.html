@@ -31,6 +31,8 @@
   gtag('config', 'UA-112777288-1');
 </script>
 
-{% include /scripts/search-js.html %}
+<script type="text/javascript">
+  handleSearch(JSON.parse(localStorage.getItem('shops')))
+</script>
 
 {% include /scripts/localstore-js.html %}

@@ -4,13 +4,7 @@ tags:
 - Indoor Seating
 shop_name: Patch Coffee
 yelp_id: patch-coffee-lake-forest
-website: 
-rating: 
-featured_min: 
-featured_max_1: 
 type: Coffee Shop
 city: Lake Forest
-coffee:
-- "..."
+map: 33.66211,-117.65367
 ---
-

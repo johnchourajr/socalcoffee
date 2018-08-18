@@ -7,10 +7,11 @@
         {% if shop.title == place.title %}{% elsif place.title == "Recipes" %}{% else %}
           {
             "id": {{ count }},
-            "title": "{{ shop.shop_name | xml_escape }}",
+            "title": "{{ shop.shop_name }}",
             "type": "{{ shop.type | xml_escape }}",
             "city": "{{ shop.city | xml_escape }}",
             "county": "{{ place.title | xml_escape }}",
+            "tags": {{shop.tags | strip_html | strip_newlines | jsonify}},
             "coffee": {{ shop.coffee | strip_html | strip_newlines | jsonify }},
             "content": {{ shop.tags | strip_html | strip_newlines | jsonify }},
             "url": "{{ shop.url | xml_escape }}",
@@ -25,6 +26,6 @@
     {% endfor %}
   ]
 
-  // console.log(allShops);
+  initStorage("shops", allShops)
 
 </script>

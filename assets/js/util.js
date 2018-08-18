@@ -1,4 +1,9 @@
-// Config Variables
+//
+//
+// CONFIG VARIABLES
+// ********************************************************************
+// ====================================================================
+// ####################################################################
 
 const yelp_url = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/"
 const yelp_access_token = "_LAi__eFhDVZeVgsWuWyG9CwdXIcEjx50MHr-OOtRhpit59roVfsgtLQZaklHdCOv2QJ4bLI8D3CcQQNZaV-E0OmoMxpi2nCbWuzkUV8nAKTBFSqvvvD8oo5Fg7dWnYx";
@@ -7,22 +12,26 @@ const mapbox_access_token = "pk.eyJ1IjoiamNob3VyYSIsImEiOiI4dUd0bF9RIn0.gjN9GZul
 const mapbox_style = "mapbox://styles/jchoura/cis3mh21n001agrm8uhrg5afy"
 
 
-// API Header
+//
+//
+// API INIT
+// ********************************************************************
+// ====================================================================
+// ####################################################################
 
+// API Header
 const myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + yelp_access_token);
 
-
 // API Init
-
-function initShops(data) {
+function initStorage(key, data) {
   if (storageAvailable('localStorage')) {
     console.log("localStorage exists");
-    if (!localStorage.shops) {
-      localStorage.setItem("shops", JSON.stringify(data))
-      console.log("localStorage.shops initialized");
+    if (!localStorage[key]) {
+      localStorage.setItem(key, JSON.stringify(data))
+      console.log(`localStorage[${key}] initialized`);
     } else {
-      console.log("localStorage.shops exists in localStore");
+      console.log(`localStorage[${key}] exists in localStore`);
     }
   }
   else {
@@ -30,6 +39,15 @@ function initShops(data) {
   }
 }
 
+//
+//
+// HELPER FUNCTIONS
+// ********************************************************************
+// ====================================================================
+// ####################################################################
+
+// HELPER FUNCTION
+// Check if LocalStorage Exists
 function storageAvailable(type) {
   try {
       var storage = window[type],
@@ -48,6 +66,8 @@ function storageAvailable(type) {
   }
 }
 
+// HELPER FUNCTION
+// Date Formatter
 function formatDate(time) {
   // Check correct time format and split into components
   time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
@@ -60,6 +80,8 @@ function formatDate(time) {
   return time.join (''); // return adjusted time or original string
 }
 
+// HELPER FUNCTION
+// Time Formatter
 function formatTime(time) {
   let timeStr = time
       timeStr = timeStr.slice(0, 2) + ":" + timeStr.slice(2);
@@ -69,6 +91,8 @@ function formatTime(time) {
   return timeStr
 }
 
+// HELPER FUNCTION
+// Number Formatter
 function formatPhoneNumber(phone) {
   phone = phone.replace("+1", "")
   phone = phone.replace(/[^\d]/g, "");
@@ -78,6 +102,7 @@ function formatPhoneNumber(phone) {
   return null;
 }
 
+// HELPER FUNCTION
 // The "callback" argument is called with either true or false
 // depending on whether the image at "url" exists or not.
 function imageExists(url, callback) {
@@ -87,32 +112,46 @@ function imageExists(url, callback) {
   img.src = url;
 }
 
+// HELPER FUNCTION
+// Handles loading by updating the data attribute
 function loadingHandler(elementId, dataAttr, dataValue) {
   const el = document.getElementById(elementId)
   el.setAttribute(dataAttr, dataValue)
 }
 
+// HELPER FUNCTION
+// checks if string exists and passes it through
 function passString(string) {
   return string != null && string ? `${string}` : ``
 }
 
+// HELPER FUNCTION
+// checks if bool exists and passes it through
 function passBool(bool) {
   return bool ? `${bool}` : false
 }
 
-function outputUpdate(vol) {
-  document.querySelector('#frenchpress-container-output').value = vol;
+// HELPER FUNCTION
+// Handles the update of the frenchpress slider
+function outputUpdate(selector, vol) {
+  document.querySelector(selector).value = vol;
 }
 
+// HELPER FUNCTION
+// Handles form updates by ID
 function changeFormById(id, attr, value) {
   value = Math.round(value)
   document.getElementById(id).setAttribute(attr,value);
 }
 
+// HELPER FUNCTION
+// Handles element changes by ID
 function changeById(id, el) {
   document.getElementById(id).innerHTML = Math.round(el)
 }
 
+// HELPER FUNCTION
+// Handles element changes by Class
 function changeByClass(html, selector, el) {
   let selectorStr = html + "." + selector
   let selectors = document.querySelectorAll(selectorStr)
@@ -121,6 +160,24 @@ function changeByClass(html, selector, el) {
   })
 }
 
+// HELPER FUNCTION
+// A utility to update the data insite of an element
+function innerHTMLDdataChange(HTMLelement, innerHTML, dataAttr, dataValue) {
+  const element = document.getElementById(HTMLelement)
+  element.innerHTML = innerHTML
+  element.setAttribute(dataAttr, dataValue)
+}
+
+//
+//
+// SHOPS TEMPLATE FUNCTIONS
+// ********************************************************************
+// ====================================================================
+// ####################################################################
+
+
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs category array
 function outputCategoryArray(HTMLelement, array) {
   let HTMLarray = array.map(item => {
     let title = item.title
@@ -131,6 +188,8 @@ function outputCategoryArray(HTMLelement, array) {
   HTMLelement.innerHTML = HTMLarray.join("")
 }
 
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs image gallery array
 function outputImageArray(HTMLelement, array) {
   let HTMLarray = array.map((item, i) => {
     let object = `<div><img src="${item}"/></div>`
@@ -140,6 +199,8 @@ function outputImageArray(HTMLelement, array) {
   HTMLelement.innerHTML = HTMLarray.join("")
 }
 
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs hours of operation array
 function outputHoursArray(HTMLelement, array) {
   let HTMLarray = array.map(item => {
     let start = formatTime(item.start)
@@ -153,7 +214,9 @@ function outputHoursArray(HTMLelement, array) {
   HTMLelement.innerHTML = HTMLarray.join("")
 }
 
-function getStars(rating) {
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs the start rating
+function outputStarRating(HTMLelement, rating) {
   rating = Math.round(rating * 2) / 2;
   let output = [];
 
@@ -165,16 +228,124 @@ function getStars(rating) {
   for (let i = (5 - rating); i >= 1; i--)
     output.push('<img class="star" src="/assets/images/star-empty.svg" />&nbsp;');
 
-  return output.join('');
-
+  HTMLelement.innerHTML = output.join('');
 }
 
-function innerHTMLDdataChange(HTMLelement, innerHTML, dataAttr, dataValue) {
-  const element = document.getElementById(HTMLelement)
-  element.innerHTML = innerHTML
-  element.setAttribute(dataAttr, dataValue)
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs the number of reviews with a link to yelp
+function outputReviewCount(HTMLelement, value, url) {
+  HTMLelement.innerHTML = `${value} Reviews`
+  HTMLelement.href = url
 }
 
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs the hero image if it exists on local server or yelp API
+function outputHeroImage(HTMLelement, data, slug) {
+  // Data Variables
+  const heroImage = `/uploads/${slug}.jpg`
+  const yelpImage = passString(data.image_url)
+
+  // This function checks if our image exists
+  const heroImageExists = imageExists(heroImage, function(exists) {
+    console.log("Has Image: " + exists);
+    // Add Hero Image
+    HTMLelement.style.backgroundImage = `url(${heroImage})`;
+    // if our image does not exist, we check if a Yelp image exists
+    if (!exists) {
+      // remove the image from the background
+      imageExists(yelpImage, function(exists) {
+        if (exists) {
+          // Assign new background image from yelp
+          HTMLelement.style.backgroundImage = `url(${yelpImage})`;
+        }
+      });
+    }
+  });
+}
+
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs whether the shop is open, closed, or permenantly closed
+function outputOpenStatus(HTMLelement, data) {
+  const pageHero = document.getElementById("page_hero")
+  const closed_forever = passBool(data.is_closed)
+  const isOpenNow = data.hours ? data.hours[0].is_open_now : false
+  // const closed_forever = false
+  // const isOpenNow = false
+  const unknown = {
+    image: ``,
+    text: `Hours Unavailable`
+  }
+  const open = {
+    image: `<img src="/assets/images/open.svg" />`,
+    text: `Open Now`
+  }
+  const closed = {
+    image: `<img src="/assets/images/closed.svg" />`,
+    text: `Closed Now`
+  }
+  const closedForever = {
+    image: `<img src="/assets/images/closed-forever.svg" />`,
+    text: `Cloesd Permenantly`
+  }
+
+  // This statement determines whether the shop has been closed forever, or if its still open
+  if (!closed_forever) {
+
+    // Open Hours Array
+    const openHours = data.hours ? data.hours[0].open : []
+    outputHoursArray(HTMLelement, openHours)
+
+    // For determining whether the shop is currently open
+    let isOpenNowStr = ""
+
+    // A condition that passes a string stating whether the shop is open
+    if (data.hours) {
+      isOpenNowStr = isOpenNow ? open : closed
+    } else {
+      isOpenNowStr = unknown
+    }
+
+    // Those strings are passed to the DOM
+    innerHTMLDdataChange("is_open_now", isOpenNowStr.text, 'data-open', isOpenNow)
+    innerHTMLDdataChange("is_open_now_hero", isOpenNowStr.image, 'data-open', isOpenNow)
+
+  } else if (closed_forever) {
+
+    // if the shop is cloesd Permenantly these are the conditions
+    console.log("Closed: " + data.is_closed);
+    const isOpenNowStr = closedForever
+
+    // Passed to the DOM
+    innerHTMLDdataChange("is_open_now", isOpenNowStr.text, 'data-open', 'closed_forever')
+    innerHTMLDdataChange("is_open_now_hero", isOpenNowStr.image, 'data-open', 'closed_forever')
+
+    pageHero.style.background = "rgba(255,0,0,.65)"
+  }
+}
+
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Outputs the address and phone number content
+function outputAddress(HTMLaddressElement, HTMLphoneElement, data) {
+  const address1 = passString(data.location.address1)
+  const address2 = passString(data.location.address2)
+  const address3 = passString(data.location.address3)
+  const city = passString(data.location.city)
+  const state = passString(data.location.state)
+  const zip_code = passString(data.location.zip_code)
+  const phone = passString(data.phone)
+
+  // Concating the strings into a sentence
+  const addressConcat = `${address1} ${address2} ${address3}\r${city}, ${state} ${zip_code}`
+  HTMLaddressElement.innerHTML = addressConcat
+  HTMLaddressElement.href = `http://maps.google.com/?q=${addressConcat}`
+
+  // Phone Render
+  HTMLphoneElement.innerHTML = formatPhoneNumber(phone)
+  HTMLphoneElement.href = `tel:${phone}`
+}
+
+// SHOPS TEMPLATE FUNCTION
+// For Shops: Inits the map
 function mapInit(yelpId, pageMap, shopName) {
   const getData = async () => fetch(`${yelp_url}${yelpId}`, {
     headers: myHeaders
@@ -267,10 +438,12 @@ function mapInit(yelpId, pageMap, shopName) {
     map.addControl(new mapboxgl.Navigation());
 
   }
-
   mapFunction()
 }
 
+
+// SEARCH FUNCTION
+// For Search: Inits search
 function handleSearch(array) {
   // builds lunr
   var index = lunr(function () {
@@ -287,12 +460,10 @@ function handleSearch(array) {
     }, this)
   });
 
-
   // builds reference data
-  var store = allShops
-  // console.log(store);
-  // builds search
+  var store = JSON.parse(localStorage.getItem('shops'))
 
+  // builds search
   $(document).ready(function() {
 
     function getQueryVariable(variable) {
@@ -308,42 +479,39 @@ function handleSearch(array) {
       }
     }
 
-    var urlQuery = getQueryVariable('query');
-
-    if (urlQuery) {
-      document.getElementById('search').setAttribute("value", urlQuery);
-
-      var resultdiv = $('#results');
-      var resultstatus = $('#resultstatus');
-      var result = index.search(urlQuery);
-
+    function searchQuery(store, resultdiv, resultstatus, result) {
       resultdiv.empty();
 
-      resultstatus.replaceWith(`<div id="resultstatus" class="col xs-col-12 xs-mb4"><h3 class="bold text-secondary">Found ${result.length} result(s)</h3></div>`);
+      resultstatus.replaceWith('<div id="resultstatus" class="col xs-col-12 xs-mb4"><h3 class="bold text-secondary">Found '+result.length+' result(s)</h3></div>');
+
       // Loop through, match, and add results
       for (var item in result) {
-        var ref = result[item].ref;
-        var searchitem = `<div class="mix mix-card col xs-col-6 sm-col-4 md-col-6 xl-col-4 result"><div class="result-body"><a href="${store[ref].url}" class=""><h3 class="bold text-secondary">${store[ref].title}</h3><h6 class="bold text-primary xs-pb1">${store[ref].city}</h6></a></div></div>`;
+        var ref = result[item].ref
+        var title = passString(store[ref].title)
+        var url = passString(store[ref].url)
+        var city = passString(store[ref].city)
+        var searchitem = `<div class="mix mix-card col xs-col-6 sm-col-4 md-col-6 xl-col-4 result"><div class="result-body"><a href="${url}" class=""><h3 class="bold text-secondary">${title}</h3><h6 class="bold text-primary xs-pb1">${city}</h6></a></div></div>`;
         resultdiv.append(searchitem);
       }
     }
 
-    $('input#search').on('keyup', function () {
+    var urlQuery = getQueryVariable('query');
+    var resultdiv = $('#results');
 
-      var resultdiv = $('#results');
+    if (urlQuery) {
+      document.getElementById('search').setAttribute("value", urlQuery);
+      var result = index.search(urlQuery);
       var resultstatus = $('#resultstatus');
+
+      searchQuery(store, resultdiv, resultstatus, result)
+    }
+
+    $('input#search').on('keyup', function () {
       var term = $(this).val();
       var result = index.search(term);
+      var resultstatus = $('#resultstatus');
 
-      resultdiv.empty();
-
-      resultstatus.replaceWith('<div id="resultstatus" class="col xs-col-12 xs-mb4"><h3 class="bold text-secondary">Found '+result.length+' result(s)</h3></div>');
-      // Loop through, match, and add results
-      for (var item in result) {
-        var ref = result[item].ref;
-        var searchitem = `<div class="mix mix-card col xs-col-6 sm-col-4 md-col-6 xl-col-4 result"><div class="result-body"><a href="${store[ref].url}" class=""><h3 class="bold text-secondary">${store[ref].title}</h3><h6 class="bold text-primary xs-pb1">${store[ref].city}</h6></a></div></div>`;
-        resultdiv.append(searchitem);
-      }
+      searchQuery(store, resultdiv, resultstatus, result)
     });
   });
 }

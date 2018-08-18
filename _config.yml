@@ -104,7 +104,7 @@ defaults:
       | ------ | ------ |
       | Tuesday-Sunday | 7a-4p |
     coffee:
-    - Coffee Roaster
+    - Coffee
 permalink: pretty
 exclude:
 - Gemfile

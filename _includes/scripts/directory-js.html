@@ -262,7 +262,7 @@ $(function(){
         type: "geojson",
         data: {
             "type": "FeatureCollection",
-            "features": JSON.parse(localStorage.getItem('shops')),
+            "features": JSON.parse(localStorage.getItem('shopsGEO')),
         },
         cluster: true,
         clusterMaxZoom: 30, // Max zoom to cluster points on

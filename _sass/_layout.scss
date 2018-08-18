@@ -222,12 +222,12 @@ nav {
 .header-logo {
   width: 60vw;
   max-width: 250px;
-  transform: translateX(-0.25em);
+  transform: translateY(.75em);
 
   @include media-query(sm) {
     width: 13em;
   }
-  @include media-query(md) {
+  @include media-query(lg) {
     width: 16em;
   }
 }
@@ -1260,6 +1260,15 @@ input {
   }
 }
 
+@keyframes rotate360 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 .body {
   &[yelp-data-exists='false'] {
     .yelp-data-block {
@@ -1319,38 +1328,53 @@ input {
 
 .open-now {
   transition: opacity .6s $bez, transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: scale(.8);
+  transform: scale(.5);
   position: relative;
+  width: 4em;
+  height: 4em;
+
+  @include media-query(md) {
+    width: 6em;
+    height: 6em;
+  }
+
+  @include media-query(lg) {
+    width: 8em;
+    height: 8em;
+  }
 
   &[data-open='true'], &[data-open='false'], &[data-open='closed_forever'] {
-    transform: scale(1);
+    transform: scale(1) rotateZ(0deg);
     opacity: 1;
     position: relative;
     z-index: 2;
+    animation: rotate360 20s linear infinite;
   }
 
   &-hero {
-    padding: .3em .4em;
-    border-radius: $border-radius;
-    margin-bottom: .75em;
+    margin-top: 1em;
     z-index: 9999;
 
-    &[data-open='true'] {
-      background: $fill-secondary;
-      color: $fill-primary;
-      box-shadow: rgba($fill-secondary, 1) 0 0 2em 0;
+    &:after {
+      content: "" !important;
     }
-    &[data-open='false'] {
-      background: transparent;
-      color: $text-white;
-      border-color: $text-white;
-      border-width: 1px;
-      border-style: solid;
-    }
-    &[data-open='closed_forever'] {
-      background: $fill-red;
-      color: white;
-    }
+
+    // &[data-open='true'] {
+    //   // background: $fill-secondary;
+    //   // color: $fill-primary;
+    //   // box-shadow: rgba($fill-secondary, 1) 0 0 2em 0;
+    // }
+    // &[data-open='false'] {
+    //   // background: transparent;
+    //   // color: $text-white;
+    //   // border-color: $text-white;
+    //   // border-width: 1px;
+    //   // border-style: solid;
+    // }
+    // &[data-open='closed_forever'] {
+    //   // background: $fill-red;
+    //   // color: white;
+    // }
   }
 
   &-mini {
@@ -1389,6 +1413,7 @@ input {
 
       img {
         height: 90vw;
+        max-height: 80vh;
 
         @include media-query(sm) {
           height: 70vw;

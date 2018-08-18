@@ -44,7 +44,7 @@ function frenchpressmath() {
   var preinfuse = c * 2
   var pour1 = (w) - preinfuse
 
-  outputUpdate(volStr)
+  outputUpdate('#frenchpress-container-output', volStr)
   changeFormById("frenchpress-coffee", 'value', c)
   changeFormById("frenchpress-water", 'value', w)
   changeByClass("strong", "frenchpress-coffee", c)
