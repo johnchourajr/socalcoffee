@@ -441,6 +441,12 @@ function mapInit(yelpId, pageMap, shopName) {
   mapFunction()
 }
 
+//
+//
+// MISC FUNCTIONS
+// ********************************************************************
+// ====================================================================
+// ####################################################################
 
 // SEARCH FUNCTION
 // For Search: Inits search
@@ -515,3 +521,44 @@ function handleSearch(array) {
     });
   });
 }
+
+// LOCALSTORAGE CACHE EXPIRATINO
+// For Search: Inits search
+Storage.prototype.setExpire = function (arrObj) {
+    var date,
+        now,
+        days,
+        deletes,
+        items,
+        fa, ta,
+        newItems = [],
+        storage = localStorage.getItem('limitStorage');
+    items = JSON.parse(storage || "[]");
+    date = new Date();
+    date = date.toString().split(' ');
+    date = Number(date[2]);
+    for (var key in arrObj) {
+        for (i = 0; i < items.length; i++) {
+            if (items[i].value == key) {
+                if (typeof (items[i].days) == "number") {
+                    if (items[i].date !== date) {
+                        days = (date - items[i].date);
+                    } else {
+                        days = items[i].days;
+                    }
+                }
+            }
+        }
+        ta = {
+            value: key,
+            limit: arrObj[key],
+            date: date,
+            days: days !== undefined ? days : 0
+        };
+        if (ta.days >= ta.limit) {
+            localStorage.removeItem(ta.value);
+        }
+        if(localStorage.getItem(ta.value) !== null) newItems.push(ta);
+    }
+    localStorage.setItem('limitStorage', JSON.stringify(newItems));
+};

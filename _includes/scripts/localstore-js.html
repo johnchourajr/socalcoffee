@@ -1,5 +1,31 @@
 <script type="text/javascript">
 
+  const allShops = [
+    {% assign count = 0 %}
+    {% assign places = site.collections %} {% for place in places %}
+      {% assign shops = place.docs %} {% for shop in shops %}
+        {% if shop.title == place.title %}{% elsif place.title == "Recipes" %}{% else %}
+          {
+            "id": {{ count }},
+            "title": "{{ shop.shop_name }}",
+            "type": "{{ shop.type | xml_escape }}",
+            "city": "{{ shop.city | xml_escape }}",
+            "county": "{{ place.title | xml_escape }}",
+            "tags": {{shop.tags | strip_html | strip_newlines | jsonify}},
+            "coffee": {{ shop.coffee | strip_html | strip_newlines | jsonify }},
+            "content": {{ shop.tags | strip_html | strip_newlines | jsonify }},
+            "url": "{{ shop.url | xml_escape }}",
+            "shop_name": `{{ shop.shop_name | xml_escape }}`,
+            "yelp_id": `{{ shop.yelp_id | xml_escape }}`,
+            "geometry": {
+              "coordinates": [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
+            }
+          },
+        {% assign count = count | plus: 1 %}{% endif %}
+      {% endfor %}
+    {% endfor %}
+  ]
+
   let shopsGeoJSON = []
 
   for (var i=0; i<allShops.length; i++) {
@@ -27,6 +53,8 @@
     shopsGeoJSON.push(newObj)
   }
 
+  initStorage("allShops", allShops)
   initStorage("shopsGeoJSON", shopsGeoJSON)
+  window.localStorage.setExpire({"allShops":1,"shopsGeoJSON":1});
 
 </script>
