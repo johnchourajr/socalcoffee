@@ -5,6 +5,7 @@
     container: 'map',
     style: mapbox_style,
     center: start,
+    pitch: 45,
     zoom: 8
   });
 
@@ -130,6 +131,7 @@
       center: start,
       zoom: 8,
       bearing: 0,
+      pitch: 45,
       speed: 1, // make the flying slow
       curve: 1, // change the speed at which it zooms out
 

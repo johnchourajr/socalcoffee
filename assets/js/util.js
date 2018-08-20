@@ -596,8 +596,9 @@ function flyTo(coordinates, lngLat) {
     map.flyTo({
       center: lngLat,
       bearing: 0,
-      speed: 2,
-      curve: 2,
+      pitch: 45,
+      speed: 1,
+      curve: 1,
 
       easing: function (t) {
         return t;
