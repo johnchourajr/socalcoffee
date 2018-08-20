@@ -46,7 +46,7 @@
         type: "geojson",
         data: {
             "type": "FeatureCollection",
-            "features": JSON.parse(localStorage.getItem('shopsGeoJSON')),
+            "features": shopsGeoJSONParsed,
         },
         cluster: true,
         clusterMaxZoom: 30, // Max zoom to cluster points on

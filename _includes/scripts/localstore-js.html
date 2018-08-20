@@ -57,8 +57,11 @@
     shopsGeoJSON.push(newObj)
   }
 
-  initStorage("allShops", allShops)
-  initStorage("shopsGeoJSON", shopsGeoJSON)
-  window.localStorage.setExpire({"allShops":1,"shopsGeoJSON":1});
+  initStorage("allShops{{site.time | date: '%s'}}", allShops)
+  initStorage("shopsGeoJSON{{site.time | date: '%s'}}", shopsGeoJSON)
+  window.localStorage.setExpire({"allShops{{site.time | date: '%s'}}":1,"shopsGeoJSON{{site.time | date: '%s'}}":1});
+
+  const allShopsJSON = JSON.parse(localStorage.getItem('allShops{{site.time | date: '%s'}}'))
+  const shopsGeoJSONParsed = JSON.parse(localStorage.getItem('shopsGeoJSON{{site.time | date: '%s'}}'))
 
 </script>

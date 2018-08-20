@@ -4,22 +4,10 @@ tags:
 - Indoor Seating
 shop_name: Bird Rock Coffee Morena
 website: http://birdrockcoffee.com
-rating: 
-featured_min: 
-featured_max_1: 
 map: 32.771291,-117.202137
 type: Coffee Shop
 city: San Diego
-address: |-
-  1270 Morena Blvd,
-  San Diego, CA 92110
-phone: 619-272-0203
-hours: |-
-  | Days   | Time   |
-  | ------ | ------ |
-  | Monday-Friday | 6a-12p |
-  | *Sunday-Saturday* | *Closed* |
 coffee:
 - Bird Rock Coffee
+yelp_id: bird-rock-coffee-roasters-san-diego-3
 ---
-

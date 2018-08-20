@@ -12,151 +12,135 @@
     var canvas = map.getCanvasContainer();
 
     map.addSource('counties', {
-        "type": "vector",
-        "url": "mapbox://mapbox.82pkq93d"
+      "type": "vector",
+      "url": "mapbox://mapbox.82pkq93d"
     });
 
     map.addLayer({
-        "id": "counties",
-        "type": "fill",
-        "source": "counties",
-        "source-layer": "original",
-        "paint": {
-            "fill-outline-color": "#00FBD5",
-            "fill-color": "transparent"
-        }
+      "id": "counties",
+      "type": "fill",
+      "source": "counties",
+      "source-layer": "original",
+      "paint": {
+        "fill-outline-color": "#00FBD5",
+        "fill-color": "transparent"
+      }
     }, 'place-city-sm'); // Place polygon under these labels.
-
   });
 
   map.on('load', function () {
     map.addSource("points", {
-        type: "geojson",
-        data: {
-            "type": "FeatureCollection",
-            "features": JSON.parse(localStorage.getItem('shopsGeoJSON')),
-        },
-        cluster: true,
-        clusterMaxZoom: 30, // Max zoom to cluster points on
-        clusterRadius: 14
+      type: "geojson",
+      data: {
+        "type": "FeatureCollection",
+        "features": shopsGeoJSONParsed,
+      },
+      cluster: true,
+      clusterMaxZoom: 30, // Max zoom to cluster points on
+      clusterRadius: 14
     });
 
 
     var layers = [
-        [150, '#00FBD5'],
-        [20, '#00FBD5'],
-        [0, '#00FBD5']
+      [150, '#00FBD5'],
+      [20, '#00FBD5'],
+      [0, '#00FBD5']
     ];
 
     map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": "points",
-        "layout": {
-            "icon-image": "{icon}-15"
-        }
+      "id": "points",
+      "type": "symbol",
+      "source": "points",
+      "layout": {
+        "icon-image": "{icon}-15"
+      }
     });
 
     // console.log(map);
 
     layers.forEach(function (layer, i) {
-        map.addLayer({
-            "id": "cluster-" + i,
-            "type": "circle",
-            "source": "points",
-            "paint": {
-                "circle-color": layer[1],
-                "circle-radius": 15
-            },
-            "filter": i === 0 ?
-                [">=", "point_count", layer[0]] :
-                ["all",
-                    [">=", "point_count", layer[0]],
-                    ["<", "point_count", layers[i - 1][0]]]
-        });
+      map.addLayer({
+        "id": "cluster-" + i,
+        "type": "circle",
+        "source": "points",
+        "paint": {
+          "circle-color": layer[1],
+          "circle-radius": 15
+        },
+        "filter": i === 0 ?
+          [">=", "point_count", layer[0]] :
+          ["all",
+            [">=", "point_count", layer[0]],
+            ["<", "point_count", layers[i - 1][0]]]
+      });
     });
 
     map.addLayer({
-        "id": "cluster-count",
-        "type": "symbol",
-        "source": "points",
-        "layout": {
-            "text-field": "{point_count}",
-            "text-font": [
-                "DIN Offc Pro Medium",
-                "Arial Unicode MS Bold"
-            ],
-            "text-size": 12
-        }
+      "id": "cluster-count",
+      "type": "symbol",
+      "source": "points",
+      "layout": {
+        "text-field": "{point_count}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-size": 12,
+      }
     });
 
+    // Create a popup, but don't add it to the map yet.
+    var popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+      if (!features.length) {
+        popup.remove();
+        return;
+      }
+
+      var feature = features[0];
+
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup.setLngLat(feature.geometry.coordinates)
+           .setHTML(feature.properties.description)
+           .addTo(map);
+    });
+
+    map.scrollZoom.disable();
+    map.addControl(new mapboxgl.Navigation());
+    showMapboxPopupOnHover(popup, '.directory-list .mix')
   });
 
-  // Create a popup, but don't add it to the map yet.
-  var popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-  });
+  var isAtStart = true;
 
-  map.on('mousemove', function(e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+  document.getElementById('all').addEventListener('click', function() {
 
-    // Change the cursor style as a UI indicator.
-    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+    isAtStart = !isAtStart;
 
-    if (!features.length) {
-      popup.remove();
-      return;
-    }
-
-    var feature = features[0];
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    popup.setLngLat(feature.geometry.coordinates)
-         .setHTML(feature.properties.description)
-         .addTo(map);
-  });
-
-  showMapboxPopupOnHover('.directory-list .mix')
-  map.scrollZoom.disable();
-  map.addControl(new mapboxgl.Navigation());
-
-
-var isAtStart = true;
-
-document.getElementById('all').addEventListener('click', function() {
-
-  isAtStart = !isAtStart;
-
-  map.flyTo({
-
+    map.flyTo({
       center: start,
       zoom: 8,
       bearing: 0,
-
       speed: 1, // make the flying slow
       curve: 1, // change the speed at which it zooms out
 
       easing: function (t) {
-          return t;
+        return t;
       }
+    });
   });
-});
 
-function lngLatStringToLngLat(coord) {
-  let coordArr = coord.split(',')
-  let lat = coordArr[0]
-  let lng = coordArr[1]
-  return [lat, lng]
-}
 
-function latLngStringToLngLat(coord) {
-  let coordArr = coord.split(',')
-  let lat = coordArr[0]
-  let lng = coordArr[1]
-  return [lng, lat]
-}
+
 
 
 

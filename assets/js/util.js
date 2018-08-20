@@ -467,7 +467,7 @@ function handleSearch(array) {
   });
 
   // builds reference data
-  var store = JSON.parse(localStorage.getItem('allShops'))
+  var store = allShopsJSON
 
   // builds search
   $(document).ready(function() {
@@ -565,7 +565,7 @@ Storage.prototype.setExpire = function (arrObj) {
 
 // FOR MAP
 // When hovering list items, it navigates to the items on a map
-function showMapboxPopupOnHover(HTMLelement) {
+function showMapboxPopupOnHover(popup, HTMLelement) {
   $(HTMLelement).hover(
     // MOUSE OVER
     (e) => {
@@ -595,14 +595,27 @@ function flyTo(coordinates, lngLat) {
   if (coordinates !== "0,0") {
     map.flyTo({
       center: lngLat,
-      zoom: 8,
       bearing: 0,
-      speed: 1,
-      curve: 1,
+      speed: 2,
+      curve: 2,
 
       easing: function (t) {
         return t;
       }
     });
   }
+}
+
+function lngLatStringToLngLat(coord) {
+  let coordArr = coord.split(',')
+  let lat = coordArr[0]
+  let lng = coordArr[1]
+  return [lat, lng]
+}
+
+function latLngStringToLngLat(coord) {
+  let coordArr = coord.split(',')
+  let lat = coordArr[0]
+  let lng = coordArr[1]
+  return [lng, lat]
 }
