@@ -1,7 +1,7 @@
 
 
 function getYelpShopData(data, slug) {
-  // console.log(data);
+  console.log(data);
 
   // Element Variables
   const ratingEl = document.getElementById("rating")

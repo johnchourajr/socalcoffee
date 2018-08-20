@@ -12,5 +12,5 @@ coffee:
 - Sweet Bloom Coffee
 - Parlor Coffee
 - Various
+map: 34.09988,-118.290344238281
 ---
-

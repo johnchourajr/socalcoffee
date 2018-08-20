@@ -14,4 +14,5 @@ coffee:
 - Parlor Coffee Roasters
 featured_max_1: true
 featured_min: false
+map: 34.085563531674,-118.275099008793
 ---

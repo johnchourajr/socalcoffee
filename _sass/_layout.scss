@@ -811,7 +811,8 @@ table {
     left: 50vw;
     background: white;
     overflow-y: scroll;
-    z-index: 9999;
+    overflow-x: visible;
+    z-index: 8888;
   }
   @include media-query(lg) {
     height: 100vh;
@@ -821,6 +822,19 @@ table {
     @include media-query(md) {
       width: 50vw;
       padding: 0 3vw !important;
+    }
+  }
+
+  .min-switch {
+    display: none;
+    position: absolute;
+    left: -20px;
+    z-index: 9999;
+    top: 50%;
+
+    button {
+      width: 20px;
+      height: 20px;
     }
   }
 }

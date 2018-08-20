@@ -138,3 +138,23 @@
     }
   }
 }
+
+.map-full {
+  #map.directory {
+    width: 100vw;
+  }
+
+  .directory-list {
+    left: 100vw;
+  }
+}
+
+.map-half {
+  #map.directory {
+    width: 50vw;
+  }
+
+  .directory-list {
+    left: 50vw;
+  }
+}

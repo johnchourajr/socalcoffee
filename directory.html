@@ -6,6 +6,11 @@ layout: directory
 {% assign places = site.collections %}
 
 <div class="directory-list">
+  <div class="min-switch">
+    <button>
+      <img src="/assets/images/arrow-right.svg" alt="">
+    </button>
+  </div>
   <section>
     <div class="wrapper">
 
@@ -52,9 +57,9 @@ layout: directory
         {% for place in places %}
           {% assign shops = place.docs | sort: title %}
           {% for shop in shops %}
-            {% if shop.title == place.title %}{% else %}
+            {% if shop.title == place.title %}{% elsif place.title == "Recipes" %}{% else %}
 
-              <div class="mix mix-card col xs-col-6 sm-col-4 md-col-6 xl-col-4 {% for spec in shop.tags %}{{ place.title | downcase | replace:' ','-' }} {{ spec | downcase | replace:' ','-' }} {% endfor %} {% for spec in shop.tags %}all {{ spec | downcase | replace:' ','-' }} {% endfor %}">
+              <div id="{{ shop.slug }}" class="mix mix-card col xs-col-6 sm-col-4 md-col-6 xl-col-4 {% for spec in shop.tags %}{{ place.title | downcase | replace:' ','-' }} {{ spec | downcase | replace:' ','-' }} {% endfor %} {% for spec in shop.tags %}all {{ spec | downcase | replace:' ','-' }} {% endfor %}" data-coordinates="{{ shop.map }}" data-countycoord="{{ place.meta.cord }}">
                 <a class="" href="{{ shop.url }}">
                   <h3 class="bold text-secondary">{{ shop.shop_name }}</h3>
                   <h6 class="bold text-primary xs-pb1">{{ shop.city }}</h6>
@@ -74,24 +79,5 @@ layout: directory
     </div>
   </section>
 </div>
-
-<script>
-// $(window).load(function(){
-//   var container = "#Container"
-//   var containerHeight = $( container ).height();
-//   var containerHeightHalf = containerHeight / 1.9
-//   console.log(containerHeight);
-//   console.log(containerHeightHalf);
-//   console.log($( window ).height() );
-//   $( container ).css('height',containerHeightHalf);
-// });
-//   var container = "#Container"
-//   var containerHeight = $( container ).height();
-//   var containerHeightHalf = containerHeight / 1.9
-//   console.log(containerHeight);
-//   console.log(containerHeightHalf);
-//   console.log($( window ).height() );
-//   $( container ).css('height',containerHeightHalf);
-</script>
 
 <div id='map' class="xs-hide md-block directory"></div>

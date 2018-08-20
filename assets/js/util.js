@@ -522,8 +522,8 @@ function handleSearch(array) {
   });
 }
 
-// LOCALSTORAGE CACHE EXPIRATINO
-// For Search: Inits search
+// LOCALSTORAGE CACHE EXPIRATION
+// Prototype for expiring localstorage
 Storage.prototype.setExpire = function (arrObj) {
     var date,
         now,
@@ -562,3 +562,47 @@ Storage.prototype.setExpire = function (arrObj) {
     }
     localStorage.setItem('limitStorage', JSON.stringify(newItems));
 };
+
+// FOR MAP
+// When hovering list items, it navigates to the items on a map
+function showMapboxPopupOnHover(HTMLelement) {
+  $(HTMLelement).hover(
+    // MOUSE OVER
+    (e) => {
+      let coordinates = e.currentTarget.dataset.coordinates ? e.currentTarget.dataset.coordinates : "0,0"
+      let lngLat = latLngStringToLngLat(coordinates)
+      let desc = e.currentTarget.childNodes[1].children[0].innerText
+
+      popup.setLngLat(lngLat)
+          .setHTML(desc)
+          .addTo(map);
+
+      flyTo(coordinates, lngLat)
+    },
+    // MOUSE OUT
+    (e) => {
+      let coordinates = e.currentTarget.dataset.countycoord ? e.currentTarget.dataset.countycoord : "0,0"
+      let lngLat = lngLatStringToLngLat(coordinates)
+
+      popup.remove();
+
+      flyTo(coordinates, lngLat)
+    }
+  )
+}
+
+function flyTo(coordinates, lngLat) {
+  if (coordinates !== "0,0") {
+    map.flyTo({
+      center: lngLat,
+      zoom: 8,
+      bearing: 0,
+      speed: 1,
+      curve: 1,
+
+      easing: function (t) {
+        return t;
+      }
+    });
+  }
+}

@@ -17,6 +17,7 @@
             "url": "{{ shop.url | xml_escape }}",
             "shop_name": `{{ shop.shop_name | xml_escape }}`,
             "yelp_id": `{{ shop.yelp_id | xml_escape }}`,
+            "slug": `{{ shop.slug }}`,
             "geometry": {
               "coordinates": [{% if shop.map %}{% assign point = {{shop.map}} | split: ',' %}{{ point[1] }}, {{ point[0] }}{% else %}0, 0{% endif %}]
             }
@@ -29,10 +30,13 @@
   let shopsGeoJSON = []
 
   for (var i=0; i<allShops.length; i++) {
+    let item = allShops[i]
+
     let details = {
-      shop_name: allShops[i].shop_name,
-      url: allShops[i].url,
-      coordinates: allShops[i].geometry.coordinates,
+      shop_name: item.shop_name,
+      url: item.url,
+      coordinates: item.geometry.coordinates,
+      slug: item.slug,
     }
 
     const newObj = {
@@ -42,7 +46,7 @@
           icon: `circle`,
           url: details.url,
           description: `<a href="${details.url}">${details.shop_name} ➝</a>`,
-
+          slug: details.slug,
       },
       geometry: {
           type: `Point`,

@@ -4,6 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://use.typekit.net/noe8cvp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
@@ -11,21 +14,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
   <meta name="theme-color" content="#0743FF">
 
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
+  <!-- SLICK JS STYLES -->
   <link rel="stylesheet" type="text/css" href="{{ "/assets/js/vendor/slick.css" | prepend: site.baseurl }}"></link>
 
+  <!-- JQUERY -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
 
-  </script>
-  <script src="https://use.typekit.net/noe8cvp.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- MAPBOX -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.1/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.1/mapbox-gl.css' rel='stylesheet' />
 
+  <!-- JS UTIL -->
   <script src="{{ "/assets/js/util.js" | prepend: site.baseurl }}"></script>
   {% include /scripts/localstore-js.html %}
 
