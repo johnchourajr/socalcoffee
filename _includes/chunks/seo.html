@@ -27,24 +27,6 @@
   </script>
 {% endif %}
 
-<!-- {% assign places = site.collections %}
-{% for place in places %}
-{% if page.shop_name %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.baseurl }}{{ page.url }}"
-      },
-      "headline": "{{ page.shop_name }}",
-      "description": "A {{ page.type }} in {{ page.city }}, {{ place.title }}, CA"
-    }
-  </script>
-{% endif %}
-{% endfor %} -->
-
 {% if page.type == 'recipe' %}
   <script type="application/ld+json">
     {
