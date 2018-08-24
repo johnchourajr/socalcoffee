@@ -3,6 +3,8 @@
     "@context": "http://schema.org",
     "@type": "WebSite",
     "url": "https://socal.coffee/",
+    "homepage": "{{ site.baseurl }}",
+    "description": "A Curated List of the Best Craft Coffee Shops in Southern California.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://socal.coffee/search/?query={search_term_string}",
@@ -22,7 +24,8 @@
         "@id": "{{ site.baseurl }}{{ page.url }}"
       },
       "headline": "{{ page.shop_name }}",
-      "description": "A {{ page.type }} in {{ place.title }}, CA"
+      "description": "A {{ page.type }} in {{ place.title }}, CA",
+
     }
   </script>
 {% endif %}
