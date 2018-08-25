@@ -1,5 +1,10 @@
 ---
-title: So.Cal. — Craft Coffee
+url: https://socal.coffee
+title: So. Cal. Craft Coffee
+description: A curated list of the best craft coffee shops in Southern California.
+social_card: /assets/images/social-card.png
+twitter: socal_coffee
+instagram: socal_cofffe_
 timezone: UTC
 collections:
   losangeles:

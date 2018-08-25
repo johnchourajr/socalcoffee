@@ -1,10 +1,11 @@
+<!-- Site Schema SEO Meta -->
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
+    "@context": "{{ site.url }}",
     "@type": "WebSite",
     "url": "https://socal.coffee/",
-    "homepage": "{{ site.baseurl }}",
-    "description": "A Curated List of the Best Craft Coffee Shops in Southern California.",
+    "homepage": "{{ site.url }}",
+    "description": "A curated list of the best craft coffee shops in Southern California.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://socal.coffee/search/?query={search_term_string}",
@@ -13,34 +14,57 @@
   }
 </script>
 
-{% assign place = site.collections %}
 {% if page.shop_name %}
+<!-- Coffee Shop Page SEO Meta -->
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "{{ site.url }}",
       "@type": "NewsArticle",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ site.baseurl }}{{ page.url }}"
+        "@id": "{{ site.url }}{{ page.url }}"
       },
       "headline": "{{ page.shop_name }}",
-      "description": "A {{ page.type }} in {{ place.title }}, CA",
+      "description": "A {{ page.type }} in {{ page.city }}.",
 
     }
   </script>
 {% endif %}
 
 {% if page.type == 'recipe' %}
+<!-- Coffee Recipe Page SEO Meta -->
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "{{ site.url }}",
       "@type": "NewsArticle",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ site.baseurl }}{{ page.url }}"
+        "@id": "{{ site.url }}{{ page.url }}"
       },
       "headline": "{{ page.title }}",
       "description": "How to brew coffee with a {{ page.title }}"
     }
   </script>
 {% endif %}
+
+{% if page.no_crawl %}
+<!-- No Crawl Options -->
+  <meta name="robots" content="noindex" />
+  <meta name="googlebot" content="noindex" />
+  <meta name="googlebot-news" content="noindex" />
+{% endif %}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.twitter }}">
+<meta name="twitter:creator" content="@{{ site.twitter }}">
+<meta name="twitter:title" content="{{ site.title }}">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.social_card }}">
+
+<!-- Open Graph Properties -->
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:image" content="{{ site.url }}{{ site.social_card }}" />
