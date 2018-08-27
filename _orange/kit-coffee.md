@@ -13,5 +13,6 @@ coffee:
   - Coava Coffee
 map: '33.6257,-117.9057'
 website: 'http://www.kit.coffee/'
+featured_min: true
 ---
 
