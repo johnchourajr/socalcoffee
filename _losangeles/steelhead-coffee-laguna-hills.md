@@ -16,6 +16,6 @@ coffee:
   - Arcade Coffee Roasters
 map: '33.62347,-117.73371'
 website: 'http://steelheadcoffee.com/'
-featured_min: true
+featured_min: false
 ---
 
