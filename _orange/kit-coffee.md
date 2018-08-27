@@ -11,7 +11,7 @@ tags:
 coffee:
   - Heart Coffee
   - Coava Coffee
-map: '0,0'
+map: '33.6257,-117.9057'
 website: 'http://www.kit.coffee/'
 ---
 
