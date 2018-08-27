@@ -89,7 +89,6 @@ defaults:
 - scope:
     path: ''
   values:
-    layout: shop
     title:
     tags:
     - Indoor Seating
