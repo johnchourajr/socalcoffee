@@ -7,6 +7,7 @@ type: Coffee Shop
 tags:
   - indoor seating
   - food
+  - beer
 coffee:
   - Heart Coffee Roasters
   - St. Frank Coffee Roasters
