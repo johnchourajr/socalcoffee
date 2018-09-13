@@ -1,17 +1,21 @@
 ---
 title: Commodity Coffee Shop
 shop_name: Commodity Coffee Shop
-yelp_id: commodity-long-beach
-website: https://www.coffeeorwhatever.com/
-type: Coffee Shop
 city: Long Beach
+yelp_id: commodity-long-beach
+type: Coffee Shop
+tags:
+  - indoor seating
+  - food
 coffee:
-- Heart Coffee Roasters
-- St. Frank Coffee Roasters
-- Mad Cap Coffee Roasters
-- Methodical Coffee Roasters
-- Belleville Coffee Roasters
-- Parlor Coffee Roasters
-map: 33.783147,-118.153295
+  - Heart Coffee Roasters
+  - St. Frank Coffee Roasters
+  - Mad Cap Coffee Roasters
+  - Methodical Coffee Roasters
+  - Belleville Coffee Roasters
+  - Parlor Coffee Roasters
+map: '33.783147,-118.153295'
+website: 'https://www.coffeeorwhatever.com/'
+featured_max_1: true
 ---
 
