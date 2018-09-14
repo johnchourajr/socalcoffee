@@ -5,9 +5,9 @@
         <h2 class="text-secondary bold xs-pt6">A List of</br>Great Coffee.</h2>
         <div class="social-footer xs-pt3">
           <p>Sign up for our newsletter.</p>
-          <form name="newsletter" method="POST" type="file" action="/thankyou/" netlify>
+          <form id="newsletter" name="newsletter" method="POST" type="file" action="/subscribe-thank-you/" netlify>
             <div class="input-wrap">
-              <input type="email" name="email" />
+              <input type="email" placeholder="Email Address" name="email" required/>
             </div>
             <button class="button button--white" type="submit">Go</button>
           </form>

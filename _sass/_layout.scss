@@ -1571,7 +1571,7 @@ input {
 
 .social-footer {
   p {
-    color: $text-secondary;
+    color: $text-primary;
     max-width: 11.625em;
   }
 
@@ -1580,7 +1580,7 @@ input {
     height: 1.2em;
 
     path {
-      fill: $text-secondary;
+      fill: $text-primary;
     }
   }
 
@@ -1602,10 +1602,11 @@ input {
       display: flex;
       align-items: center;
       width: 100%;
-      height: 2.875rem;
-      background-color: $fill-secondary-lightest;
+      height: 3rem;
+      background-color: $fill-primary-lightest;
       border-radius: .25em;
       margin-top: 1em;
+      padding-right: .25em;
 
       @include media-query(sm) {
         width: 24rem;
@@ -1613,9 +1614,9 @@ input {
 
       .input-wrap {
         display: flex;
-        height: 2.875rem;
+        height: 3rem;
         flex-grow: 1;
-        max-width: 200px;
+        max-width: calc(100% - 67px);
 
         @include media-query(sm) {
           max-width: initial;
@@ -1633,7 +1634,7 @@ input {
           color: $text-primary;
 
           &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: $text-secondary;
+            color: white;
             transition: color .2s $bez;
           }
 
@@ -1648,7 +1649,7 @@ input {
       button {
         position: relative;
         height: 2.5rem;
-        margin: 0 .25em;
+        margin: 0;
         background: white;
         padding: 0 .66em;
         border-radius: .25em;
