@@ -713,19 +713,34 @@ section {
 
   &-item {
     position: relative;
-    padding-right: 0.15em;
+    padding-right: 0.5em;
     padding-bottom: 0.2em;
     display: inline-block;
 
-    &:after {
-      content: ", ";
-      color: $text-primary;
-      display: inline-table;
-    }
-    &:last-child {
+    a {
+      display: initial;
+      position: relative;
+
+      @include media-query(md) {
+        font-size: 90%;
+      }
+
       &:after {
-        content: "." !important;
-        padding-right: 0;
+        content: ", ";
+        color: $text-primary;
+        display: inline-table;
+        right: -0.5em;
+        bottom: 0.2em;
+        position: absolute;
+      }
+    }
+
+    &:last-child {
+      a {
+        &:after {
+          content: "." !important;
+          padding-right: 0;
+        }
       }
     }
   }
@@ -1524,4 +1539,125 @@ input {
       width: 2em;
     }
   }
+}
+
+.footer {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    @include media-query(sm) {
+      flex-direction: row;
+    }
+
+    &--logo {
+      order: 1;
+
+      @include media-query(sm) {
+        order: 2;
+      }
+    }
+
+    &--content {
+      order: 2;
+
+      @include media-query(sm) {
+        order: 1;
+      }
+    }
+  }
+}
+
+
+.social-footer {
+  p {
+    color: $text-secondary;
+    max-width: 11.625em;
+  }
+
+  ul li svg {
+    width: 1.2em;
+    height: 1.2em;
+
+    path {
+      fill: $text-secondary;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    li {
+      margin-right: 1em;
+    }
+  }
+
+  form {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 2.875rem;
+      background-color: $fill-secondary-lightest;
+      border-radius: .25em;
+      margin-top: 1em;
+
+      @include media-query(sm) {
+        width: 24rem;
+      }
+
+      .input-wrap {
+        display: flex;
+        height: 2.875rem;
+        flex-grow: 1;
+        max-width: 200px;
+
+        @include media-query(sm) {
+          max-width: initial;
+        }
+
+        input {
+          flex: 1;
+          outline: none;
+          background-color: transparent;
+          border-width: 0;
+          border: none;
+          border-radius: .25em;
+          padding: 0 .75em;
+          font-size: 1em;
+          color: $text-primary;
+
+          &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $text-secondary;
+            transition: color .2s $bez;
+          }
+
+          &:focus {
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: transparent;
+            }
+          }
+        }
+      }
+
+      button {
+        position: relative;
+        height: 2.5rem;
+        margin: 0 .25em;
+        background: white;
+        padding: 0 .66em;
+        border-radius: .25em;
+        flex-grow: 1;
+        color: $text-primary !important;
+
+        @include media-query(sm) {
+          display: inline-block;
+        }
+      }
+    }
 }

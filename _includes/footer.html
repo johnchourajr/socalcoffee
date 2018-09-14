@@ -1,21 +1,35 @@
 <section class="xs-pt3 md-pt4 xs-inline-block xs-pb5 {% if  page.title == 'Directory' %}md-hide{% endif %}">
   <div class="wrapper">
-    <div class="clearfix gutters">
-      <div class="col xs-col-12 sm-col-8">
+    <div class="clearfix gutters footer__wrap">
+      <div class="col xs-col-12 sm-col-8 footer__wrap--content">
         <h2 class="text-secondary bold xs-pt6">A List of</br>Great Coffee.</h2>
+        <div class="social-footer xs-pt3">
+          <p>Sign up for our newsletter.</p>
+          <form name="newsletter" method="POST" type="file" action="/thankyou/" netlify>
+            <div class="input-wrap">
+              <input type="email" name="email" />
+            </div>
+            <button class="button button--white" type="submit">Go</button>
+          </form>
+        </div>
+        <div class="social-footer xs-pt4">
+          <p>Follow us on social for fresh shop updates.</p>
+          <ul>
+            <li><a href="https://instagram.com/{{ site.instagram }}/" alt="Instagram" target="_blank">{% include chunks/svg-insta.html %}</a></li>
+            <li><a href="https://facebook.com/{{ site.instagram }}/" alt="Facebook" target="_blank">{% include chunks/svg-fb.html %}</a></li>
+            <li><a href="https://twitter.com/{{ site.twitter }}/" alt="Twitter" target="_blank">{% include chunks/svg-twitter.html %}</a></li>
+          </ul>
+        </div>
         <p class="text-secondary bold xs-pt1 xs-pb6 md-pb0">Built by <a class="text-secondary" href="https://john.design">John Choura Jr.</a></p>
       </div>
-      <div class="col xs-col-12 sm-col-4 xs-relative">
+      <div class="col xs-col-12 sm-col-4 xs-relative footer__wrap--logo">
         <div class="sm-float-right xs-pt1 sm-pt5">
           <a href="{{ site.baseurl }}/"><img src="/assets/images/seal.svg" class="footer-seal" alt="{{ site.title }}" /></a>
-
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
 
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 
