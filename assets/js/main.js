@@ -79,3 +79,11 @@ $('#search').on('keyup', function () {
   reset.removeClass('hide');
   reset.addClass('show');
 });
+
+
+function noBotSubmit(formName) {
+    var x = document.forms[formName]["hellnah"].value;
+    if (x != "") {
+        return false;
+    }
+}
