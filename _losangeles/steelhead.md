@@ -7,10 +7,10 @@ website: http://steelheadcoffee.com/
 type: Coffee Shop
 city: Long Beach
 coffee:
-- Ruby Coffee Roasters
-- 49th Parallel Roasters
-- Heart Coffee Roasters
-- Huckleberry Roasters
-- Rose Park Roasters
+  - Ruby Coffee Roasters
+  - 49th Parallel
+  - Heart Coffee
+  - Huckleberry Roasters
+  - Rose Park Roasters
 map: 33.826417, -118.189171
 ---

@@ -7,8 +7,7 @@ type: Coffee Shop
 tags:
   - Indoor Seating
 coffee:
-  - Heart Coffee Roasters
-map: '34.0710914418663,-118.250747892565'
+  - Heart Coffee
+map: "34.0710914418663,-118.250747892565"
 featured_max_1: true
 ---
-

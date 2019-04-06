@@ -9,14 +9,13 @@ tags:
   - food
   - beer
 coffee:
-  - Heart Coffee Roasters
+  - Heart Coffee
   - St. Frank Coffee Roasters
   - Mad Cap Coffee Roasters
   - Methodical Coffee Roasters
   - Belleville Coffee Roasters
   - Parlor Coffee Roasters
-map: '33.783147,-118.153295'
-website: 'https://www.coffeeorwhatever.com/'
+map: "33.783147,-118.153295"
+website: "https://www.coffeeorwhatever.com/"
 featured_max_1: true
 ---
-

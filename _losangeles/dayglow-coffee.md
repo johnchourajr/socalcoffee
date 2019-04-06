@@ -7,15 +7,14 @@ type: Coffee Shop
 tags:
   - indoor seating
 coffee:
-  - Heart Coffee Roasters
+  - Heart Coffee
   - St. Frank Coffee Roasters
   - Mad Cap Coffee Roasters
   - Methodical Coffee Roasters
   - Belleville Coffee Roasters
   - Parlor Coffee Roasters
-map: '34.085563531674,-118.275099008793'
-website: 'https://dayglow.coffee/'
+map: "34.085563531674,-118.275099008793"
+website: "https://dayglow.coffee/"
 featured_max_1: false
 featured_min: false
 ---
-
