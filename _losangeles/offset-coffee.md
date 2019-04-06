@@ -9,9 +9,9 @@ website: https://offsetcoffee.com
 type: Coffee Shop
 city: Torrance
 coffee:
-  - 49th Parallel Roasters
+  - 49th Parallel
   - Camber
-  - Heart Coffee Roasters
+  - Heart Coffee
   - Madcap
   - Onyx
   - Stumptown

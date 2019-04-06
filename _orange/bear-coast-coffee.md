@@ -11,7 +11,7 @@ type: Coffee Shop
 city: San Clemente
 coffee:
 - Ritual Coffee
-- 49th Parallel Coffee
+- 49th Parallel
 - Heart Coffee
 yelp_id: bear-coast-coffee-san-clemente
 map: 33.4200861775673,-117.619638964534
