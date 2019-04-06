@@ -17,4 +17,5 @@ coffee:
   - Stumptown
   - Sweet Bloom
   - Toby's Estate
+map: 33.8035005,-118.3275883
 ---
