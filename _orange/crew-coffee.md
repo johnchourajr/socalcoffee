@@ -11,6 +11,6 @@ website: http://www.lidohousehotel.com/#CrewCoffeeandCremerie
 type: Coffee Shop
 city: Newport Beach
 coffee:
-  - Common Room Roasters
+  - Common Room Coffee
 map: 33.616847, -117.929433
 ---
