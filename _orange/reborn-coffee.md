@@ -1,6 +1,7 @@
 ---
 title: Reborn Coffee
 tags:
+  - Roaster
   - Pastries
   - Cold Brew
   - Free Wi-Fi
@@ -12,5 +13,5 @@ type: Coffee Shop
 city: Brea
 coffee:
   - Reborn Coffee
-map: "33.909473, -117.850972"
+map: 33.909473, -117.850972
 ---
