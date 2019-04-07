@@ -7,7 +7,7 @@ tags:
   - Outdoor Seating
 shop_name: Steelhead Coffee
 yelp_id: steelhead-coffee-laguna-hills-4
-website: https://steelheadcoffee.com/
+website: http://steelheadcoffee.com/
 type: Coffee Shop
 city: Laguna Hills
 coffee:
