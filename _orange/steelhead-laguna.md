@@ -11,6 +11,13 @@ website: http://steelheadcoffee.com/
 type: Coffee Shop
 city: Laguna Hills
 coffee:
+  - Ruby Coffee
+  - Huckleberry Coffee
+  - Heart Coffee
+  - Supersonic Coffee
+  - Rival Bros Coffee
+  - Dogwood Coffee Co
+  - Arcade Coffee Roasters
   - Ceremony Coffee
 map: 33.623497, -117.733575
 ---
