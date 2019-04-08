@@ -10,5 +10,5 @@ tags:
 coffee:
   - Coffee Parlor
 map: '33.809900, -118.133492'
-featured_min: false
+featured_min: true
 ---
