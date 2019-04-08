@@ -8,8 +8,7 @@ tags:
   - Indoor Seating
 coffee:
   - Toby's Estate Coffee
-map: '33.627308,-117.9525905'
+map: 33.627308,-117.9525905
 website: 'https://www.vacancycoffeebar.com/'
 featured_min: false
 ---
-

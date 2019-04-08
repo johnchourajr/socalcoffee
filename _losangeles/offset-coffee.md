@@ -5,7 +5,7 @@ tags:
   - Outdoor Seating
 shop_name: Offset Coffee
 yelp_id: offset-coffee-torrance
-website: https://offsetcoffee.com
+website: http://offsetcoffee.com
 type: Coffee Shop
 city: Torrance
 coffee:
