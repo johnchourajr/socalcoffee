@@ -10,5 +10,5 @@ city: Silver Lake
 coffee:
 - Four Barrel Coffee
 - Guest Coffee
+featured_max_1: true
 ---
-
