@@ -2,6 +2,8 @@
 
 A list of good coffee and brewing recipes
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3984ae6e-957d-4e44-9c96-89d87a648645/deploy-status)](https://app.netlify.com/sites/socalcoffee/deploys)
+
 ## About
 
 Socall.Coffee is a static site, built with [Jekyll](https://github.com/jekyll/jekyll).
